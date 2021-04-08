@@ -10,4 +10,4 @@ ostis-web-platform из ветки scp_stable: https://github.com/ostis-dev/osti
 
 ### **Важное** уточнение:
 
-Наборы символов =>, ->, -|>, <-, =>, <= объединяются в [лигатуры](https://www.jetbrains.com/ru-ru/lp/mono/#ligatures)
+Наборы символов = >, - >, - | >, < -, = >, < = объединяются в [лигатуры](https://www.jetbrains.com/ru-ru/lp/mono/#ligatures)
