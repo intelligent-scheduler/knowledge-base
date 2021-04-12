@@ -6,7 +6,7 @@ ostis-web-platform из ветки scp_stable: https://github.com/ostis-dev/osti
 
 ### Требования к фрагментам:
 
-Следовать шаблонам из файла SCS-patterns.txt
+Следовать примерам конструкций из файла examples.txt
 
 ### Требования к названиям файлов и папок:
 
