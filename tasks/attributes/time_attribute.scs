@@ -79,66 +79,66 @@ task_1 => nrel_end : moment_of_time_end;;
 
 moment_of_time_start <= nrel_value:
 {
-    some_date_start;
-    some_time_start
+    date_start;
+    time_start
 };;
 
 moment_of_time_end <= nrel_value:
 {
-    some_date_end;
-    some_time_end
+    date_end;
+    time_end
 };;
 
 concept_date_in_the_calendar ->
-some_date_start;
-some_date_end;;
+date_start;
+date_end;;
 
 concept_clock_time ->
-some_time_start;
-some_time_end;;
+time_start;
+time_end;;
 
-some_date_start ->
-some_day_start;
-some_month_start;
-some_year_start;;
+date_start ->
+day_start;
+month_start;
+year_start;;
 
-some_time_start ->
-some_hour_start;
-some_minute_start;;
+time_start ->
+hour_start;
+minute_start;;
 
-some_date_end ->
-some_day_end;
-some_month_end;
-some_year_end;;
+date_end ->
+day_end;
+month_end;
+year_end;;
 
-some_time_end ->
-some_hour_end;
-some_minute_end;;
+time_end ->
+hour_end;
+minute_end;;
 
-some_date_start => rrel_year : some_year_start;;
-some_date_start => rrel_month : some_month_start;;
-some_date_start => rrel_day : some_day_start;;
+date_start => rrel_year : year_start;;
+date_start => rrel_month : month_start;;
+date_start => rrel_day : day_start;;
 
-some_date_end => rrel_year : some_year_end;;
-some_date_end => rrel_month : some_month_end;;
-some_date_end => rrel_day : some_day_end;;
+date_end => rrel_year : year_end;;
+date_end => rrel_month : month_end;;
+date_end => rrel_day : day_end;;
 
-some_time_start => rrel_hour : some_hour_start;;
-some_time_start => rrel_minute : some_minute_start;;
+time_start => rrel_hour : hour_start;;
+time_start => rrel_minute : minute_start;;
 
-some_time_end => rrel_hour : some_hour_end;;
-some_time_end => rrel_minute : some_minute_end;;
+time_end => rrel_hour : hour_end;;
+time_end => rrel_minute : minute_end;;
 
 concept_number ->
-some_day_start;
-some_day_end;
-some_month_start;
-some_month_end;
-some_year_start;
-some_year_end;
-some_hour_start;
-some_hour_end;
-some_minute_start;
-some_minute_end;;
+day_start;
+day_end;
+month_start;
+month_end;
+year_start;
+year_end;
+hour_start;
+hour_end;
+minute_start;
+minute_end;;
 
 moment_of_time_end <= nrel_time_to_solve_the_task : moment_of_time_start;;
