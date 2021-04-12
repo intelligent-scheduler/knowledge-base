@@ -6,7 +6,7 @@ concept_importance_of_the_task <- sc_node_not_relation;
 //идентификаторы
 => nrel_main_idtf:
     [важность задачи] (*<-lang_ru;;*);
-    [creation] (*<-lang_en;;*);
+    [importance of the task] (*<-lang_en;;*);
 
 //определение
 <- rrel_key_sc_element: ... 
