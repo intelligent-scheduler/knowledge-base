@@ -1,0 +1,50 @@
+sc_node_norole_relation -> nrel_attribute;;
+
+//важность задачи
+concept_urgency_of_the_task <- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf:
+    [срочность задачи] (*<-lang_ru;;*);
+    [urgency of the task] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... 
+(*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Срочность задачи)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+            concept_power;
+            concept_task;
+            concept_time
+};; 
+<= nrel_sc_text_translation: ...
+ (*
+      -> rrel_example:
+        [Срочность задачи — степень решения задачи, специфика которой не позволяет отложить их на более позднее время.] (* <- lang_ru;; *);;
+    *);;
+
+   *);
+
+//утверждение
+<- rrel_key_sc_element: ... 
+(*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Срочность задачи)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+       concept_indefinite_term
+};; 
+ <= nrel_sc_text_translation: ... 
+(*
+      -> rrel_example:
+[Срочные задачи имеют конкретные сроки.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+
+//принадлежность
+concept_task -> concept_urgency_of_the_task;;
+
+
