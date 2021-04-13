@@ -1,0 +1,38 @@
+nrel_atribute 
+//identifiers
+    => nrel_main_idtf: [атрибут] (*<-lang_ru;;*);
+    => nrel_main_idtf: [atrribute] (*<-lang_en;;*);
+    => nrel_system_identifer: [nrel_atribute];;
+//definition
+... <- sc_definition;
+    -> rrel_key_sc_element: nrel_atribute;
+    => nrel_main_idtf: [Опр. Атрибут] (* <- lang_ru;; *);
+    <= nrel_sc_text_translation: ... 
+        (*-> rrel_example: 
+            [Атрибут — некое свойство задачи, отношение] 
+            (*<-lang_ru;;*)
+        ;;*);
+    => nrel_using_constans: {
+        concept_task;
+        nrel_relation
+    };
+//domains
+    => nrel_definitional_domain: ... (*<= nrel_combination: {
+        concept_task;
+        concept_atribute_type
+    };;*);
+    => nrel_first_domain: concept_task;
+    => nrel_second_domain: concept_atribute_type;;
+
+//properties
+    relation => nrel_inclusion: binary_relation;
+        => nrel_inclusion: order_relation;;
+
+    binary_relation => nrel_inclusion: symmetric_relation;
+        => nrel_inclusion: transitive_relation;
+        => nrel_inclusion: reflexive_relation;;
+
+    nrel_atribute <|- symmetric_relation;
+        <|- transitive_relation;
+        <|- reflexive_relation;
+        <- order_relation;;

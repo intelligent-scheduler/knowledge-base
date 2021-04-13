@@ -1,0 +1,4 @@
+concept_name                        <- sc_node_not_relation;;
+concept_task                        <- sc_node_not_relation;;
+concept_incompleteness_observation  <- sc_node_not_relation;;
+nrel_atribute                       <- sc_node_norole_relation;;
