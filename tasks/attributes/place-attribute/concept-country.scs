@@ -1,0 +1,19 @@
+concept_country <- sc_node_not_relation;;
+
+concept_country => nrel_main_idtf:
+    [Страна] (* <- lang_ru;; *);
+    [Country] (* <- lang_en;; *);;
+
+concept_country <- rrel_key_sc_element: ... (*
+<- explanation;;
+    => nrel_main_idtf: [Утв.(Об.Стране)] (* <- lang_ru;; *);;
+    => nrel_using_constants:{
+        concept_city
+    };;
+    <= nrel_sc_text_translation: ... (*
+        -> rrel_example: [Страна действия задачи может содержать название города.] (*
+        <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+concept_country <= nrel_country: concept_task_location;;

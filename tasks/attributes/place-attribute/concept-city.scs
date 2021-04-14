@@ -1,0 +1,20 @@
+concept_city <- sc_node_not_relation;;
+
+concept_city => nrel_main_idtf:
+    [Город] (* <- lang_ru;; *);
+    [City] (* <- lang_en;; *);;
+
+concept_city <- rrel_key_sc_element: ... (*
+<- explanation;;
+    => nrel_main_idtf: [Утв.(Об.Городе)] (* <- lang_ru;; *);;
+    => nrel_using_constants:{
+        concept_street
+    };;
+    <= nrel_sc_text_translation: ... (*
+        -> rrel_example: [Город действия задачи может содержать улицу.] (*
+        <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+    
+concept_city <= nrel_city: concept_country;;    
+concept_city <= nrel_city: concept_task_location;;

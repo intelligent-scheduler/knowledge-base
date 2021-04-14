@@ -1,0 +1,20 @@
+concept_place_to_complete_task <- sc_node_not_relation;;
+
+concept_place_to_complete_task => nrel_main_idtf:
+    [Место выполнения задачи] (* <- lang_ru;; *);
+    [Place to complete task] (* <- lang_en;; *);;
+
+concept_place_to_complete_task <- rrel_key_sc_element: ... (*
+<- definition;;
+    => nrel_main_idtf: [Опр. (Место для выполнения задачи)] (* <- lang_ru;; *);;
+    => nrel_using_constants:{
+        concept_location;
+        concept_time_period
+    };;
+    <= nrel_sc_text_translation: ... (*
+    -> rrel_example:
+        [Место для выполнения задачи - отведенное место для выполнения задачи в течении определенного промежутка времени.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+concept_place_to_complete_task <= nrel_type_of_loction: concept_place_attribute;;

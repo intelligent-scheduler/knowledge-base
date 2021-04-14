@@ -1,0 +1,19 @@
+concept_place_for_final_result <- sc_node_not_relation;;
+
+concept_place_for_final_result => nrel_main_idtf:
+    [Место конечного результата задачи] (* <- lang_ru;; *);
+    [Place for the final result of the task] (* <- lang_en;; *);;
+
+concept_place_for_final_result <- rrel_key_sc_element: ... (*
+<- definition;;
+    => nrel_main_idtf: [Опр. (Место для финального результата задачи.)] (* <- lang_ru;; *);;
+    => nrel_using_constants:{
+        concept_location
+    };;
+    <= nrel_sc_text_translation: ... (*
+    -> rrel_example:
+        [Место для финального результата задачи - это место, где должен быть представлен результат выполнения задачи.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+concept_place_for_final_result <= nrel_type_of_loction: concept_place_attribute;;

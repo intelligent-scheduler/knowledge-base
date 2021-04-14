@@ -1,0 +1,9 @@
+nrel_type_of_loction <- sc_node_norole_relation;;
+
+nrel_type_of_attribute <- sc_node_norole_relation;;
+
+nrel_city <- sc_node_norole_relation;;
+
+nrel_country <- sc_node_norole_relation;;
+
+nrel_street <- sc_node_norole_relation;;

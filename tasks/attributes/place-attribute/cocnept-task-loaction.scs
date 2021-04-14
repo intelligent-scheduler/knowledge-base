@@ -1,0 +1,46 @@
+concept_task_location <- sc_node_not_relation;;
+
+concept_task_location => nrel_main_idtf:
+    [Место действия задачи] (* <- lang_ru;; *);
+    [Task location] (* <- lang_en;; *);;
+
+concept_task_location <- rrel_key_sc_element: ... (*
+<- definition;;
+    => nrel_main_idtf: [Опр. (Место действия задачи)] (* <- lang_ru;; *);;
+    => nrel_using_constants:{
+        concept_user;
+        concept_location
+    };;
+    <= nrel_sc_text_translation: ... (*
+    -> rrel_example:
+        [Место действия задачи - любое место которое задавается пользователем.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+concept_task_location <- rrel_key_sc_element: ... (*
+<- explanation;;
+    => nrel_main_idtf: [Утв.(Об.Месте действия задачи)] (* <- lang_ru;; *);;
+    => nrel_using_constants:{
+        illustration
+    };;
+    <= nrel_sc_text_translation: ... (*
+        -> rrel_example: [Место действия задачи может задаваться в виде изображения.] (*
+        <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+concept_task_location <- rrel_key_sc_element: ... (*
+<- explanation;;
+    => nrel_main_idtf: [Утв.(Об.Месте действия задачи)] (* <- lang_ru;; *);;
+    => nrel_using_constants:{
+        concept_country;
+        concept_street;
+        concept_city
+    };;
+    <= nrel_sc_text_translation: ... (*
+        -> rrel_example: [Место действия задачи может задаваться страной, городом, улицей.] (*
+        <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+concept_task_location <= nrel_type_of_loction: concept_place_attribute;;
