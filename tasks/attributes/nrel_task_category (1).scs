@@ -1,0 +1,79 @@
+nrel_task_category <- sc_node_norole_relation;;
+sc_node_not_relation -> concept_family;;
+sc_node_not_relation -> concept_relaxation;;
+sc_node_not_relation -> concept_entertainment;;
+sc_node_not_relation -> concept_work;;
+
+
+
+nrel_task_category => nrel_main_idtf: 
+    [Категория задачи] (*<-lang_ru;;*);
+    [Task category] (*<-lang_en;;*);;
+
+
+
+nrel_task_category <- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf: [Опр. (Категория задачи)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+    //используемые константы  
+    concept_concept;
+    nrel_relation;
+    concept_reality;
+    concept_task  
+    };;
+    <= nrel_sc_text_translation: ... (*
+    -> rrel_example: 
+    [Категория задачи - предельно общее понятие, выражающее наиболее существенные отношения действительности конкретной задачи.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+
+
+//утверждение
+ <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf: [Утв.(Категория задачи, систематизация)] (* <- lang_ru;; *);; 
+    => nrel_using_constants: {
+        concept_systematization
+    };; 
+    <= nrel_sc_text_translation: ... (*
+    -> rrel_example: [Категории служат для систематизации.] (*<-lang_ru;; => nrel_format: format_html;;*);;
+        *);;
+*);
+
+
+
+
+
+//домены
+
+=> nrel_first_domain: concept_task; 
+=> nrel_second_domain: ...
+(*
+    <=nrel_combination:{
+		cconcept_family;
+        concept_relaxation;
+        concept_entertainment;
+        concept_work
+	};;
+*);;
+
+nrel_task_category =>nrel_definitional_domain:...
+(*
+	<=nrel_combination:{
+		concept_literary_work;
+		concept_character
+	};;
+*);;
+
+
+
+
+
+//какое это отношение
+oriented_relation      -> nrel_task_category;;
+binary_relation        -> nrel_task_category;;
+asymmetric_relation    -> nrel_task_category;;
+atransitive_relation   -> nrel_task_category;;
+antireflexive_relation -> nrel_task_category;;
