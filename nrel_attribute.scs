@@ -1,23 +1,32 @@
-nrel_attribute              <- sc_node_norole_relation;;
+nrel_task_attribute         <- sc_node_norole_relation;;
 nrel_place_attribute        <- sc_node_norole_relation;;
 nrel_time_attribute         <- sc_node_norole_relation;;
 nrel_description_attribute  <- sc_node_norole_relation;;
 
-//нужно для второго домена атрибута описания, может лучше и не текст
+//нужны для иерархии (атрибуты описания), поэтому пока пусть объявляются тут, в этом файле
+nrel_memo  <- sc_node_norole_relation;; //возможно стоит изменить на nrel_comment, но тогда страшно делать включение
+nrel_name  <- sc_node_norole_relation;;
+
+//нужно для второго домена атрибута описания
 concept_text    <- sc_node_not_relation;;
 
 //идентификаторы
-nrel_attribute              => nrel_main_idtf: [атрибут]                (*<-lang_ru;;*);;
-nrel_attribute              => nrel_main_idtf: [attribute]              (*<-lang_en;;*);;
+nrel_task_attribute              => nrel_main_idtf: [атрибут задачи]	(*<-lang_ru;;*);;
+nrel_task_attribute              => nrel_main_idtf: [task attribute]	(*<-lang_en;;*);;
 nrel_place_attribute        => nrel_main_idtf: [атрибут места]          (*<-lang_ru;;*);;
 nrel_place_attribute        => nrel_main_idtf: [place attribute]        (*<-lang_en;;*);;
 nrel_time_attribute         => nrel_main_idtf: [атрибут времени]        (*<-lang_ru;;*);;
 nrel_time_attribute         => nrel_main_idtf: [time attribute]         (*<-lang_en;;*);;
 nrel_description_attribute  => nrel_main_idtf: [атрибут описания]       (*<-lang_ru;;*);;
 nrel_description_attribute  => nrel_main_idtf: [description attribute]  (*<-lang_en;;*);;
+//опять же, пусть пока эти идентификаторы будут тут
+nrel_memo  					=> nrel_main_idtf: [memo]  					(*<-lang_en;;*);;
+nrel_memo  					=> nrel_main_idtf: [заметка] 				(*<-lang_ru;;*);;
+nrel_name   				=> nrel_main_idtf: [name]  					(*<-lang_en;;*);;
+nrel_name   				=> nrel_main_idtf: [название]  				(*<-lang_ru;;*);;
 
 //определение понятия Атрибут
-nrel_attribute <- rrel_key_sc_element: ... (*
+nrel_task_attribute <- rrel_key_sc_element: ... (*
     <- definition;;
     => nrel_main_idtf: [Опр. (Атрибут)] (* <- lang_ru;; *);;
     => nrel_using_constants: {
@@ -30,7 +39,7 @@ nrel_attribute <- rrel_key_sc_element: ... (*
 *);;
 
 //утверждение о видах атрибутов 
-nrel_attribute <- rrel_key_sc_element: ... (*
+nrel_task_attribute <- rrel_key_sc_element: ... (*
     <- explanation;;
     => nrel_main_idtf: [Утв.(Атрибут, Атрибут времени, Атрибут места, Атрибут описания)] (* <- lang_ru;; *);; 
     => nrel_using_constants: {
@@ -44,15 +53,19 @@ nrel_attribute <- rrel_key_sc_element: ... (*
 *);;
 
 //атрибуты места, времени и описания включаются в атрибуты
-nrel_place_attribute        => nrel_inclusion: nrel_attribute;;
-nrel_time_attribute         => nrel_inclusion: nrel_attribute;;
-nrel_description_attribute  => nrel_inclusion: nrel_attribute;;
+nrel_place_attribute        => nrel_inclusion: nrel_task_attribute;;
+nrel_time_attribute         => nrel_inclusion: nrel_task_attribute;;
+nrel_description_attribute  => nrel_inclusion: nrel_task_attribute;;
+
+//название и заметка включаются в атрибуты описания
+nrel_name        => nrel_inclusion: nrel_place_attribute;;
+nrel_memo        => nrel_inclusion: nrel_place_attribute;;
 
 //начало и конец включаются в атрибуты времени
 nrel_start      => nrel_inclusion: nrel_time_attribute;;
 nrel_completion => nrel_inclusion: nrel_time_attribute;;
 
-//домены атрибута месте
+//домены атрибута места
 nrel_place_attribute => nrel_definitional_domain: ... (*<= nrel_combination: {
     concept_task_location; //понятие из файла cocnept-task-loaction.scs (от Миши)
     concept_task
@@ -67,7 +80,7 @@ nrel_time_attribute => nrel_definitional_domain: ... (*<= nrel_combination: {
     concept_task
     };;
 *);
-=> nrel_first_domain: concept_task  ;
+=> nrel_first_domain: concept_task;
 => nrel_second_domain: concept_moment_of_time;;
 
 //домены атрибута описания
