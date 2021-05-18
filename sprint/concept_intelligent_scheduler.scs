@@ -1,0 +1,56 @@
+concept_intelligent_scheduler
+
+    <- sc_node_not_relation;
+    
+    => nrel_main_idtf:
+        [Интеллектуальный планировщик]
+        (* <- lang_ru;; *);
+        [Intelligent_scheduler]
+        (* <- lang_en;; *);;
+
+    definition -> ...
+    (*
+        -> rrel_key_sc_element: concept_intelligent_scheduler;;
+
+        <= nrel_sc_text_translation: ...
+            (* -> rrel_example: 
+                [Интеллекутальный планировщик - это приложение для управления задачами, 
+                обладающее интеллектуальным функционалом]
+                (*<- lang_ru;;*);;
+            *);;
+
+        => nrel_main_idtf: 
+            [Опр.(Интеллекутальный планировщик)]
+            (*<- lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_intelligent_scheduler;;
+                -> concept_application;;
+                -> concept_task;;
+                -> concept_intelligent_functionality;;
+            *);;
+    *);;
+
+    statement -> ...
+    (*
+        -> rrel_key_sc_element: concept_intelligent_scheduler;;
+
+        <= nrel_sc_text_translation: ...
+            (* -> rrel_example:
+                [Интеллектуальный планировщик совершает автоматический поиск плана, 
+                который принято относить к интеллектуальным задачам.]
+                (*<- lang_ru;;*);;
+            *);;
+
+        => nrel_main_idtf: 
+            [Утв.(Об интеллектуальном планировщике.)]
+            (*<- lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+                (*
+                    -> concept_automatic_search;;
+                    -> plan;;//kb concept
+                    -> intellectual_task;;//kb_concept
+                *);;
+        *);;
