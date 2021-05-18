@@ -37,7 +37,7 @@ concept_task
 
         <= nrel_sc_text_translation: ...
             (* -> rrel_example:
-                ["Задача не может принадлежать самой себе."] //check if possible to formalize it
+                ["Задача не может принадлежать самой себе."] //check if possible to formalize it with another way
                 (*<-lang_ru;;*);
             *);;
 
@@ -48,7 +48,7 @@ concept_task
         <= nrel_using_constants: ...
             (*
                 -> nrel_beloning;; //kb nrel; check if needed
-                -> antireflexive_relation;; //kb relation ??
+                -> antireflexive_relation;; //kb relation ??; check if needed
             *);;
     *);;
 
@@ -58,7 +58,7 @@ concept_task
 
         <= nrel_sc_text_translation: ...
             (* -> rrel_example:
-                ["Задача не может принадлежать ни одной из подзадач."] //check if possible to formalize it
+                ["Задача не может принадлежать ни одной из подзадач."] //check if possible to formalize it with another way
                 (*<-lang_ru;;*);
             *);;
 

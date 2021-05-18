@@ -24,10 +24,10 @@ concept_task_relation
 
         <= nrel_using_constants: ...
             (*
-                -> concept_element;; //
-                -> set;;             //
-                -> concept_task;; //
-                -> relation;;  //
+                -> concept_set_element;;
+                -> set;;             //kb concept
+                -> concept_task;;
+                -> relation;;  //kb concept
             *);;
     *);;
 
@@ -37,8 +37,8 @@ concept_task_relation
 
         <= nrel_sc_text_translation: ...
             (* -> rrel_example:
-                ["Отношение на множесте задач может быть только между двумя элементами, 
-                принадлежащими множеству задач"] //check if possible to formalize it
+                ["Отношение на множестве задач может быть только между двумя элементами, 
+                принадлежащими множеству задач"] 
                 (*<-lang_ru;;*);
             *);;
 
@@ -48,9 +48,8 @@ concept_task_relation
 
         <= nrel_using_constants: ...
             (*
-                -> concept_element;;
-                -> nrel_beloning;;
+                -> concept_set_element;;
                 -> set;;
-                ->
+                -> nrel_beloning;;
             *);;
     *);;
