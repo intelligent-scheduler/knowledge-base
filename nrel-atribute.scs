@@ -10,8 +10,8 @@ nrel_atribute
     <= nrel_sc_text_translation: ... 
         (*-> rrel_example: 
             [Атрибут — некое свойство задачи, отношение] 
-            (*<-lang_ru;;*)
-        ;;*);
+            (*<-lang_ru;;*);; 
+        *);
     => nrel_using_constans: {
         concept_task;
         nrel_relation
@@ -25,14 +25,17 @@ nrel_atribute
     => nrel_second_domain: concept_atribute_type;;
 
 //properties
-    relation => nrel_inclusion: binary_relation;
+    relation 
+        => nrel_inclusion: binary_relation;
         => nrel_inclusion: order_relation;;
 
-    binary_relation => nrel_inclusion: symmetric_relation;
+    binary_relation 
+        => nrel_inclusion: symmetric_relation;
         => nrel_inclusion: transitive_relation;
         => nrel_inclusion: reflexive_relation;;
 
-    nrel_atribute <|- symmetric_relation;
+    nrel_atribute 
+        <|- symmetric_relation;
         <|- transitive_relation;
         <|- reflexive_relation;
         <- order_relation;;

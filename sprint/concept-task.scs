@@ -1,65 +1,75 @@
-concept_task
-=> nrel_main_idtf:
-	[Задача]
-	(* <- lang_ru;; *);
-	[Task]
-	(* <- lang_en;; *);;
+concept_task 
 
-concept_task <= nrel_inclusion: task;; //kb concept
+    <= nrel_inclusion: task;;
 
-definition -> ...
-(*
-    -> rrel_key_sc_element: concept_task;;
-    <= nrel_sc_text_translation: ...
-        (*
-            -> [Задача — множество подзадач, обладающее свойствами.]
-            (*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: 
-        [Опр.(Задача)]
-        (*<- lang_ru;;*);;
-    <= nrel_using_constants: ...
-        (*
-            -> set;; //kb concept
-            -> concept_subtask;;
-            -> nrel_beloning;; //kb nrel
-            -> concept_property;;  //check if kb contains property concept
-        *);;
-*);;
+    => nrel_main_idtf:
+        [задача]
+        (*<-lang_ru;;*);
+        [task]
+        (*<-lang_en;;*);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: concept_task;;
-    <= nrel_sc_text_translation: ...
-        (*
-            -> ["Задача не может принадлежать самой себе."] //check if possible to formalize it
-            (*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: 
-        [Утв.(О задаче)]
-        (*<- lang_ru;;*);;
-    <= nrel_using_constants: ...
-        (*
-            -> nrel_beloning;; //kb nrel; check if needed
-            -> antireflexive_relation;; //kb relation ??
-        *);;
-*);;
+    definition -> ...
+    (*
+        -> rrel_key_sc_element: concept_task;;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: concept_task;;
-    <= nrel_sc_text_translation: ...
-        (*
-            -> ["Задача не может принадлежать ни одной из подзадач."] //check if possible to formalize it
-            (*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: 
-        [Утв.(О задаче)]
-        (*<- lang_ru;;*);;
-    <= nrel_using_constants: ...
-        (*
-            //непринадлежность
-            -> concept_subtask;;
-            -> nrel_beloning;;
-        *);;
-*);;
+        <= nrel_sc_text_translation: ...
+            (*-> rrel_example:
+                [Задача — множество подзадач, обладающее свойствами.]
+                (*<-lang_ru;;*);
+            *);;
+
+        => nrel_main_idtf: 
+            [Опр.(Задача)]
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> set;; //kb concept
+                -> rrel_subtask;;
+                -> nrel_beloning;; //kb nrel
+                -> concept_property;;  //check if kb contains property concept
+            *);;
+    *);;
+
+    statement -> ...
+    (*
+        -> rrel_key_sc_element: concept_task;;
+
+        <= nrel_sc_text_translation: ...
+            (* -> rrel_example:
+                ["Задача не может принадлежать самой себе."] //check if possible to formalize it
+                (*<-lang_ru;;*);
+            *);;
+
+        => nrel_main_idtf: 
+            [Утв.(О задаче)]
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> nrel_beloning;; //kb nrel; check if needed
+                -> antireflexive_relation;; //kb relation ??
+            *);;
+    *);;
+
+    statement -> ...
+    (*
+        -> rrel_key_sc_element: concept_task;;
+
+        <= nrel_sc_text_translation: ...
+            (* -> rrel_example:
+                ["Задача не может принадлежать ни одной из подзадач."] //check if possible to formalize it
+                (*<-lang_ru;;*);
+            *);;
+
+        => nrel_main_idtf: 
+            [Утв.(О задаче)]
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                //непринадлежность
+                -> rrel_subtask;;
+                -> nrel_beloning;;
+            *);;
+    *);;

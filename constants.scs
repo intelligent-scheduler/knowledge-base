@@ -1,2 +1,4 @@
-concept_task <- sc_node_not_relation;;
-concept_subtask <- sc_node_not_relation;;
+
+concept_task                <- sc_node_not_relation;;
+concept_task_relation       <- sc_node_not_relation;;
+nrel_subtask                <- sc_node_norole_relation;;
