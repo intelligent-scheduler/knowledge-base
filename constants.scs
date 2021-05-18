@@ -1,0 +1,2 @@
+concept_task <- sc_node_not_relation;;
+concept_subtask <- sc_node_not_relation;;
