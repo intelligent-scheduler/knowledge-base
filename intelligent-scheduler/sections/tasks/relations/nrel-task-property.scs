@@ -36,7 +36,7 @@ nrel_task_property
 
     definition -> ...
     (*
-        -> rrel_key_sc_element: nrel_property;;
+        -> rrel_key_sc_element: nrel_task_property;;
 
             <= nrel_sc_text_translation: ... 
             (* 
