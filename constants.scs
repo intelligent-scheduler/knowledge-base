@@ -9,16 +9,20 @@
     subject_domain_of_application                               <- subject_domain;;
     //concepts
     concept_task_relation                                       <- sc_node_not_relation;;
+    concept_property                                            <- sc_node_not_relation;;
     concept_intelligent_scheduler                               <- sc_node_not_relation;;
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;;
+    nrel_property                                               <- sc_node_norole_relation;;
 
 //wanted
     //concepts
-    concept_property                                            <- sc_node_not_relation;; // Свойство
+    concept_attribute                                           <- sc_node_not_relation;; // Атрибут
     concept_application                                         <- sc_node_not_relation;; // Приложение
     concept_intelligent_functionality                           <- sc_node_not_relation;; // Интеллектуальный функционал
     concept_element                                             <- sc_node_not_relation;; // Элемент
-    concept_set_element                                         <- sc_node_not_relation;; // Элемент множества
     concept_task_set                                            <- sc_node_not_relation;; // Множество задач
     concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
+    //relations
+    nrel_set_element                                            <- sc_node_norole_relation;; // Элемент множества
+    nrel_category                                               <- sc_node_norole_relation;; // Категория

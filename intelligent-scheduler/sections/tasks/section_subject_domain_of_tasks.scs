@@ -15,6 +15,7 @@ section_subject_domain_of_tasks
     -> rrel_key_sc_element: {
         subject_domain_of_tasks;
         task;
-        nrel_subtask;
-        concept_task_relation
+        concept_task_relation;
+        nrel_task_property;
+        nrel_subtask
     };;

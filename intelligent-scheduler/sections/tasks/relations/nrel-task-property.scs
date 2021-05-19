@@ -1,0 +1,58 @@
+nrel_task_property
+
+    <- norole_relation;
+    <- concept_task_relation;
+
+    //FIXME: check if statements is correct
+    <- asymmetric_relation;
+    <- transitive_relation;
+    <- reflexive_relation;
+    <|-  order_relation;
+
+    // FIXME: add domains
+
+    => nrel_main_idtf: 
+        [свойство задачи'*']
+        (*<-lang_ru;;*);
+        [property'*']
+        (*<-lang_en;;*);
+
+    => nrel_system_identifer:
+        [nrel_property]
+        (*<- lang_en;;*);
+
+    => nrel_idtf:
+        [отношение между задачей и каким-то конкретным свойством]
+        (*<- lang_ru;;*);
+
+    => nrel_idtf:
+        [отличительная или характерная черта задачи, качество задачи]
+        (*<- lang_ru;;*);
+
+    => nrel_idtf:
+        [характер задачи, природа задачи]
+        (*<- lang_ru;;*);;
+
+
+    definition -> ...
+    (*
+        -> rrel_key_sc_element: nrel_property;;
+
+            <= nrel_sc_text_translation: ... 
+            (* 
+                -> rrel_example: 
+                    [Свойство задачи — отношение между задачей и каким-то конкретным свойством.] 
+                    (*<-lang_ru;;*);; 
+            *);;
+
+        => nrel_main_idtf: 
+            [Опр.(Свойство)] 
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constans: ...
+            (*
+                -> relation;; //kb rel
+                -> task;;
+                -> nrel_property;;
+            *);;
+    *);;

@@ -1,6 +1,6 @@
 concept_task_relation
 
-    <= nrel_inclusion: relation; //kb concept
+    <= nrel_inclusion: norole_relation; //kb concept
 
     => nrel_main_idtf:
         [отношение на множестве задач]
@@ -14,7 +14,7 @@ concept_task_relation
 
     => nrel_idtf:
         [отношение между элементами, принадлежащими множеству задач]
-        (*<- lang_en;;*);;    
+        (*<- lang_ru;;*);;    
 
     definition -> ...
     (*
@@ -34,7 +34,7 @@ concept_task_relation
             (*
                 -> relation;; //kb concept
                 -> concept_task_set;;
-                -> concept_set_element;;
+                -> nrel_set_element;;
                 -> nrel_belonging;; //kb nrel
             *);;
     *);;
@@ -58,7 +58,7 @@ concept_task_relation
             (*
                 -> relation;; //kb concept
                 -> concept_task_set;;
-                -> concept_set_element;;
+                -> nrel_set_element;;
                 -> nrel_beloning;; //kb nrel
             *);;
     *);;

@@ -1,9 +1,9 @@
 nrel_subtask
 
-    <= nrel_inclusion: concept_task_relation;
+    <- concept_task_relation;
 
     //FIXME: check if statements is correct
-    <- symmetric_relation;
+    <- asymmetric_relation;
     <- transitive_relation;
     <|- reflexive_relation;
     <|-  order_relation;
@@ -22,7 +22,7 @@ nrel_subtask
 
     => nrel_idtf:
         [часть разбиения задачи]
-        (*<- lang_en;;*);;
+        (*<- lang_ru;;*);;
 
     definition -> ...
     (*
