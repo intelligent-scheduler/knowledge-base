@@ -15,7 +15,7 @@ concept_task_relation
         <= nrel_sc_text_translation: ...
             (*-> rrel_example:
                 [Отношение на множестве задач — отношение между элементами, принадлежащими множеству задач.]
-                (*<-lang_ru;;*);
+                (*<-lang_ru;;*);;
             *);;
 
         => nrel_main_idtf: 
@@ -39,7 +39,7 @@ concept_task_relation
             (* -> rrel_example:
                 ["Отношение на множестве задач может быть только между двумя элементами, 
                 принадлежащими множеству задач"] 
-                (*<-lang_ru;;*);
+                (*<-lang_ru;;*);;
             *);;
 
         => nrel_main_idtf: 
