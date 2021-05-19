@@ -1,6 +1,6 @@
 concept_task 
 
-    <= nrel_inclusion: task;;
+    <= nrel_inclusion: task; //kb concept
 
     => nrel_main_idtf:
         [задача]

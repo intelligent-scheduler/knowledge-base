@@ -6,7 +6,20 @@ nrel_subtask
     <- symmetric_relation;
     <- transitive_relation;
     <|- reflexive_relation;
-    <|-  order_relation;;
+    <|-  order_relation;
+
+    // FIXME: add domains
+    => nrel_definitional_domain: concept_task; 
+    // ...
+    // (* 
+    //     <= nrel_combination: 
+    //         (*
+    //             ;
+    //             concept_task;
+    //         *);;
+    // *);
+    => nrel_first_domain:   concept_task;
+    => nrel_second_domain:  concept_task;
 
     => nrel_main_idtf: 
         [подзадача] 
@@ -36,17 +49,4 @@ nrel_subtask
                 -> nrel_inclusion;;
             *);;
     *);;
-
-// FIXME: add domains
-    => nrel_definitional_domain: concept_task 
-    // ...
-    // (* 
-    //     <= nrel_combination: 
-    //         (*
-    //             ;
-    //             concept_task;
-    //         *);;
-    // *);
-    => nrel_first_domain:   concept_task;
-    => nrel_second_domain:  concept_task;;
         

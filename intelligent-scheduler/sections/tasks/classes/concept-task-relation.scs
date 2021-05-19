@@ -1,6 +1,6 @@
 concept_task_relation
 
-    <= nrel_inclusion: relation;; //kb concept
+    <= nrel_inclusion: relation; //kb concept
 
     => nrel_main_idtf:
         [отношение на множестве задач]
