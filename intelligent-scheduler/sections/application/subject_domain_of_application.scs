@@ -1,0 +1,23 @@
+subject_domain_of_intelligent_scheduler_application
+
+    <- structure;
+
+    <= nrel_private_subject_domain: subject_domain_of_intelligent_scheduler;
+
+    => nrel_main_idtf:
+        [Предметная область приложения Интеллектуальный Планировщик]
+        (*<-lang_ru;;*);
+        [Subject domain of Subject domain of Intelligent Scheduler application]
+        (*<-lang_en;;*);
+    
+    => nrel_system_identifer:
+        [subject_domain_of_intelligent_scheduler_application]
+        (*<-lang_en;;*);
+
+    // -> rrel_explored_relation: {
+        
+    // };
+
+    -> rrel_not_maximum_studied_object_class: {
+        concept_intelligent_scheduler
+    };;

@@ -2,30 +2,27 @@ nrel_subtask
 
     <= nrel_inclusion: concept_task_relation;
 
-//FIXME: check if statements is correct
+    //FIXME: check if statements is correct
     <- symmetric_relation;
     <- transitive_relation;
     <|- reflexive_relation;
     <|-  order_relation;
 
     // FIXME: add domains
-    => nrel_definitional_domain: concept_task; 
-    // ...
-    // (* 
-    //     <= nrel_combination: 
-    //         (*
-    //             ;
-    //             concept_task;
-    //         *);;
-    // *);
-    => nrel_first_domain:   concept_task;
-    => nrel_second_domain:  concept_task;
 
     => nrel_main_idtf: 
-        [подзадача] 
+        [подзадача'*']
         (*<-lang_ru;;*);
-        [subtask] 
-        (*<-lang_en;;*);;
+        [subtask'*']
+        (*<-lang_en;;*);
+
+    => nrel_system_identifer:
+        [nrel_subtask]
+        (*<- lang_en;;*);
+
+    => nrel_idtf:
+        [часть разбиения задачи]
+        (*<- lang_en;;*);;
 
     definition -> ...
     (*
@@ -34,19 +31,18 @@ nrel_subtask
             <= nrel_sc_text_translation: ... 
             (* 
                 -> rrel_example: 
-                    [Подзадача - часть разбиения задачи, включение.] 
+                    [Подзадача - часть разбиения задачи.] 
                     (*<-lang_ru;;*);; 
             *);;
 
         => nrel_main_idtf: 
-            [Опр. Подзадача] 
+            [Опр.(Подзадача)] 
             (*<-lang_ru;;*);;
 
         <= nrel_using_constans: ...
             (*
                 -> nrel_subdividing;;
-                -> concept_task;;
+                -> task;; //kb concept
                 -> nrel_inclusion;;
             *);;
     *);;
-        

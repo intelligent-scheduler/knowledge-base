@@ -1,0 +1,18 @@
+section_subject_domain_of_intelligent_scheduler_application
+
+    <- not_enough_formed_structure; //kb concept
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область приложения Интеллектуальный Планировщик]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of Intelligent Scheduler application]
+        (*<-lang_en;;*);
+    
+    => nrel_system_identifer:
+        [section_subject_domain_of_intelligent_scheduler_application]
+        (*<-lang_en;;*);
+
+    -> rrel_key_sc_element: {
+        subject_domain_of_intelligent_scheduler_application;
+        concept_intelligent_scheduler
+    };;

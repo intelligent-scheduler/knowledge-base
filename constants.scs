@@ -1,11 +1,13 @@
 //existed
     //sections    
     section_subject_domain_of_intelligent_scheduler             <- non_atomic_section;;
+    section_subject_domain_of_tasks                             <- non_atomic_section;;
+    section_subject_domain_of_application                       <- non_atomic_section;;
     //subject domains
     subject_domain_of_intelligent_scheduler                     <- subject_domain;;
+    subject_domain_of_tasks                                     <- subject_domain;;
+    subject_domain_of_application                               <- subject_domain;;
     //concepts
-    concept_task                                                <- sc_node_not_relation;;
-    concept_property                                            <- sc_node_not_relation;;
     concept_task_relation                                       <- sc_node_not_relation;;
     concept_intelligent_scheduler                               <- sc_node_not_relation;;
     //relations
@@ -13,7 +15,10 @@
 
 //wanted
     //concepts
+    concept_property                                            <- sc_node_not_relation;; // Свойство
     concept_application                                         <- sc_node_not_relation;; // Приложение
     concept_intelligent_functionality                           <- sc_node_not_relation;; // Интеллектуальный функционал
     concept_element                                             <- sc_node_not_relation;; // Элемент
     concept_set_element                                         <- sc_node_not_relation;; // Элемент множества
+    concept_task_set                                            <- sc_node_not_relation;; // Множество задач
+    concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
