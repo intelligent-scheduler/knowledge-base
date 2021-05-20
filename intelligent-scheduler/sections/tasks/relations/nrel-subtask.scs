@@ -7,10 +7,10 @@ nrel_subtask
     <- transitive_relation;
     <|- reflexive_relation; //change to antireflexive (areflexive)
     <|-  order_relation;
+    
+    // FIXME: add domains and scope definition
 
-    // FIXME: add domains
-
-    => nrel_main_idtf: 
+    => nrel_main_idtf:
         [подзадача'*']
         (*<-lang_ru;;*);
         [subtask'*']
