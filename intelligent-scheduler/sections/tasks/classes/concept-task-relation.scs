@@ -8,10 +8,6 @@ concept_task_relation
         [relation on a set of tasks]
         (*<-lang_en;;*);
 
-    => nrel_system_identifer:
-        [concept_task_relation]
-        (*<- lang_en;;*);
-
     => nrel_idtf:
         [отношение между элементами, принадлежащими множеству задач]
         (*<- lang_ru;;*);;    

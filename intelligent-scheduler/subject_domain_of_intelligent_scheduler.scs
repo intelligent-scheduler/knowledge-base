@@ -6,8 +6,5 @@ subject_domain_of_intelligent_scheduler
         [Предметная область интеллектуального планировщика]
         (*<-lang_ru;;*);
         [Subject domain of intelligent scheduler]
-        (*<-lang_en;;*);
-    
-    => nrel_system_identifer:
-        [subject_domain_of_intelligent_scheduler]
         (*<-lang_en;;*);;
+        

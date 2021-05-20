@@ -16,10 +16,6 @@ nrel_subtask
         [subtask'*']
         (*<-lang_en;;*);
 
-    => nrel_system_identifer:
-        [nrel_subtask]
-        (*<- lang_en;;*);
-
     => nrel_idtf:
         [часть разбиения задачи]
         (*<- lang_ru;;*);;

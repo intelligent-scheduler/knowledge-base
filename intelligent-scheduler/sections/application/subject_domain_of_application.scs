@@ -9,10 +9,6 @@ subject_domain_of_intelligent_scheduler_application
         (*<-lang_ru;;*);
         [Subject domain of Subject domain of Intelligent Scheduler application]
         (*<-lang_en;;*);
-    
-    => nrel_system_identifer:
-        [subject_domain_of_intelligent_scheduler_application]
-        (*<-lang_en;;*);
 
     -> rrel_maximum_studied_object_class: {
         concept_intelligent_scheduler
@@ -21,4 +17,3 @@ subject_domain_of_intelligent_scheduler_application
     // -> rrel_explored_relation: {
         
     // };
-    

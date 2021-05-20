@@ -9,10 +9,6 @@ concept_task_property
         [task property]
         (*<-lang_en;;*);
 
-    => nrel_system_identifer:
-        [concept_task_property]
-        (*<- lang_en;;*);
-
     => nrel_idtf:
         [отношение между задачей и каким-то конкретным свойством]
         (*<- lang_ru;;*);

@@ -8,10 +8,6 @@ concept_intelligent_scheduler
         [Intelligent_scheduler]
         (* <- lang_en;;*);
 
-    => nrel_system_identifer:
-        [concept_intelligent_scheduler]
-        (*<- lang_en;;*);
-
     => nrel_idtf:
         [приложение для управления задачами, обладающее интеллектуальным функционалом]
         (*<- lang_ru;;*);;

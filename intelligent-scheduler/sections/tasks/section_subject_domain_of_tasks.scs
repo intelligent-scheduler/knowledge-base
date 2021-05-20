@@ -7,15 +7,10 @@ section_subject_domain_of_tasks
         (*<-lang_ru;;*);
         [Section. Subject domain of tasks]
         (*<-lang_en;;*);
-    
-    => nrel_system_identifer:
-        [section_subject_domain_of_tasks]
-        (*<-lang_en;;*);
 
-    -> rrel_key_sc_element: {
+    -> rrel_key_sc_element:
         subject_domain_of_tasks;
         task;
         concept_task_relation;
         concept_task_property;
-        nrel_subtask
-    };;
+        nrel_subtask;;
