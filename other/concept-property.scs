@@ -8,10 +8,6 @@ concept_property
         [property]
         (*<-lang_en;;*);
 
-    => nrel_system_identifer:
-        [concept_property]
-        (*<- lang_en;;*);
-
     => nrel_idtf:
         [характерная черта]
         (*<- lang_ru;;*);
