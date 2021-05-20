@@ -9,7 +9,7 @@ subject_domain_of_tasks
     => nrel_main_idtf:
         [Предметная область задач]
         (*<-lang_ru;;*);
-        [Subject domain of intelligent scheduler]
+        [Subject domain of tasks]
         (*<-lang_en;;*);
     
     => nrel_system_identifer:
@@ -17,11 +17,11 @@ subject_domain_of_tasks
         (*<-lang_en;;*);
 
     -> rrel_explored_relation: {
-        nrel_property;
         nrel_subtask
     };
 
     -> rrel_not_maximum_studied_object_class: {
         task;
-        concept_task_relation
+        concept_task_relation;
+        concept_task_property
     };;

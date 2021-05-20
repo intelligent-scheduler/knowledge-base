@@ -16,6 +16,6 @@ section_subject_domain_of_tasks
         subject_domain_of_tasks;
         task;
         concept_task_relation;
-        nrel_task_property;
+        concept_task_property;
         nrel_subtask
     };;

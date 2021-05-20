@@ -28,12 +28,12 @@ nrel_subtask
     (*
         -> rrel_key_sc_element: nrel_subtask;;
 
-            <= nrel_sc_text_translation: ... 
-            (* 
-                -> rrel_example: 
-                    [Подзадача - часть разбиения задачи.] 
-                    (*<-lang_ru;;*);; 
-            *);;
+        <= nrel_sc_text_translation: ... 
+        (* 
+            -> rrel_example: 
+                [Подзадача - часть разбиения задачи.] 
+                (*<-lang_ru;;*);; 
+        *);;
 
         => nrel_main_idtf: 
             [Опр.(Подзадача)] 
