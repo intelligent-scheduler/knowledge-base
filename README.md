@@ -2,15 +2,21 @@
 
 ### Требования к сборке: 
 
-ostis-web-platform из ветки scp_stable: https://github.com/ostis-dev/ostis-web-platform/tree/scp_stable
+ostis-web-platform версии 0.5.0: https://github.com/ostis-apps/dockerized-ostis/
 
 ### Требования к фрагментам:
 
-Следовать примерам конструкций из файла examples.txt
+Константы объявлять в файле *[constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs)*, который лежит в корне
 
-### Требования к названиям файлов и папок:
+Следовать кодстайлу, с которым можно ознакомиться в любом из файлов
 
-Вместо пробела использовать дефис
+Указывать тип понятия в качестве префикса в названии понятия
+
+### Требования к названиям файлов:
+
+Использовать дефис, а не нижнее подчёркивание вместо пробела
+
+Название файла должно соответствовать названию понятия
 
 ### **Важное** уточнение:
 

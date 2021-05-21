@@ -48,16 +48,21 @@ node <= nrel_subdividing: ...
 *);;
 
 //пример объявления иллюстрации
-node <-rrel_key_sc_element:...
-(*
-	<-illustration;;
-	=>nrel_main_idtf:
-		[Рис. (Мой узел)](*<-lang_ru;;*);;
-	<=nrel_sc_text_translation:...
-	(*
-		->rrel_example: "file://path_to_the_image/image.jpg"(*=>nrel_format:format_jpg;;*);;
-	*);;
-*);;
+illustration -> ...
+    (*
+        -> rrel_key_sc_element: concept_property;;
+
+        <= nrel_sc_text_translation: ...
+            (* 
+                -> rrel_example:
+                    "path"
+                    (*=>nrel_format:format_png;;*);;
+            *);;
+
+        => nrel_main_idtf: 
+            [Рис. (Свойство)]
+            (*<-lang_ru;;*);;
+    *);;
 
 //пример объявления определения понятия
 node <- rrel_key_sc_element: ... (*
