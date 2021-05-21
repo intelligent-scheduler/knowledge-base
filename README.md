@@ -4,9 +4,11 @@
 
 ostis-web-platform версии 0.5.0: https://github.com/ostis-apps/dockerized-ostis/
 
-### Требования к фрагментам:
+### **Требования** к фрагментам:
 
-Константы объявлять в файле *[constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs)*, который лежит в корне
+Константы объявлять в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs), который лежит в корне
+
+Блоки текста выносить в html-файл и добавлять гиперссылки
 
 Следовать кодстайлу, с которым можно ознакомиться в любом из файлов
 
