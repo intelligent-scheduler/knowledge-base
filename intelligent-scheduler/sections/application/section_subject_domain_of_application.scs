@@ -8,7 +8,24 @@ section_subject_domain_of_intelligent_scheduler_application
         [Section. Subject domain of "Intelligent scheduler" application]
         (*<-lang_en;;*);
     
-    -> rrel_key_sc_element: {
+    -> rrel_key_sc_element:
         subject_domain_of_intelligent_scheduler_application;
-        concept_intelligent_scheduler
-    };;
+        concept_intelligent_scheduler;;
+
+    section_subject_domain_of_intelligent_scheduler_application = [*
+        subject_domain_of_intelligent_scheduler_application
+
+            <- structure;
+
+            <= nrel_private_subject_domain: subject_domain_of_intelligent_scheduler;
+
+            => nrel_main_idtf:
+                [Предметная область приложения Интеллектуальный Планировщик]
+                (*<-lang_ru;;*);
+                [Subject domain of Subject domain of Intelligent Scheduler application]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class:
+                concept_intelligent_scheduler;;
+    *];;
+    

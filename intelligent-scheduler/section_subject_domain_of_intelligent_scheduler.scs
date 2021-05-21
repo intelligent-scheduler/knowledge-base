@@ -8,12 +8,12 @@ section_subject_domain_of_intelligent_scheduler
         [Section. Subject domain of intelligent scheduler]
         (*<-lang_en;;*);
     
-    <= nrel_section_decomposition: {
+    <= nrel_section_decomposition:
         section_subject_domain_of_tasks;
-        section_subject_domain_of_intelligent_scheduler_application
-    };
+        section_subject_domain_of_intelligent_scheduler_application;
 
-    -> rrel_key_sc_element: subject_domain_of_intelligent_scheduler;;
+    -> rrel_key_sc_element: 
+        subject_domain_of_intelligent_scheduler;;
 
     section_subject_domain_of_intelligent_scheduler = [*
         subject_domain_of_intelligent_scheduler
@@ -25,4 +25,4 @@ section_subject_domain_of_intelligent_scheduler
                 (*<-lang_ru;;*);
                 [Subject domain of intelligent scheduler]
                 (*<-lang_en;;*);;
-    *];; 
+    *];;

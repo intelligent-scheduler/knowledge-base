@@ -5,7 +5,7 @@ nrel_subtask
     //FIXME: check if statements is correct
     <- asymmetric_relation;
     <- transitive_relation;
-    <|- reflexive_relation; //change to antireflexive (areflexive)
+    <- antireflexive_relation;
     <|-  order_relation;
     
     // FIXME: add domains and scope definition
