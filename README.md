@@ -8,9 +8,11 @@ ostis-web-platform версии 0.5.0: https://github.com/ostis-apps/dockerized-
 
 Связывать фрагменты друг с другом и с фрагментами из [ims](http://ims.ostis.net/)
 
-Узлы объявлять в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs), который лежит в корне
+Понятия объявлять в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs), который лежит в корне
 
 Не дублировать объявления в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs)
+
+Указывать основной идентификатор понятия в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs) в комментарии после объявления
 
 Ещё не формализованные константы класть в файл [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs) после комментария //wanted
 
