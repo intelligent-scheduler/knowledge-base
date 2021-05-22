@@ -1,6 +1,6 @@
 section_subject_domain_of_tasks
 
-    <- not_enough_formed_structure; //kb concept
+    <- not_enough_formed_structure; //ims
 
     => nrel_main_idtf:
         [Раздел. Предметная область задач]
@@ -20,7 +20,7 @@ section_subject_domain_of_tasks
 
             <- structure;
 
-            <= nrel_private_subject_domain: subjdomain_tasks_classes_tasks_ways_of_solving_task_ontologies; //kb subject_domain
+            <= nrel_private_subject_domain: subjdomain_tasks_classes_tasks_ways_of_solving_task_ontologies; //ims
 
             <= nrel_private_subject_domain: subject_domain_of_intelligent_scheduler;
 
@@ -30,8 +30,7 @@ section_subject_domain_of_tasks
                 [Subject domain of tasks]
                 (*<-lang_en;;*);
 
-            -> rrel_maximum_studied_object_class: task; //kb concept
-
+            -> rrel_maximum_studied_object_class: task; //ims
             -> rrel_not_maximum_studied_object_class:
                 concept_task_relation;
                 concept_task_property;
