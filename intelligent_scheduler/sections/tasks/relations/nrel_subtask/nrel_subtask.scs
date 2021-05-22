@@ -21,9 +21,13 @@ nrel_subtask
     => nrel_first_domain: task;
     => nrel_second_domain: task;
 
-    definition -> ...
+    <- rrel_key_sc_element: ...
         (*
-            -> rrel_key_sc_element: nrel_subtask;;
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Подзадача)]
+                (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ... 
                 (* 
