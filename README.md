@@ -16,9 +16,9 @@ ostis-web-platform версии 0.5.0: https://github.com/ostis-apps/dockerized-
 
 Ещё не формализованные константы класть в файл [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs) после комментария //wanted
 
-Если понятие существуюет в [ims](http://ims.ostis.net/), то при его использовании нужно добавлять комментарий //ims 
+Если понятие существует в [ims](http://ims.ostis.net/), то при его использовании нужно добавлять комментарий //ims 
 
-Блоки текста выносить в html-файл и добавлять гиперссылки, пример: [concept-property.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/other/property/concept-property.scs)
+Блоки текста выносить в html-файл и добавлять гиперссылки, пример: [nrel_subtask](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/other/property/concept-property.scs)
 
 Следовать кодстайлу и порядку блоков, с которым можно ознакомиться в шаблонах
 

@@ -2,7 +2,6 @@ nrel_subtask
 
     <- concept_task_relation;
 
-    //FIXME: check if statements is correct
     <- asymmetric_relation;
     <- transitive_relation;
     <- antireflexive_relation;
@@ -24,16 +23,16 @@ nrel_subtask
     (*
         -> rrel_key_sc_element: nrel_subtask;;
 
-        <= nrel_sc_text_translation: ... 
-        (* 
-            -> rrel_example: 
-                [Подзадача - часть разбиения задачи.] 
-                (*<-lang_ru;;*);; 
-        *);;
-
         => nrel_main_idtf: 
             [Опр.(Подзадача)] 
             (*<-lang_ru;;*);;
+
+        <= nrel_sc_text_translation: ... 
+            (* 
+                -> rrel_example: 
+                    [Подзадача - часть разбиения задачи.] 
+                    (*<-lang_ru;;*);; 
+            *);;    
 
         <= nrel_using_constans: ...
             (*
