@@ -29,7 +29,7 @@
                         (*<-lang_ru;;=>nrel_format:format_html;;*);; 
                 *);;
 
-            => nrel_using_constants: ...
+            <= nrel_using_constants: ...
                 (*
                     *константа*;;
                     *константа*;;
@@ -51,7 +51,7 @@
                         (*<-lang_ru;;*);; 
                 *);;
 
-            => nrel_using_constants: ...
+            <= nrel_using_constants: ...
                 (*
                     *константа*;;
                     *константа*;;
@@ -73,7 +73,7 @@
                         (*<-lang_ru;;*);; 
                 *);;
 
-            => nrel_using_constants: ...
+            <= nrel_using_constants: ...
                 (*
                     *константа*;;
                     *константа*;;
