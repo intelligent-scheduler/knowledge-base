@@ -1,6 +1,6 @@
 concept_intelligent_scheduler
 
-    <= concept_scheduler;
+    <= nrel_inclusion: concept_scheduler;
 
     => nrel_main_idtf:
         [интеллектуальный планировщик]
@@ -25,6 +25,7 @@ concept_intelligent_scheduler
 
             <= nrel_using_constants: ...
                 (*
+                    -> concept_scheduler;;
                     -> task;; //ims
                 *);;
         *);;
