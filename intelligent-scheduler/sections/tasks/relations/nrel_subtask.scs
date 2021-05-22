@@ -11,9 +11,9 @@ nrel_subtask
     // FIXME: add domains and scope definition
 
     => nrel_main_idtf:
-        [подзадача'*']
+        [подзадача* ]
         (*<-lang_ru;;*);
-        [subtask'*']
+        [subtask* ]
         (*<-lang_en;;*);
 
     => nrel_idtf:
