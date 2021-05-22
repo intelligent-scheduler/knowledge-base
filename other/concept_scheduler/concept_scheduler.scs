@@ -1,0 +1,28 @@
+concept_scheduler
+
+    => nrel_main_idtf:
+        [планировщик]
+        (*<-lang_ru;;*);
+        [scheduler]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Планировщик)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://definition_concept_scheduler.html"
+                        (*<-lang_ru;;*);;
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> task;; //ims
+                *);;
+        *);;

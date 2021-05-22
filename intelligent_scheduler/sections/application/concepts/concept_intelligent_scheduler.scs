@@ -1,6 +1,4 @@
 concept_intelligent_scheduler
-
-    <= nrel_inclusion: concept_application;
     
     => nrel_main_idtf:
         [Интеллектуальный планировщик]
@@ -13,26 +11,26 @@ concept_intelligent_scheduler
         (*<- lang_ru;;*);;
 
     explanation -> ...
-    (*
-        -> rrel_key_sc_element: concept_intelligent_scheduler;;
+        (*
+            -> rrel_key_sc_element: concept_intelligent;;
 
-        <= nrel_sc_text_translation: ...
-            (* 
-                -> rrel_example: 
-                    [Интеллекутальный планировщик — это приложение для управления задачами, 
-                    обладающее интеллектуальным функционалом.]
-                    (*<- lang_ru;;*);;
-            *);;
+            => nrel_main_idtf: 
+                [Поясн.(Интеллекутальный планировщик)]
+                (*<- lang_ru;;*);;
 
-        => nrel_main_idtf: 
-            [Поясн.(Интеллекутальный планировщик)]
-            (*<- lang_ru;;*);;
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        [Интеллекутальный планировщик — это приложение для управления задачами, 
+                        обладающее интеллектуальным функционалом.]
+                        (*<- lang_ru;;*);;
+                *);;
 
-        <= nrel_using_constants: ...
-            (*
-                -> concept_application;;
-                -> concept_task_managment;;
-                -> task;; //ims
-                -> concept_intelligent_functionality;;
-            *);;
-    *);;
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_application;;
+                    -> concept_task_managment;;
+                    -> task;; //ims
+                    -> concept_intelligent_functionality;;
+                *);;
+        *);;

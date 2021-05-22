@@ -9,8 +9,9 @@
     subject_domain_of_application                               <- subject_domain;; // Предметная область приложения "Интеллектуальный планировщик"
     //concepts
     concept_task_relation                                       <- sc_node_not_relation;; // Отношение на множестве задач
-    concept_intelligent_scheduler                               <- sc_node_not_relation;; // Интеллектуальный планировщик (приложение)
+    concept_intelligent_scheduler                               <- sc_node_not_relation;; // Интеллектуальный планировщик
     concept_task_property                                       <- sc_node_not_relation;; // Свойство задачи
+    concept_scheduler                                           <- sc_node_not_relation;; // Планировщик
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
 
@@ -23,5 +24,3 @@
     concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
     //relations
     nrel_set_element                                            <- sc_node_norole_relation;; // Элемент множества
-    
-//other test

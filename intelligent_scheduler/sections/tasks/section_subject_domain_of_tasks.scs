@@ -31,6 +31,7 @@ section_subject_domain_of_tasks
                 (*<-lang_en;;*);
 
             -> rrel_maximum_studied_object_class: task; //ims
+            
             -> rrel_not_maximum_studied_object_class:
                 concept_task_relation;
                 concept_task_property;
