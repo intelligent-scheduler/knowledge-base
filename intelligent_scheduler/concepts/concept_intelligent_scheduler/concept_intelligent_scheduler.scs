@@ -26,6 +26,6 @@ concept_intelligent_scheduler
             <= nrel_using_constants: ...
                 (*
                     -> concept_scheduler;;
-                    -> task;; //ims
+                    -> concept_intelligent_functionality;; //ims
                 *);;
         *);;

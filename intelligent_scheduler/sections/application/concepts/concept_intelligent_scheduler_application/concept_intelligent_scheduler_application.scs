@@ -32,7 +32,8 @@ concept_intelligent_scheduler_application
 
             <= nrel_using_constants: ...
                 (*
-                    -> *системный идентификатор константы*;;
-                    -> *системный идентификатор константы*;;
+                    -> concept_application;;
+                    -> concept_task_managment;;
+                    -> concept_intelligent_functionality;;
                 *);;
         *);

@@ -12,6 +12,7 @@
     concept_intelligent_scheduler                               <- sc_node_not_relation;; // Интеллектуальный планировщик
     concept_task_property                                       <- sc_node_not_relation;; // Свойство задачи
     concept_scheduler                                           <- sc_node_not_relation;; // Планировщик
+    concept_intelligent_scheduler_application                   <- sc_node_not_relation;; // Приложение интеллектуальный планировщик
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
 
