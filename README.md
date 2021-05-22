@@ -18,7 +18,7 @@ ostis-web-platform версии 0.5.0: https://github.com/ostis-apps/dockerized-
 
 Если понятие существует в [ims](http://ims.ostis.net/), то при его использовании нужно добавлять комментарий //ims 
 
-Блоки текста выносить в html-файл и добавлять гиперссылки, пример: [nrel_subtask](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/other/property/concept-property.scs)
+Блоки текста выносить в html-файл и добавлять гиперссылки, пример: [nrel_subtask](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/intelligent_scheduler/sections/tasks/relations/nrel_subtask/nrel_subtask.scs)
 
 Следовать кодстайлу и порядку блоков, с которым можно ознакомиться в шаблонах
 

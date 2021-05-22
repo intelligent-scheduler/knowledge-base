@@ -1,6 +1,6 @@
 concept_task_property
 
-    <= nrel_inclusion: concept_property;
+    <= nrel_inclusion: parameter;
     <= nrel_inclusion: concept_task_relation;
 
     => nrel_main_idtf: 
