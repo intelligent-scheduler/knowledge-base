@@ -43,7 +43,7 @@ concept_task_property
 
         <= nrel_using_constans: ...
             (*
-                -> relation;; //kb rel
+                -> relation;; //ims
                 -> task;;
                 -> concept_property;;
             *);;

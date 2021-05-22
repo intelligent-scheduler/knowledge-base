@@ -1,6 +1,6 @@
 concept_task_relation
 
-    <= nrel_inclusion: norole_relation; //kb concept
+    <= nrel_inclusion: norole_relation; //ims
 
     => nrel_main_idtf:
         [отношение на множестве задач]
@@ -28,10 +28,10 @@ concept_task_relation
 
         <= nrel_using_constants: ...
             (*
-                -> relation;; //kb concept
+                -> relation;; //ims
                 -> concept_task_set;;
                 -> nrel_set_element;;
-                -> nrel_belonging;; //kb nrel
+                -> nrel_belonging;; //ims
             *);;
     *);;
 
@@ -53,9 +53,9 @@ concept_task_relation
 
         <= nrel_using_constants: ...
             (*
-                -> relation;; //kb concept
+                -> relation;; //ims
                 -> concept_task_set;;
                 -> nrel_set_element;;
-                -> nrel_beloning;; //kb nrel
+                -> nrel_beloning;; //ims
             *);;
     *);;

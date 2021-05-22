@@ -32,7 +32,7 @@ concept_intelligent_scheduler
             (*
                 -> concept_application;;
                 -> concept_task_managment;;
-                -> task;; //kb concept
+                -> task;; //ims
                 -> concept_intelligent_functionality;;
             *);;
     *);;
