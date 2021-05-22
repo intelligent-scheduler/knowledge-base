@@ -25,3 +25,4 @@
     //relations
     nrel_set_element                                            <- sc_node_norole_relation;; // Элемент множества
     
+//test2
