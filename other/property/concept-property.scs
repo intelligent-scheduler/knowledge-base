@@ -53,7 +53,7 @@ concept_property
 
         <= nrel_using_constants: ...
             (*
-                -> subject;; //ims
+                -> subject;; //ims 
                 -> nrel_object;; //ims
                 // interaction 
             *);;
