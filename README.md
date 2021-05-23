@@ -12,7 +12,7 @@ ostis-web-platform версии 0.5.0: https://github.com/ostis-apps/dockerized-
 
 Не дублировать объявления в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs)
 
-Указывать основной идентификатор понятия в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs) в комментарии после объявления
+Указывать основной идентификатор понятия на русском языке в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs) в комментарии после объявления
 
 Ещё не формализованные константы класть в файл [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs) после комментария //wanted
 

@@ -24,6 +24,6 @@
     concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
     concept_text                                                <- sc_node_not_relation;; // Текст
     concept_description                                         <- sc_node_not_relation;; // Описание
+    concept_task_set                                            <- sc_node_not_relation;; // Множество задач
     //relations
-    nrel_set_element                                            <- sc_node_norole_relation;; // Элемент множества
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность

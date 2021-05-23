@@ -11,7 +11,14 @@
 
     => nrel_first_domain: *первый домен*;
     => nrel_second_domain: *второй домен*;
-    => nrel_definitional_domain: *область определения*;
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    *первый домен*;
+                    *второй домен*
+                };;
+        *);
 
     => nrel_main_idtf:
         [*основной идентификатор*]

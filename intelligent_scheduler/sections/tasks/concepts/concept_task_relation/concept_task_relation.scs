@@ -30,8 +30,7 @@ concept_task_relation
             <= nrel_using_constants: ...
                 (*
                     -> relation;; //ims
-                    -> nrel_set_element;;
-                    -> task;; //ims
+                    -> concept_task_set;;
                 *);;
         *);    
 
@@ -53,7 +52,6 @@ concept_task_relation
             <= nrel_using_constants: ...
                 (*
                     -> relation;; //ims
-                    -> nrel_set_element;;
-                    -> task;; //ims
+                    -> concept_task_set;;
                 *);;
         *);;

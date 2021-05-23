@@ -7,11 +7,17 @@ nrel_task_property
     <-  antireflexive_relation;
     <|- order_relation;
 
-    //fix domains
-    => nrel_first_domain: task;
-    => nrel_second_domain: task;
-    => nrel_definitional_domain: task;
-
+    => nrel_first_domain: task; //ims
+    => nrel_second_domain: parameter; //ims
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    task; //ims
+                    parameter //ims
+                };;
+        *);
+    
     => nrel_main_idtf: 
         [свойство задачи* ]
         (*<-lang_ru;;*);
