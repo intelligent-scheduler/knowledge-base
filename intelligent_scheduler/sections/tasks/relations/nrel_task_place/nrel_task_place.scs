@@ -11,16 +11,16 @@ nrel_task_place
 
     => nrel_first_domain: task;
     => nrel_second_domain: concept_place;
-    => nrel_definitional_domain: concept_place;
+    => nrel_definitional_domain: concept_place;task;
 
     => nrel_main_idtf:
-        [Место задачи]
+        [место задачи* ]
         (*<-lang_ru;;*);
-        [Task place]
+        [task place* ]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [Местоположение определенной задачи]
+        [местоположение определенной задачи]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...
@@ -42,7 +42,6 @@ nrel_task_place
                 (*
                     -> nrel_location;; //ims
                     -> concept_place;;
-                    -> ui_user;; //ims
                 *);;
         *);
 
