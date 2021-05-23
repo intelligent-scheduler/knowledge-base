@@ -11,7 +11,7 @@ nrel_task_place
 
     => nrel_first_domain: task;
     => nrel_second_domain: concept_place;
-     => nrel_definitional_domain: ...
+    => nrel_definitional_domain: ...
         (*
             <= nrel_combination:
                 {
