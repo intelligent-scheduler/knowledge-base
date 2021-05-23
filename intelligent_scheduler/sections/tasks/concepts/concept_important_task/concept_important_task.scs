@@ -1,0 +1,31 @@
+concept_important_task
+
+    <= nrel_inclusion: task;
+
+    => nrel_main_idtf:
+        [важная задача]
+        (*<-lang_ru;;*);
+        [important task]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Важная задача)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_important_task.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> task;; //ims
+                    -> question_finished;; //ims
+                *);;
+        *);;

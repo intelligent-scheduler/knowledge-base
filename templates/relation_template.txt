@@ -104,7 +104,7 @@
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://*название html-файла с иллюстрацией*" 
+                        "file://*название html-файла с иллюстрацией*";;
                 *);;
         *);
 
@@ -119,6 +119,6 @@
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://*название html-файла с примером*"
+                        "file://*название html-файла с примером*";;
                 *);;
         *);;

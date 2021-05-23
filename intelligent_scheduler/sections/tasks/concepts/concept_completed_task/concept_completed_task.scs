@@ -1,0 +1,74 @@
+concept_completed_task
+
+    <= nrel_inclusion: task;
+
+    => nrel_main_idtf:
+        [выполненная задача]
+        (*<-lang_ru;;*);
+        [completed task]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [concept_completed_task]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Выполненная задача)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_completed_task.html"
+                        (*<-lang_ru;;*);;
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> task;; //ims
+                    -> nrel_result;; //ims
+                    -> question_finished;; //ims
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(О задаче)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_concept_completed_task.html"
+                        (*<-lang_ru;;*);;
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> task;; //ims
+                    -> question_finished;; //ims
+                    -> nrel_result;; //ims
+                *);;
+        *);    
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- description_of_a_typical_instance;;
+
+            => nrel_main_idtf:
+                [Прим. (Выполненной задачи)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/description_concept_completed_task.png";;
+                *);;
+        *);;

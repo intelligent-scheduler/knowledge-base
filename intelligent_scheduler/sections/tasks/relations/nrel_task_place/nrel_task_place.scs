@@ -73,17 +73,17 @@ nrel_task_place
                 *);;
         *);
 
-        <- rrel_key_sc_element: ... 
+    <- rrel_key_sc_element: ... 
         (*
-            <- illustration;;
+            <- description_of_a_typical_instance;;
 
             => nrel_main_idtf:
-                [Рис.(Место задачи)]
+                [Прим. (Места задачи)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/illustration_concept_task_place.png";;
+                        "file://png/description_nrel_task_place.png";;
                 *);;
         *);;
