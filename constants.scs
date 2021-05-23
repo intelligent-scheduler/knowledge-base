@@ -20,6 +20,7 @@
 
 //wanted
     //concepts
+    concept_place                                               <- sc_node_not_relation;; // Место
     concept_application                                         <- sc_node_not_relation;; // Приложение
     concept_intelligent_functionality                           <- sc_node_not_relation;; // Интеллектуальный функционал
     concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
