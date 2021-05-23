@@ -1,6 +1,5 @@
 nrel_task_property
 
-    <- parameter;
     <- concept_task_relation;
 
     <-  asymmetric_relation;
