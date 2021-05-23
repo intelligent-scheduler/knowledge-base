@@ -1,0 +1,120 @@
+*системный идентификатор*
+
+    <- *чему принадлежит*;
+
+    <- asymmetric_relation;
+    <- transitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    <= nrel_inclusion: *во что включается*;
+
+    => nrel_first_domain: *первый домен*;
+    => nrel_second_domain: *второй домен*;
+    => nrel_definitional_domain: *область определения*;
+
+    => nrel_main_idtf:
+        [*основной идентификатор*]
+        (*<-lang_ru;;*);
+        [*основной идентификатор на английском*]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [*идентификтор*]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(*Основной идентификатор задачи*)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://*название html файла с определением*.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> *системный идентификатор константы*;;
+                    -> *системный идентификатор константы*;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(*Об основном идентификаторе задачи*)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://*название html-файла с утверждением*.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> *системный идентификатор константы*;;
+                    -> *системный идентификатор константы*;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн.(*Основного идентификатора задачи*)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://*название html-файла с пояснением*.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> *системный идентификатор константы*;;
+                    -> *системный идентификатор константы*;;
+                *);;
+        *);
+    
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(*Основной идентификатор задачи*)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://*название html-файла с иллюстрацией*" 
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- description_of_a_typical_instance;;
+
+            => nrel_main_idtf:
+                [Прим. (*Основного идентификатора*)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://*название html-файла с примером*"
+                *);;
+        *);;

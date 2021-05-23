@@ -10,18 +10,20 @@
     //concepts
     concept_task_relation                                       <- sc_node_not_relation;; // Отношение на множестве задач
     concept_intelligent_scheduler                               <- sc_node_not_relation;; // Интеллектуальный планировщик
-    concept_task_property                                       <- sc_node_not_relation;; // Свойство задачи
     concept_scheduler                                           <- sc_node_not_relation;; // Планировщик
     concept_intelligent_scheduler_application                   <- sc_node_not_relation;; // Приложение интеллектуальный планировщик
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
+    nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
+    nrel_task_description                                       <- sc_node_norole_relation;; // Описание задачи
 
 //wanted
     //concepts
     concept_application                                         <- sc_node_not_relation;; // Приложение
     concept_intelligent_functionality                           <- sc_node_not_relation;; // Интеллектуальный функционал
-    concept_element                                             <- sc_node_not_relation;; // Элемент
-    concept_task_set                                            <- sc_node_not_relation;; // Множество задач
     concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
+    concept_text                                                <- sc_node_not_relation;; // Текст
+    concept_description                                         <- sc_node_not_relation;; // Описание
     //relations
     nrel_set_element                                            <- sc_node_norole_relation;; // Элемент множества
+    nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность

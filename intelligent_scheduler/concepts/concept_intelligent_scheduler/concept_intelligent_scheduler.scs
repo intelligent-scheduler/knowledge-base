@@ -19,7 +19,7 @@ concept_intelligent_scheduler
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://definition_concept_scheduler.html"
+                        "file://html/definition_concept_intelligent_scheduler.html"
                         (*<-lang_ru;;*);;
                 *);;
 
