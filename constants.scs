@@ -16,6 +16,7 @@
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
     nrel_task_description                                       <- sc_node_norole_relation;; // Описание задачи
+    nrel_task_place                                             <- sc_node_norole_relation;; // Место задачи
 
 //wanted
     //concepts
@@ -25,5 +26,7 @@
     concept_text                                                <- sc_node_not_relation;; // Текст
     concept_description                                         <- sc_node_not_relation;; // Описание
     concept_task_set                                            <- sc_node_not_relation;; // Множество задач
+    concept_place                                               <- sc_node_not_relation;; // Место
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
+    nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи
