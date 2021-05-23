@@ -36,7 +36,7 @@ nrel_task_description
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/definition_concept_task_description.html"
+                        "file://html/definition_nrel_task_description.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
