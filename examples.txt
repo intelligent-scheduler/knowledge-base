@@ -1,0 +1,103 @@
+//пример записи отношения между двумя сущностями, соединенными дугой общего вида 
+node_1 => nrel_node: node_2;;
+
+//пример записи принадлежности
+node_1 -> node_2;;
+
+//пример записи непринадлежности
+node_1 -|> node_2;;
+
+//пример включения множества node_2 во множество node_1 (но это не точно)
+node_1 => nrel_inclusion: node_2;;
+
+//пример объявления сущности, не являющейся отношением
+node <- sc_node_not_relation;;
+
+//пример объявления неролевого отношения
+nrel_node <- sc_node_norole_relation;;
+
+//пример объявления ролевого отношения
+rrel_node <- sc_node_role_relation;;
+
+//пример объявления идентификатора
+node => nrel_main_idtf: [Мой узел] (*<-lang_ru;;*);;
+
+//пример объявления идентификаторов на нескольких языках
+node => nrel_main_idtf: 
+ 	[Мой узел] (*<-lang_ru;;*);
+	[My node] (*<-lang_en;;*);;
+
+//пример объявления узла связки
+node => nrel_node: {
+        node_1;
+        node_2;
+	node_3
+};;
+
+//пример объявления разбиения
+node <= nrel_subdividing: ... 
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+	[Мое разбиение (по какому признаку делится)](* <-lang_ru;; *);
+	[My subdividing](* <-lang_en;; *);;
+->
+	node_1;
+	node_2;
+	node_3;; 
+*);;
+
+//пример объявления иллюстрации
+node <-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мой узел)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://path_to_the_image/image.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+//пример объявления определения понятия
+node <- rrel_key_sc_element: ... (*
+	<- definition;;
+	=> nrel_main_idtf: [Опр. (Мой узел)] (* <- lang_ru;; *);;
+	=> nrel_using_constants: {
+	//используемые константы  
+	node_1;
+	node_2;
+	node_3	
+	};;
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example: 
+	[Мой узел - тот узел, который создала я.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+//утверждение
+node <- rrel_key_sc_element: ... (*
+	<- explanation;;
+	//в скобках: идентификатор узла, о котором утверждение, и используемые для этого утверждения константы
+	=> nrel_main_idtf: [Утв.(Мой узел, ананас, я, создать)] (* <- lang_ru;; *);; 
+	=> nrel_using_constants: {
+		node_1;
+		node_2;
+		node_3
+	};; 
+	<= nrel_sc_text_translation: ... (*
+	-> rrel_example: [Я создала мой узел и назвала его ананас.] (*<-lang_ru;; => nrel_format: format_html;;*);;
+    	*);;
+*);;
+
+//домены (не уверена, что рабочие, но должны)
+node => nrel_definitional_domain: ... (*<= nrel_combination: {
+    node_1;
+    node_2;
+    node_3
+    };;*);
+    => nrel_first_domain: node_1;
+    => nrel_second_domain: ... (*<= nrel_combination: {
+    	node_2;
+    	node_3
+    	};;*);;
