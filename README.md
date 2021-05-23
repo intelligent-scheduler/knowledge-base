@@ -8,15 +8,17 @@ ostis-web-platform версии 0.5.0: https://github.com/ostis-apps/dockerized-
 
 Связывать фрагменты друг с другом и с фрагментами из [ims](http://ims.ostis.net/)
 
-Узлы объявлять в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs), который лежит в корне
+Понятия объявлять в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs), который лежит в корне
 
 Не дублировать объявления в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs)
 
+Указывать основной идентификатор понятия в файле [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs) в комментарии после объявления
+
 Ещё не формализованные константы класть в файл [constants.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/constants.scs) после комментария //wanted
 
-Если понятие существуюет в [ims](http://ims.ostis.net/), то при его использовании нужно добавлять комментарий //ims 
+Если понятие существует в [ims](http://ims.ostis.net/), то при его использовании нужно добавлять комментарий //ims 
 
-Блоки текста выносить в html-файл и добавлять гиперссылки, пример: [concept-property.scs](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/other/property/concept-property.scs)
+Блоки текста выносить в html-файл и добавлять гиперссылки, пример: [nrel_subtask](https://intelligent-scheduler.jetbrains.space/p/ische/repositories/knowledge-base/files/intelligent_scheduler/sections/tasks/relations/nrel_subtask/nrel_subtask.scs)
 
 Следовать кодстайлу и порядку блоков, с которым можно ознакомиться в шаблонах
 
@@ -34,7 +36,7 @@ ostis-web-platform версии 0.5.0: https://github.com/ostis-apps/dockerized-
 
 Фрагменты, принадлежащие разделам интеллектуального планировщика, класть в соответствующие папки
 
-Фрагменты используемых констант класть в папку other
+Фрагменты используемых констант, не принадлежащие разделам интеллектуального планировщика, класть в папку other
 
 Следовать существующей в репозитории структуре
 

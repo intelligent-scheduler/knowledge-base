@@ -1,0 +1,41 @@
+nrel_subtask
+
+    <- concept_task_relation;
+
+    <- asymmetric_relation;
+    <- transitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    => nrel_main_idtf:
+        [подзадача* ]
+        (*<-lang_ru;;*);
+        [subtask* ]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [часть разбиения задачи]
+        (*<- lang_ru;;*);;
+
+    => nrel_definitional_domain: task;
+    => nrel_first_domain: task;
+    => nrel_second_domain: task;
+
+    definition -> ...
+        (*
+            -> rrel_key_sc_element: nrel_subtask;;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://definition_nrel_subtask.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constans: ...
+                (*
+                    -> nrel_subdividing;;
+                    -> task;; //ims
+                    -> nrel_inclusion;;
+                *);;
+        *);;
