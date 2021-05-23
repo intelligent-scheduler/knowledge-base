@@ -15,6 +15,8 @@
     concept_completed_task                                      <- sc_node_not_relation;; // Выполненная задача
     concept_urgent_task                                         <- sc_node_not_relation;; // Срочная задача
     concept_important_task                                      <- sc_node_not_relation;; // Важная задача
+    concept_application                                         <- sc_node_not_relation;; // Приложение
+    concept_intelligent_functionality                           <- sc_node_not_relation;; // Интеллектуальный функционал
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
@@ -23,13 +25,15 @@
 
 //wanted
     //concepts
-    concept_application                                         <- sc_node_not_relation;; // Приложение
-    concept_intelligent_functionality                           <- sc_node_not_relation;; // Интеллектуальный функционал
     concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
     concept_text                                                <- sc_node_not_relation;; // Текст
     concept_description                                         <- sc_node_not_relation;; // Описание
     concept_task_set                                            <- sc_node_not_relation;; // Множество задач
     concept_place                                               <- sc_node_not_relation;; // Место
+    concept_software                                            <- sc_node_not_relation;; // Программное обеспечение
+    concept_functionality                                       <- sc_node_not_relation;; // Функционал
+    concept_device                                              <- sc_node_not_relation;; // Устройство
+    concept_human                                               <- sc_node_not_relation;; // Человек
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи

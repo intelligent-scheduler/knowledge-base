@@ -1,0 +1,30 @@
+concept_application
+
+    <= nrel_inclusion: concept_software;;
+
+    concept_not_strict_deadline => nrel_main_idtf:
+        [приложение]
+        (*<-lang_ru;;*);
+        [application]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element:...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Приложение)]
+                (*<-lang_ru;;*);;
+            
+            <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example: 
+                        "file://html/definition_concept_application.html"
+                        (*<-lang_ru;;*);;
+                *);;
+
+            <= nrel_using_constans: ...
+                (*
+                    -> concept_software;;
+                *);;
+        *);;
