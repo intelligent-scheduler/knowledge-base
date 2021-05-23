@@ -26,10 +26,7 @@
         [*основной идентификатор на английском*]
         (*<-lang_en;;*);
 
-    => nrel_idtf:
-        [*идентификтор*]
-        (*<- lang_ru;;*);
-
+    => nrel_idtf://fix domains
     <- rrel_key_sc_element: ...
         (*
             <- definition;;
