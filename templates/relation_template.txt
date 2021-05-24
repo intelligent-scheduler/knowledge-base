@@ -38,7 +38,7 @@
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://*название html файла с определением*.html"
+                        "file://html/*название html файла с определением*.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
@@ -60,7 +60,7 @@
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://*название html-файла с утверждением*.html" 
+                        "file://html/*название html-файла с утверждением*.html" 
                         (*<-lang_ru;;*);; 
                 *);;
 
@@ -82,7 +82,7 @@
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://*название html-файла с пояснением*.html" 
+                        "file://html/*название html-файла с пояснением*.html" 
                         (*<-lang_ru;;*);; 
                 *);;
 
@@ -104,7 +104,7 @@
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://*название html-файла с иллюстрацией*";;
+                        "file://png/*название png-файла с иллюстрацией*.png";;
                 *);;
         *);
 
@@ -119,6 +119,6 @@
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://*название html-файла с примером*";;
+                        "file://png/*название png-файла с примером*.png";;
                 *);;
         *);;
