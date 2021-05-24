@@ -17,11 +17,22 @@
     concept_important_task                                      <- sc_node_not_relation;; // Важная задача
     concept_application                                         <- sc_node_not_relation;; // Приложение
     concept_intelligent_functionality                           <- sc_node_not_relation;; // Интеллектуальный функционал
+    concept_place                                               <- sc_node_not_relation;; // Место
+    concept_address                                             <- sc_node_not_relation;; // Адрес
+    concept_building                                            <- sc_node_not_relation;; // Постройка
+    concept_territory                                           <- sc_node_not_relation;; // Территория
+    concept_city                                                <- sc_node_not_relation;; // Город
+    concept_street                                              <- sc_node_not_relation;; // Улица
+    concept_settlement                                          <- sc_node_not_relation;; // Населеный пункт
+    concept_residential_building                                <- sc_node_not_relation;; // Жилой дом
+    concept_country                                             <- sc_node_not_relation;; // Страна
+    concept_square                                              <- sc_node_not_relation;; // Городская площадь
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
     nrel_task_description                                       <- sc_node_norole_relation;; // Описание задачи
     nrel_task_place                                             <- sc_node_norole_relation;; // Место задачи
+    nrel_place_address                                          <- sc_node_norole_relation;; // Адрес места
 
 //wanted
     //concepts
@@ -29,11 +40,15 @@
     concept_text                                                <- sc_node_not_relation;; // Текст
     concept_description                                         <- sc_node_not_relation;; // Описание
     concept_task_set                                            <- sc_node_not_relation;; // Множество задач
-    concept_place                                               <- sc_node_not_relation;; // Место
     concept_software                                            <- sc_node_not_relation;; // Программное обеспечение
     concept_functionality                                       <- sc_node_not_relation;; // Функционал
     concept_device                                              <- sc_node_not_relation;; // Устройство
     concept_human                                               <- sc_node_not_relation;; // Человек
+    concept_crossroads                                          <- sc_node_not_relation;; // Перекресток
+    concept_boulevar                                            <- sc_node_not_relation;; // Бульвар
+    concept_avenue                                              <- sc_node_not_relation;; // Проспект
+    concept_district                                            <- sc_node_not_relation;; // Район
+    concept_appartment                                          <- sc_node_not_relation;; // Квартира
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи

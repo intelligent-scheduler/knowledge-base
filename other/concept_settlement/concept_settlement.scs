@@ -1,0 +1,31 @@
+concept_settlement
+
+    <= nrel_inclusion: concept_territory;
+    <= nrel_address: concept_address; //nrel_address - ims
+
+    => nrel_main_idtf:
+        [населенный пункт]
+        (*<-lang_ru;;*);
+        [settlement]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Населенный пункт)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_settlement.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_territory;;
+                *);;
+        *);;
