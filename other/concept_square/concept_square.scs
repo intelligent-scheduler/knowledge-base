@@ -1,7 +1,6 @@
 concept_square
 
-    <= nrel_inclusion: concept_place;
-    <= nrel_address: concept_address; //nrel_address - ims
+    <= nrel_inclusion: concept_territory;
 
     => nrel_main_idtf:
         [городская площадь]
@@ -29,7 +28,6 @@ concept_square
                     -> concept_building;;
                     -> concept_territory;;
                     -> concept_city;;
-                    -> concept_place;;
                 *);;
         *);
 

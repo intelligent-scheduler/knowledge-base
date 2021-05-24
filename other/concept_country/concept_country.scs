@@ -1,7 +1,6 @@
 concept_country
 
     <= nrel_inclusion: concept_territory;
-    <= nrel_address: concept_address; //nrel_address - ims
 
     => nrel_main_idtf:
         [страна]

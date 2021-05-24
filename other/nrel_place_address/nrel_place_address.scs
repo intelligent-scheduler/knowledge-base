@@ -10,13 +10,13 @@ nrel_place_address
     <= nrel_inclusion: nrel_address; //ims
 
     => nrel_first_domain: concept_place;
-    => nrel_second_domain: concept_address;
+    => nrel_second_domain: concept_territory;
     => nrel_definitional_domain: ...
         (*
             <= nrel_combination:
                 {
                     concept_place;
-                    concept_address
+                    concept_territory
                 };;
         *);
 
@@ -45,5 +45,35 @@ nrel_place_address
                 (*
                     -> concept_address;;
                     -> concept_place;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(Об адресе места)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_nrel_place_address.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_city;;
+                    -> concept_street;;
+                    -> concept_residential_building;;
+                    -> concept_settlement;;
+                    -> concept_country;;
+                    -> concept_square;;
+                    -> concept_crossroads;;
+                    -> concept_boulevar;;
+                    -> concept_avenue;;
+                    -> concept_district;;
                 *);;
         *);;

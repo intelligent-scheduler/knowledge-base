@@ -18,7 +18,6 @@
     concept_application                                         <- sc_node_not_relation;; // Приложение
     concept_intelligent_functionality                           <- sc_node_not_relation;; // Интеллектуальный функционал
     concept_place                                               <- sc_node_not_relation;; // Место
-    concept_address                                             <- sc_node_not_relation;; // Адрес
     concept_building                                            <- sc_node_not_relation;; // Постройка
     concept_territory                                           <- sc_node_not_relation;; // Территория
     concept_city                                                <- sc_node_not_relation;; // Город

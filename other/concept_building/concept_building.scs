@@ -20,4 +20,9 @@ concept_building
                         "file://html/definition_building.html"
                         (*<-lang_ru;;*);; 
                 *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_territory;;
+                *);;
         *);;
