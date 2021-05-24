@@ -1,0 +1,47 @@
+concept_residential_building
+
+    <= nrel_inclusion: concept_building;
+    <= nrel_inclusion: concept_territory;
+
+    => nrel_main_idtf:
+        [жилой дом]
+        (*<-lang_ru;;*);
+        [residential building]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Жилой дом)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_residential_buildeng.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_appartment;;
+                    -> concept_building;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Жилой дом)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/residential_building.png";; 
+                *);;
+        *);;
