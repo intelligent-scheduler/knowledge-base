@@ -1,5 +1,7 @@
 section_subject_domain_of_intelligent_scheduler
 
+	<- ui_start_sc_element;
+
     <- not_enough_formed_structure; //ims
 
     => nrel_main_idtf:
@@ -30,3 +32,4 @@ section_subject_domain_of_intelligent_scheduler
 
             -> rrel_maximum_studied_object_class: concept_intelligent_scheduler;;
     *];;
+    
