@@ -12,7 +12,7 @@
 
     => nrel_idtf:
         [*идентификатор*]
-        (*<- lang_ru;;*);
+        (*<-lang_ru;;*);
 
     <- rrel_key_sc_element: ...
         (*
