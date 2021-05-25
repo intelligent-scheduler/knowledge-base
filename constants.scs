@@ -109,6 +109,8 @@
     concept_scope                                               <- sc_node_not_relation;; // Масштаб
     concept_conventional_sign                                   <- sc_node_not_relation;; // Условный знак
     concept_coordinates                                         <- sc_node_not_relation;; // Координаты
+    concept_latitude                                            <- sc_node_not_relation;; // Широта
+    concept_longitude                                           <- sc_node_not_relation;; // Долгота
 
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
@@ -183,4 +185,3 @@
     nrel_rise                                                   <- sc_node_norole_relation;; // Повышение
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
-
