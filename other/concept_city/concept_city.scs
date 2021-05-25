@@ -40,6 +40,6 @@ concept_city
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/city.png";; 
+                        "file://png/concept_city.png";; 
                 *);;
         *);;

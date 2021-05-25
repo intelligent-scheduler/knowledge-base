@@ -33,6 +33,6 @@ concept_road
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/road.png";; 
+                        "file://png/concept_road.png";; 
                 *);;
         *);;

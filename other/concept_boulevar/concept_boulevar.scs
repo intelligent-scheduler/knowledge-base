@@ -40,6 +40,6 @@ concept_boulevar
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/boulevar.png";; 
+                        "file://png/concept_boulevar.png";; 
                 *);;
         *);;

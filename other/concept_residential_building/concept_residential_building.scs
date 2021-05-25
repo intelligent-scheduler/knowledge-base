@@ -42,6 +42,6 @@ concept_residential_building
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/residential_building.png";; 
+                        "file://png/concept_residential_building.png";; 
                 *);;
         *);;

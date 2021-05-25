@@ -1,6 +1,6 @@
 concept_appartment
 
-    <= nrel_inclusion: concept_residential_building;
+    <= nrel_part_of_building: concept_residential_building;
 
     => nrel_main_idtf:
         [квартира]

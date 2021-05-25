@@ -1,6 +1,6 @@
 concept_crossroads
 
-    <= nrel_inclusion: concept_territory;
+    <= nrel_inclusion: concept_road;
 
     => nrel_main_idtf:
         [перекресток]
@@ -41,6 +41,6 @@ concept_crossroads
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/crossroads.png";; 
+                        "file://png/concept_crossroads.png";; 
                 *);;
         *);;

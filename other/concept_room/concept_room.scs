@@ -1,6 +1,6 @@
 concept_room
 
-    <= nrel_inclusion: concept_residential_building;
+    <= nrel_part_of_building: concept_residential_building;
 
     => nrel_main_idtf:
         [комната]
@@ -40,6 +40,6 @@ concept_room
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/room.png";; 
+                        "file://png/concept_room.png";; 
                 *);;
         *);;
