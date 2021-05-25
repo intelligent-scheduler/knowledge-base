@@ -100,6 +100,7 @@
     concept_mathematical_object                                 <- sc_node_not_relation;; // Математический объект
     concept_abcd_analysis                                       <- sc_node_not_relation;; // ABCD-анализ
     concept_eisenhower_matrix                                   <- sc_node_not_relation;; // Матрица Эйзенхауэра
+    concept_map_of_task_locations                               <- sc_node_not_relation;; // Карта местоположений всех пользовательских задач
 
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
@@ -172,3 +173,4 @@
     nrel_criterion                                              <- sc_node_norole_relation;; // Критерий
     nrel_group                                                  <- sc_node_norole_relation;; // Группа
     nrel_rise                                                   <- sc_node_norole_relation;; // Повышение
+    
