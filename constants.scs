@@ -59,7 +59,6 @@
     concept_function_set                                        <- sc_node_not_relation;; // Набор возможностей
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
-    nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи
     nrel_part_of_building                                       <- sc_node_norole_relation;; // Часть строения
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
