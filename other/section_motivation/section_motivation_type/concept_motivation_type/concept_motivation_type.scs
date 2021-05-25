@@ -1,6 +1,6 @@
 concept_motivation_type
 
-    <= nrel_inclusion: section_subject_domain_of_motivation_type;
+    <= nrel_inclusion: concept_motivation;
 
     => nrel_main_idtf: 
         [вид мотивации]

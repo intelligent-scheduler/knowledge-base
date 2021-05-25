@@ -1,7 +1,5 @@
 section_subject_domain_of_goal_characteristic
 
-    <= nrel_inclusion: section_subject_domain_of_goal;
-
     => nrel_main_idtf:
         [Раздел. Предметная область характеристики цели]
         (*<-lang_ru;;*);

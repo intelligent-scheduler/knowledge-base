@@ -1,7 +1,5 @@
 section_subject_domain_of_motivation_source
 
-    <= nrel_inclusion: section_subject_domain_of_motivation_type;
-
     => nrel_main_idtf:
         [Раздел. Предметная область источника мотивации]
         (*<-lang_ru;;*);

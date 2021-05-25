@@ -1,6 +1,7 @@
 concept_internal_motivation
 
-    <= nrel_inclusion: section_subject_domain_of_internal_motivation;
+    <= nrel_inclusion: concept_motivation_type;
+    concept_motivation_type;
 
     => nrel_main_idtf: 
         [внутренняя мотивация]
