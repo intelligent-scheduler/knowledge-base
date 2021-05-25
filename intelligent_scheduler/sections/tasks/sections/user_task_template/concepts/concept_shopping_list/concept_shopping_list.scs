@@ -1,0 +1,22 @@
+concept_shopping_list
+
+<= concept_user_task_template;
+
+=> nrel_main_idtf: 
+    [список покупок] (*<-lang_ru;;*);
+    [shopping list] (*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Список покупок)] (* <- lang_ru;; *);;
+    => nrel_using_constants: ... (*
+        -> concept_user_task_template;;
+        -> nrel_subtask;;
+        -> concept_action_purchase;;
+    *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        "file://html/definition_concept_shopping_list.html" (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;

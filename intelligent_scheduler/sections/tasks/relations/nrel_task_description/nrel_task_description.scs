@@ -53,7 +53,7 @@ nrel_task_description
                     -> concept_text;;
                     -> nrel_detail;;
                 *);;
-        *);;
+        *);
 
             <- rrel_key_sc_element: ... 
         (*

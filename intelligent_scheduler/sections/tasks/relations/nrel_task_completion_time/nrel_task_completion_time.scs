@@ -19,7 +19,7 @@ nrel_task_completion_time
                     task; //ims
                     duration //ims
                 };;
-        *);;
+        *);
 
     => nrel_main_idtf:
         [время выполнения задачи* ]
@@ -55,7 +55,7 @@ nrel_task_completion_time
                     -> task;; //ims
                     -> duration;; //ims
                 *);;
-        *);;
+        *);
 
     <- rrel_key_sc_element: ...
         (*

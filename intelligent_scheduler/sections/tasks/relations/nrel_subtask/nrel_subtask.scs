@@ -42,7 +42,7 @@ nrel_subtask
                     -> task;; //ims
                     -> nrel_inclusion;;
                 *);;
-        *);;
+        *);
 
     <- rrel_key_sc_element: ...
         (*
