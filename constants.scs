@@ -50,7 +50,7 @@
     concept_avenue                                              <- sc_node_not_relation;; // Проспект
     concept_district                                            <- sc_node_not_relation;; // Район
     concept_appartment                                          <- sc_node_not_relation;; // Квартира
-    concept_function                                            <- sc_node_not_relation;; // Функция чего-либо
+    concept_function_set                                        <- sc_node_not_relation;; // Набор возможностей
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
