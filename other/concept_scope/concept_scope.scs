@@ -1,0 +1,39 @@
+concept_scope
+
+    => nrel_main_idtf:
+        [масштаб]
+        (*<-lang_ru;;*);
+        [scope]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Масштаб)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_scope.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(Об масштабе)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_concept_scope.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+        *);;

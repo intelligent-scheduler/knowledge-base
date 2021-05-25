@@ -1,0 +1,23 @@
+concept_conventional_sign
+
+    => nrel_main_idtf:
+        [условный знак]
+        (*<-lang_ru;;*);
+        [conventional sign]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Условный знак)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_conventional_sign.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+        *);;
