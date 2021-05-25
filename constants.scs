@@ -16,7 +16,6 @@
     concept_urgent_task                                         <- sc_node_not_relation;; // Срочная задача
     concept_important_task                                      <- sc_node_not_relation;; // Важная задача
     concept_application                                         <- sc_node_not_relation;; // Приложение
-    concept_intelligent_functionality                           <- sc_node_not_relation;; // Интеллектуальный функционал
     concept_place                                               <- sc_node_not_relation;; // Место
     concept_building                                            <- sc_node_not_relation;; // Постройка
     concept_territory                                           <- sc_node_not_relation;; // Территория
@@ -35,6 +34,7 @@
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время выполнения задачи
     nrel_start_task_completion                                  <- sc_node_norole_relation;; // Начало выполнения задачи 
     nrel_end_of_task_completion                                 <- sc_node_norole_relation;; // Завершение выполнения задачи
+    nrel_intelligent_functionality                              <- sc_node_norole_relation;; // Интеллектуальный функционал
 
 //wanted
     //concepts
@@ -43,14 +43,14 @@
     concept_description                                         <- sc_node_not_relation;; // Описание
     concept_task_set                                            <- sc_node_not_relation;; // Множество задач
     concept_software                                            <- sc_node_not_relation;; // Программное обеспечение
-    concept_functionality                                       <- sc_node_not_relation;; // Функционал
-    concept_device                                              <- sc_node_not_relation;; // Устройство
-    concept_human                                               <- sc_node_not_relation;; // Человек
+    //concept_device                                              <- sc_node_not_relation;; // Устройство
+    //concept_human                                               <- sc_node_not_relation;; // Человек
     concept_crossroads                                          <- sc_node_not_relation;; // Перекресток
     concept_boulevar                                            <- sc_node_not_relation;; // Бульвар
     concept_avenue                                              <- sc_node_not_relation;; // Проспект
     concept_district                                            <- sc_node_not_relation;; // Район
     concept_appartment                                          <- sc_node_not_relation;; // Квартира
+    concept_function                                            <- sc_node_not_relation;; // Функция чего-либо
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
-    nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи
+    nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
