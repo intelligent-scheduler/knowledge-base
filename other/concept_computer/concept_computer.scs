@@ -3,9 +3,9 @@ concept_computer
     <= nrel_inclusion: concept_device;
 
     => nrel_main_idtf:
-        [Компьютер]
+        [компьютер]
         (*<-lang_ru;;*);
-        [Computer]
+        [computer]
         (*<-lang_en;;*);
 
     => nrel_idtf:

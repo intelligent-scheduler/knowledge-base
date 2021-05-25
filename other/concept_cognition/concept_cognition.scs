@@ -1,15 +1,13 @@
-concept_software
-
-    <- concept_invention;
+concept_cognition
 
     => nrel_main_idtf:
-        [программное обеспечение]
+        [познание]
         (*<-lang_ru;;*);
-        [software]
+        [cognition]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [программное обеспечение]
+        [познание]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...
@@ -17,43 +15,44 @@ concept_software
             <- definition;;
 
             => nrel_main_idtf:
-                [Опр.(Программное обеспечение)]
+                [Опр.(Познание)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/concept_software.html"
+                        "file://html/concept_cognition.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constants: ...
                 (*
-                    -> concept_programm;;
-                    -> concept_computer;;
-                    -> nrel_manage;;
+                    -> knowledge;; //ims
+                    -> concept_phenomenon;;
+                    -> nrel_regularity;;
+                    -> concept_method;;
+                    -> concept_procedure;;
+                    -> concept_process;;
                 *);;
         *);
-
-        <- rrel_key_sc_element: ...
+        
+         <- rrel_key_sc_element: ...
         (*
             <- statement;;
 
             => nrel_main_idtf:
-                [Утв.(О программном обеспечение)]
+                [Утв.(О познании)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/about-concept-software.html" 
+                        "file://html/about_concept_cognition.html" 
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constants: ...
                 (*
-                    -> concept_compucter;;
-                    -> nrel_functioning;;
+                    -> concept_form;;
                 *);;
         *);;
-

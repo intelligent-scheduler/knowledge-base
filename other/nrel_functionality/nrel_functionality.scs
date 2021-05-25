@@ -6,24 +6,23 @@ nrel_functionality
     <- antireflexive_relation;
     <|-  order_relation;
 
-    <= nrel_inclusion: concept_task_relation;
 
-    => nrel_first_domain: concept_application;
-    => nrel_second_domain: action; //ims
+    => nrel_first_domain: _system;
+    => nrel_second_domain: concept_opportunity; //ims
     => nrel_definitional_domain: ...
         (*
             <= nrel_combination:
                 {
-                    concept_application;
-                    action
+                    _system;
+                    concept_opportunity
                 };;
         *);
 
 
     => nrel_main_idtf:
-        [Функционал]
+        [функционал]
         (*<-lang_ru;;*);
-        [Functionality]
+        [functionality]
         (*<-lang_en;;*);
 
     => nrel_idtf:

@@ -1,15 +1,13 @@
-concept_function
-
-    <= nrel_inclusion: concept_invention ;
+concept_problem
 
     => nrel_main_idtf:
-        [Функция]
+        [проблема]
         (*<-lang_ru;;*);
-        [function]
+        [problem]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [функция]
+        [проблема]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...
@@ -17,23 +15,20 @@ concept_function
             <- definition;;
 
             => nrel_main_idtf:
-                [Опр.(Функция)]
+                [Опр.(Проблема)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/concept_function.html"
+                        "file://html/concept_problem.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constants: ...
                 (*
-                    -> concept_organ;; 
-                    -> nrel_work;;
-                    -> concept_organism;; 
-                    -> concept_device;;
+                    -> question;; //ims
+                    -> nrel_examine;;
+                    -> nrel_fix;;
                 *);;
         *);;
-
-    

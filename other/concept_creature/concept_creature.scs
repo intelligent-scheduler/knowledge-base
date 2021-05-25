@@ -3,13 +3,13 @@ concept_creature
     <= nrel_inclusion: concept_organism;
 
     => nrel_main_idtf:
-        [Существо]
+        [cущество]
         (*<-lang_ru;;*);
-        [Creature]
+        [creature]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [Существо]
+        [существо]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...

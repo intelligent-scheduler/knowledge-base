@@ -20,13 +20,13 @@ nrel_movement
 
 
     => nrel_main_idtf:
-        [Движение]
+        [движение]
         (*<-lang_ru;;*);
-        [Movement]
+        [movement]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [Движение]
+        [движение]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...

@@ -3,13 +3,13 @@ concept_animal
     <= nrel_inclusion: concept_creature;
 
     => nrel_main_idtf:
-        [Животное]
+        [животное]
         (*<-lang_ru;;*);
-        [Animal]
+        [animal]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [Животное]
+        [животное]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...

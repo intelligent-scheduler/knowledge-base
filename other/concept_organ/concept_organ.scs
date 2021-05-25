@@ -3,9 +3,9 @@ concept_organ
     <= nrel_inclusion: concept_creature ;
 
     => nrel_main_idtf:
-        [Орган]
+        [орган]
         (*<-lang_ru;;*);
-        [Organ]
+        [organ]
         (*<-lang_en;;*);
 
     => nrel_idtf:
@@ -31,21 +31,6 @@ concept_organ
                 (*
                     -> concept_material;; 
                     -> concept_function;;
-                *);;
-        *);
-
-    <- rrel_key_sc_element: ... 
-        (*
-            <- illustration;;
-
-            => nrel_main_idtf:
-                [Рис.(Орган)]
-                (*<-lang_ru;;*);;
-
-            <= nrel_sc_text_translation: ... 
-                (* 
-                    -> rrel_example: 
-                        "file://png/concept_organ.png";; 
                 *);;
         *);;
 

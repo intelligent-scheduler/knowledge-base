@@ -3,9 +3,9 @@ concept_speech
     <= nrel_inclusion: concept_human;
 
     => nrel_main_idtf:
-        [Речь]
+        [речь]
         (*<-lang_ru;;*);
-        [Speech]
+        [speech]
         (*<-lang_en;;*);
 
     => nrel_idtf:

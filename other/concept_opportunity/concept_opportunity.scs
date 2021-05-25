@@ -1,15 +1,15 @@
-concept_task_management
+concept_opportunity
 
-    <= nrel_inclusion: concept_managment;
+    <= nrel_inclusion: concept_invention ;
 
     => nrel_main_idtf:
-        [управление задачами]
+        [возможности]
         (*<-lang_ru;;*);
-        [task management]
+        [oppottunity]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [управление задачами]
+        [возможности]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...
@@ -17,22 +17,23 @@ concept_task_management
             <- definition;;
 
             => nrel_main_idtf:
-                [Опр.(Управление задачами)]
+                [Опр.(возможности)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/concept_task_management.html"
+                        "file://html/concept_opportunity.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constants: ...
                 (*
-                    -> nrel_control;;
-                    -> nrel_done;;
-                    -> concept_time;;
-                    ->_some_section;; //ims
+                    -> concept_organ;; 
+                    -> nrel_work;;
+                    -> concept_organism;; 
+                    -> concept_device;;
                 *);;
         *);;
 
+    

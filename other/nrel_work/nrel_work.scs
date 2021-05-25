@@ -5,29 +5,27 @@ nrel_work
     <- antireflexive_relation;
     <|-  order_relation;
 
-    <= nrel_inclusion: concept_task_relation;
 
-    => nrel_first_domain: concept_application;
-    => nrel_second_domain: action; //ims
+    => nrel_first_domain: subject;//ims
+    => nrel_second_domain: _object; //ims
     => nrel_definitional_domain: ...
         (*
             <= nrel_combination:
                 {
-                    concept_application;
-                    action
+                    subject;
+                    _object
                 };;
         *);
 
-    <= nrel_inclusion: concept_task_relation ;
 
     => nrel_main_idtf:
-        [Работа]
+        [работа]
         (*<-lang_ru;;*);
-        [Work]
+        [work]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [Работа]
+        [работа]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...

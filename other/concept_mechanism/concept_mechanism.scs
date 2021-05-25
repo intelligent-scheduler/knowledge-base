@@ -1,15 +1,15 @@
-concept_task_management
+concept_mechanism
 
-    <= nrel_inclusion: concept_managment;
+    <= nrel_inclusion: concept_device;
 
     => nrel_main_idtf:
-        [управление задачами]
+        [механизм]
         (*<-lang_ru;;*);
-        [task management]
+        [mechanism]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [управление задачами]
+        [механизм]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...
@@ -17,22 +17,20 @@ concept_task_management
             <- definition;;
 
             => nrel_main_idtf:
-                [Опр.(Управление задачами)]
+                [Опр.(Механизм)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/concept_task_management.html"
+                        "file://html/concept_mechanism.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constants: ...
                 (*
-                    -> nrel_control;;
-                    -> nrel_done;;
-                    -> concept_time;;
-                    ->_some_section;; //ims
+                    -> concept_machine;; 
+                    -> nrel_movement;;
+                    -> concept_device;;
                 *);;
         *);;
-
