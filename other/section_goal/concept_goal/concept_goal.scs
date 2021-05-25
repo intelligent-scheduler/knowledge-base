@@ -47,6 +47,9 @@ concept_goal
         <= nrel_using_constants: ...
             (*
                 -> concept_goal_setting;;
+                -> concept_goal_characteristic;;
+                -> concept_final_goal;;
+                -> concept_intermediate_goal;;
             *);;
     *);
 
