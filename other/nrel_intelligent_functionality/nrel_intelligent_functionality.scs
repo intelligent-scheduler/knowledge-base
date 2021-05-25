@@ -44,6 +44,6 @@ nrel_intelligent_functionality
             <= nrel_using_constants: ...
                 (*
                     -> concept_application;;
-                    -> concept_function;;
+                    -> concept_function_set;;
                 *);;
         *);;
