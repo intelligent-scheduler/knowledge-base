@@ -3,10 +3,28 @@
     section_subject_domain_of_intelligent_scheduler             <- non_atomic_section;; // Раздел. Предметная область интеллектуального планировщика
     section_subject_domain_of_tasks                             <- non_atomic_section;; // Раздел. Предметная область задач
     section_subject_domain_of_application                       <- non_atomic_section;; // Раздел. Предметная область приложения "Интеллектуальный планировщик"
+    section_subject_domain_of_goal                              <- non_atomic_section;; // Раздел. Предметная область цели
+    section_subject_domain_of_goal_type                         <- non_atomic_section;; // Раздел. Предметная область вида цели
+    section_subject_domain_of_goal_characteristic               <- non_atomic_section;; // Раздел. Предметная область характеристики цели
+    section_subject_domain_of_goal_setting                      <- non_atomic_section;; // Раздел. Предметная область постановки цели
+    section_subject_domain_of_goal_setting_type                 <- non_atomic_section;; // Раздел. Предметная область вида постановки цели
+    section_subject_domain_of_motivation                        <- non_atomic_section;; // Раздел. Предметная область мотивации
+    section_subject_domain_of_motivation_type                   <- non_atomic_section;; // Раздел. Предметная область вида мотивации
+    section_subject_domain_of_motivation_source                 <- non_atomic_section;; // Раздел. Предметная область источника мотивации
+    section_subject_domain_of_motivation_stimulus               <- non_atomic_section;; // Раздел. Предметная область стимула мотивации
     //subject domains
     subject_domain_of_intelligent_scheduler                     <- subject_domain;; // Предметная область интеллектуального планировщика
     subject_domain_of_tasks                                     <- subject_domain;; // Предметная область задач
     subject_domain_of_application                               <- subject_domain;; // Предметная область приложения "Интеллектуальный планировщик"
+    subject_domain_of_goal                                      <- subject_domain;; // Предметная область цели
+    subject_domain_of_goal_type                                 <- subject_domain;; // Предметная область вида цели
+    subject_domain_of_goal_characteristic                       <- subject_domain;; // Предметная область характеристики цели
+    subject_domain_of_goal_setting                              <- subject_domain;; // Предметная область постановки цели
+    subject_domain_of_goal_setting_type                         <- subject_domain;; // Предметная область вида постановки цели
+    subject_domain_of_motivation                                <- subject_domain;; // Предметная область мотивации
+    subject_domain_of_motivation_type                           <- subject_domain;; // Предметная область вида мотивации
+    subject_domain_of_motivation_source                         <- subject_domain;; // Предметная область источника мотивации
+    subject_domain_of_motivation_stimulus                       <- subject_domain;; // Предметная область стимула мотивации
     //concepts
     concept_task_relation                                       <- sc_node_not_relation;; // Отношение на множестве задач
     concept_intelligent_scheduler                               <- sc_node_not_relation;; // Интеллектуальный планировщик
@@ -26,6 +44,25 @@
     concept_residential_building                                <- sc_node_not_relation;; // Жилой дом
     concept_country                                             <- sc_node_not_relation;; // Страна
     concept_square                                              <- sc_node_not_relation;; // Городская площадь
+    concept_goal                                                <- sc_node_not_relation;; // Цель
+    concept_goal_characteristic                                 <- sc_node_not_relation;; // Характеристика цели
+    concept_difficulty                                          <- sc_node_not_relation;; // Трудность
+    concept_importance                                          <- sc_node_not_relation;; // Важность
+    concept_measurability                                       <- sc_node_not_relation;; // Измеримость
+    concept_specificity                                         <- sc_node_not_relation;; // Определённость
+    concept_goal_setting                                        <- sc_node_not_relation;; // Постановка цели
+    concept_direct_goal_setting                                 <- sc_node_not_relation;; // Прямая постановка цели
+    concept_indirect_goal_setting                               <- sc_node_not_relation;; // Опосредованная постановка цели
+    concept_final_goal                                          <- sc_node_not_relation;; // Конечная цель
+    concept_intermediate_goal                                   <- sc_node_not_relation;; // Промежуточная цель
+    concept_motivation                                          <- sc_node_not_relation;; // Мотивация
+    concept_motivation_type                                     <- sc_node_not_relation;; // Вид мотивации
+    concept_positive_motivation                                 <- sc_node_not_relation;; // Положительная мотивация
+    concept_negative_motivation                                 <- sc_node_not_relation;; // Отрицательная мотивация
+    concept_internal_motivation                                 <- sc_node_not_relation;; // Внутренняя мотивация
+    concept_external_motivation                                 <- sc_node_not_relation;; // Внешняя мотивация
+    concept_completion                                          <- sc_node_not_relation;; // Выполнение
+    concept_efficiency                                          <- sc_node_not_relation;; // Эффективность
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи

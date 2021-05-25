@@ -3,7 +3,7 @@ section_subject_domain_of_goal_type
     <= nrel_inclusion: section_subject_domain_of_goal;
 
     => nrel_main_idtf:
-        [Раздел. Предметная область типа цели]
+        [Раздел. Предметная область вида цели]
         (*<-lang_ru;;*);
         [Section. Subject domain of goal type]
         (*<-lang_en;;*);
@@ -21,7 +21,7 @@ section_subject_domain_of_goal_type
             <= nrel_private_subject_domain: subject_domain_of_goal;
 
             => nrel_main_idtf:
-                [Предметная область типа цели]
+                [Предметная область вида цели]
                 (*<-lang_ru;;*);
                 [Subject domain of goal type]
                 (*<-lang_en;;*);
