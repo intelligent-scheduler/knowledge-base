@@ -1,0 +1,31 @@
+concept_district
+
+    <= nrel_inclusion: concept_territory;
+
+    => nrel_main_idtf:
+        [район]
+        (*<-lang_ru;;*);
+        [district]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Район)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_district.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_territory;;
+                    -> concept_country;;
+                *);;
+        *);;
