@@ -42,6 +42,6 @@ concept_square
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/square.png";; 
+                        "file://png/concept_square.png";; 
                 *);;
         *);;

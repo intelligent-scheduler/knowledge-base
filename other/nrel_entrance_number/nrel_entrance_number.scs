@@ -3,7 +3,7 @@ nrel_entrance_number
     <- norole_relation;
 
     <- asymmetric_relation;
-    <- transitive_relation;
+    <- antitransitive_relation;
     <- antireflexive_relation;
     <|-  order_relation;
 

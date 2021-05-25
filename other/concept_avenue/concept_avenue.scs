@@ -41,6 +41,6 @@ concept_avenue
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/avenue.png";; 
+                        "file://png/concept_avenue.png";; 
                 *);;
         *);;

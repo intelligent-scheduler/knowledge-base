@@ -3,7 +3,7 @@ nrel_floor_number
     <- norole_relation;
 
     <- asymmetric_relation;
-    <- transitive_relation;
+    <- antitransitive_relation;
     <- antireflexive_relation;
     <|-  order_relation;
 
@@ -13,7 +13,7 @@ nrel_floor_number
         (*
             <= nrel_combination:
                 {
-                    concept_appartment;
+                    concept_address;
                     number
                 };;
         *);
