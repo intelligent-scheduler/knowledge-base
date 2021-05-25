@@ -1,0 +1,33 @@
+concept_phenomenon
+
+    => nrel_main_idtf:
+        [явление]
+        (*<-lang_ru;;*);
+        [phenomenon]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [явление]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Явление)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_phenomenon.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> _event;; //ims
+                    -> concept_happening;;
+                *);;
+        *);;
