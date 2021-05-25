@@ -1,0 +1,47 @@
+nrel_appartment_number
+
+    <- norole_relation;
+
+    <- asymmetric_relation;
+    <- transitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    => nrel_first_domain: concept_appartment;
+    => nrel_second_domain: number; //ims
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    concept_appartment;
+                    number
+                };;
+        *);
+
+    => nrel_main_idtf:
+        [номер квартиры* ]
+        (*<-lang_ru;;*);
+        [appartment number* ]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Номер квартиры)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_nrel_appartment_number.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_appartment;;
+                    -> number;;
+                *);;
+        *);;

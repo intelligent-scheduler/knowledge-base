@@ -1,0 +1,31 @@
+concept_appartment
+
+    <= nrel_inclusion: concept_residential_building;
+
+    => nrel_main_idtf:
+        [квартира]
+        (*<-lang_ru;;*);
+        [appartment]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Квартира)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_appartment.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_room;;
+                    -> concept_residential_building;;
+                *);;
+        *);;
