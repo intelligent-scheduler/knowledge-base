@@ -1,0 +1,77 @@
+concept_map_of_task_locations
+
+    <- concept_intelligent_scheduler_application;
+
+    <= nrel_intelligent_functionality: concept_intelligent_scheduler_application;
+    
+    <= nrel_inclusion: concept_digital_map;
+    
+    => nrel_main_idtf:
+        [карта местоположения задач]
+        (*<- lang_ru;;*);
+        [map of task locations]
+        (* <- lang_en;;*);
+
+    => nrel_idtf:
+        [карта расположения всех пользовательских задач]
+        (*<- lang_ru;;*);
+
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(карта местоположения задач)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_map_of_task_locations.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> task;; //ims
+                    -> concept_territory;;
+                    -> concept_digital_map;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(Об карте местоположения задач)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_concept_map_of_task_locationc.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_map_label;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- description_of_a_typical_instance;;
+
+            => nrel_main_idtf:
+                [Прим. (Карты местоположения задач)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_map_of_task_locations.png";;
+                *);;
+        *);;

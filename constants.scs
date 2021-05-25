@@ -101,6 +101,14 @@
     concept_abcd_analysis                                       <- sc_node_not_relation;; // ABCD-анализ
     concept_eisenhower_matrix                                   <- sc_node_not_relation;; // Матрица Эйзенхауэра
     concept_map_of_task_locations                               <- sc_node_not_relation;; // Карта местоположений всех пользовательских задач
+    concept_map_of_task_locations                               <- sc_node_not_relation;; // Карта местоположений всех задач
+    concept_digital_map                                         <- sc_node_not_relation;; // Цифровая карта
+    concept_map                                                 <- sc_node_not_relation;; // Карта
+    concept_map_label                                           <- sc_node_not_relation;; // Метка на карте
+    concept_model                                               <- sc_node_not_relation;; // Модель
+    concept_scope                                               <- sc_node_not_relation;; // Масштаб
+    concept_conventional_sign                                   <- sc_node_not_relation;; // Условный знак
+    concept_coordinates                                         <- sc_node_not_relation;; // Координаты
 
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
@@ -173,4 +181,6 @@
     nrel_criterion                                              <- sc_node_norole_relation;; // Критерий
     nrel_group                                                  <- sc_node_norole_relation;; // Группа
     nrel_rise                                                   <- sc_node_norole_relation;; // Повышение
-    
+    nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
+    nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
+

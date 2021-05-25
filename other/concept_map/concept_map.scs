@@ -1,0 +1,44 @@
+concept_map
+
+    => nrel_main_idtf:
+        [географическая карта]
+        (*<-lang_ru;;*);
+        [geographic map]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Географическая карта)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_map.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_scope;;
+                    -> concept_conventional_sign;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Географическая карта)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_map.png";; 
+                *);;
+        *);;
