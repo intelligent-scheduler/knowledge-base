@@ -1,0 +1,36 @@
+concept_functionality
+
+    <= nrel_inclusion: concept_software;
+
+    => nrel_main_idtf:
+        [Функционал]
+        (*<-lang_ru;;*);
+        [Functionality]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [функционал]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Функционал)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_functionality.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_device;;
+                    -> concept_human;;
+                    -> _system;;
+                *);;
+        *);;

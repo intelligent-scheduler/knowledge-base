@@ -26,6 +26,13 @@
     concept_residential_building                                <- sc_node_not_relation;; // Жилой дом
     concept_country                                             <- sc_node_not_relation;; // Страна
     concept_square                                              <- sc_node_not_relation;; // Городская площадь
+    concept_software                                            <- sc_node_not_relation;; // Программное обеспечение
+    concept_functionality                                       <- sc_node_not_relation;; // Функционал
+    concept_device                                              <- sc_node_not_relation;; // Устройство
+    concept_human                                               <- sc_node_not_relation;; // Человек
+    concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
+    concept_function                                            <- sc_node_not_relation;; // Функция
+    concept_element                                             <- sc_node_not_relation;; // Элемент
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
@@ -38,14 +45,9 @@
 
 //wanted
     //concepts
-    concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
     concept_text                                                <- sc_node_not_relation;; // Текст
     concept_description                                         <- sc_node_not_relation;; // Описание
     concept_task_set                                            <- sc_node_not_relation;; // Множество задач
-    concept_software                                            <- sc_node_not_relation;; // Программное обеспечение
-    concept_functionality                                       <- sc_node_not_relation;; // Функционал
-    concept_device                                              <- sc_node_not_relation;; // Устройство
-    concept_human                                               <- sc_node_not_relation;; // Человек
     concept_crossroads                                          <- sc_node_not_relation;; // Перекресток
     concept_boulevar                                            <- sc_node_not_relation;; // Бульвар
     concept_avenue                                              <- sc_node_not_relation;; // Проспект

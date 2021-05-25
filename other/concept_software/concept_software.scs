@@ -1,0 +1,59 @@
+concept_software
+
+    <= nrel_inclusion: concept_invention;
+
+    => nrel_main_idtf:
+        [Программное обеспечение]
+        (*<-lang_ru;;*);
+        [Software]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [программное обеспечение]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Программное обеспечение)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_software.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_programm;;
+                    -> concept_compucter;;
+                    -> nrel_manage;;
+                *);;
+        *);
+
+        <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(О программном обеспечение)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/about-concept-software.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_compucter;;
+                    -> nrel_functioning;;
+                *);;
+        *);;
+

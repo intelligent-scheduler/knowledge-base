@@ -1,0 +1,39 @@
+concept_device
+
+    <= nrel_inclusion: concept_invention ;
+
+    => nrel_main_idtf:
+        [Устройство]
+        (*<-lang_ru;;*);
+        [Device]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [устройство]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Устройство)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_function.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_organ;; 
+                    -> concept_work;;
+                    -> concept_organism;; 
+                    -> concept_device;;
+                *);;
+        *);;
+
+    
