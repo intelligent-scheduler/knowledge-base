@@ -32,6 +32,9 @@
     nrel_task_description                                       <- sc_node_norole_relation;; // Описание задачи
     nrel_task_place                                             <- sc_node_norole_relation;; // Место задачи
     nrel_place_address                                          <- sc_node_norole_relation;; // Адрес места
+    nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время выполнения задачи
+    nrel_start_task_completion                                  <- sc_node_norole_relation;; // Начало выполнения задачи 
+    nrel_end_of_task_completion                                 <- sc_node_norole_relation;; // Завершение выполнения задачи
 
 //wanted
     //concepts

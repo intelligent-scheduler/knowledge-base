@@ -1,35 +1,37 @@
-nrel_task_description
+nrel_task_completion_time
 
     <- concept_task_relation;
 
-    <-  asymmetric_relation;
+    <-  symmetric_relation;
     <-  transitive_relation;
-    <-  antireflexive_relation;
+    <-  reflexive_relation;
     <|- order_relation;
+    <-  oriented_relation;
 
     <= nrel_inclusion: nrel_task_property;
-    <= nrel_inclusion: nrel_description;
 
-    //FIX domains
     => nrel_first_domain: task; //ims
-    => nrel_second_domain: concept_text;
+    => nrel_second_domain: duration; //ims
     => nrel_definitional_domain: ...
         (*
             <= nrel_combination:
                 {
                     task; //ims
-                    concept_text
+                    duration //ims
                 };;
-        *);
+        *);;
 
-    => nrel_main_idtf: 
-        [описание задачи* ]
+    => nrel_main_idtf:
+        [время выполнения задачи* ]
         (*<-lang_ru;;*);
-        [task description* ]
+        [task completion time* ]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [уточнение задачи]
+        [затраченное время на задачу]
+        (*<- lang_ru;;*);
+    => nrel_idtf:
+        [время на выполнение задачи]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...
@@ -37,25 +39,25 @@ nrel_task_description
             <- definition;;
 
             => nrel_main_idtf:
-                [Опр.(Описание задачи))]
+                [Опр.(Время выполнения задачи))]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/definition_nrel_task_description.html"
+                        "file://html/definition_nrel_task_completion_time.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constans: ...
                 (*
-                    -> nrel_task_property;;
-                    -> concept_text;;
-                    -> nrel_detail;;
+                    -> relation;; //ims
+                    -> task;; //ims
+                    -> duration;; //ims
                 *);;
         *);;
 
-            <- rrel_key_sc_element: ... 
+    <- rrel_key_sc_element: ...
         (*
             <- description_of_a_typical_instance;;
 
@@ -63,9 +65,9 @@ nrel_task_description
                 [Прим. (*Основного идентификатора*)]
                 (*<-lang_ru;;*);;
 
-            <= nrel_sc_text_translation: ... 
-                (* 
-                    -> rrel_example: 
-                        "file://png/nrel_description.png";;
+            <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        "file://png/nrel_task_completion_time.png";;
                 *);;
         *);;

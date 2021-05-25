@@ -43,3 +43,18 @@ nrel_subtask
                     -> nrel_inclusion;;
                 *);;
         *);;
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- description_of_a_typical_instance;;
+
+            => nrel_main_idtf:
+                [Прим. (*Основного идентификатора*)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (*
+                    -> rrel_example:
+                        "file://png/nrel_subtask.png";;
+                *);;
+        *);;
