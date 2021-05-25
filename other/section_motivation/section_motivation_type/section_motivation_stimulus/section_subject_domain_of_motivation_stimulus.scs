@@ -1,7 +1,5 @@
 section_subject_domain_of_motivation_stimulus
 
-    <= nrel_inclusion: section_subject_domain_of_motivation_type;
-
     => nrel_main_idtf:
         [Раздел. Предметная область стимула мотивации]
         (*<-lang_ru;;*);

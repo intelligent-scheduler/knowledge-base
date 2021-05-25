@@ -1,7 +1,5 @@
 concept_motivation
 
-    <= nrel_inclusion: section_subject_domain_of_motivation;
-
     => nrel_main_idtf: 
         [мотивация]
         (*<-lang_ru;;*);
@@ -25,7 +23,7 @@ concept_motivation
 
         <= nrel_using_constants: ...
             (*
-                -> ui_user;;
+                -> subject;;
             *);;
     *);
 

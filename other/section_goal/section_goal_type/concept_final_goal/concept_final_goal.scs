@@ -1,6 +1,6 @@
 concept_final_goal
 
-    <= nrel_inclusion: section_subject_domain_of_goal_type;
+    <= nrel_inclusion: nrel_result;
 
     => nrel_main_idtf: 
         [конечная цель]

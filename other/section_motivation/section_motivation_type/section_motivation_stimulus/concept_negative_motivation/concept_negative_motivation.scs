@@ -1,6 +1,7 @@
 concept_negative_motivation
 
-    <= nrel_inclusion: section_subject_domain_of_motivation_stimulus;
+    <= nrel_inclusion: concept_motivation;
+    concept_motivation_type;
 
     => nrel_main_idtf: 
         [отрицательная мотивация]

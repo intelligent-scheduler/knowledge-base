@@ -1,6 +1,6 @@
 concept_specificity
 
-    <= nrel_inclusion: section_subject_domain_of_goal_characteristic;
+    <= nrel_inclusion: concept_goal_characteristic;
     
     => nrel_main_idtf:
         [определённость]
@@ -46,7 +46,7 @@ concept_specificity
 
         <= nrel_using_constants: ...
             (*
-                -> concept_goal;;
+                -> nrel_result;;
             *);;
     *);
 

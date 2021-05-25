@@ -16,7 +16,6 @@
     subject_domain_of_intelligent_scheduler                     <- subject_domain;; // Предметная область интеллектуального планировщика
     subject_domain_of_tasks                                     <- subject_domain;; // Предметная область задач
     subject_domain_of_application                               <- subject_domain;; // Предметная область приложения "Интеллектуальный планировщик"
-    subject_domain_of_goal                                      <- subject_domain;; // Предметная область цели
     subject_domain_of_goal_type                                 <- subject_domain;; // Предметная область вида цели
     subject_domain_of_goal_characteristic                       <- subject_domain;; // Предметная область характеристики цели
     subject_domain_of_goal_setting                              <- subject_domain;; // Предметная область постановки цели

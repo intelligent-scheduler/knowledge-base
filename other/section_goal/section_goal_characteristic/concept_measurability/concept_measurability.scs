@@ -1,6 +1,6 @@
 concept_measurability
 
-    <= nrel_inclusion: section_subject_domain_of_goal_characteristic;
+    <= nrel_inclusion: concept_goal_characteristic;
     
     => nrel_main_idtf:
         [измеримость]
@@ -46,6 +46,6 @@ concept_measurability
 
         <= nrel_using_constants: ...
             (*
-                -> ui_user;;
+                -> subject;;
             *);;
     *);;

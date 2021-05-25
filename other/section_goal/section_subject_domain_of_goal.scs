@@ -1,5 +1,7 @@
 section_subject_domain_of_goal
 
+    <- non_atomic_section;
+
     => nrel_main_idtf:
         [Раздел. Предметная область цели]
         (*<-lang_ru;;*);
@@ -8,7 +10,7 @@ section_subject_domain_of_goal
     
     -> rrel_key_sc_element:
         subject_domain_of_goal;
-        concept_goal;
+        nrel_result;
 
     <= nrel_section_decomposition: {
         section_subject_domain_of_goal_characteristic;
@@ -27,6 +29,8 @@ section_subject_domain_of_goal
                 [Subject domain of goal]
                 (*<-lang_en;;*);
 
+            -> rrel_maximum_studied_object_class: nrel_result; //ims
+
             -> rrel_minimum_studied_object_class:
                 concept_goal_setting;
                 concept_direct_goal_setting;
@@ -37,8 +41,5 @@ section_subject_domain_of_goal
                 concept_measurability;
                 concept_specificity;
                 concept_final_goal;
-                concept_intermediate_goal;
-
-            -> rrel_maximum_studied_object_class:
-                concept_goal;;
+                concept_intermediate_goal;;
     *];;

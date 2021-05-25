@@ -1,6 +1,4 @@
 concept_goal_characteristic
-
-    <= nrel_inclusion: section_subject_domain_of_goal_characteristic;
     
     => nrel_main_idtf:
         [характеристика цели]
@@ -41,8 +39,13 @@ concept_goal_characteristic
 
         <= nrel_using_constants: ...
             (*
-                -> concept_goal;;
+                -> subject;;
+                -> nrel_result;;
                 -> concept_motivation;;
                 -> concept_completion;;
+                -> concept_difficulty;;
+                -> concept_measurability;;
+                -> concept_specificity;;
+                -> concept_importance;;
             *);;
     *);;
