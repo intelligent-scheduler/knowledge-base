@@ -1,0 +1,49 @@
+nrel_intelligent_functionality
+
+    <- norole_relation;
+
+    <- asymmetric_relation;
+    <- transitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    <= nrel_inclusion: nrel_functionality;
+
+    => nrel_first_domain: concept_application;
+    => nrel_second_domain: concept_function;
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    concept_application;
+                    concept_function
+                };;
+        *);
+
+    => nrel_main_idtf:
+        [интеллектуальный функционал* ]
+        (*<-lang_ru;;*);
+        [intelligent functionality* ]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(интеллектуального функционала)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_nrel_intelligent_functionality.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_application;;
+                    -> concept_function;;
+                *);;
+        *);;
