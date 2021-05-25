@@ -1,0 +1,52 @@
+concept_intellection
+
+    <= nrel_inclusion: concept_human;
+
+    => nrel_main_idtf:
+        [Интеллект]
+        (*<-lang_ru;;*);
+        [Intellection]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [Интеллект]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Интеллект)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_intellection.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_cognition;; 
+                    -> concept_problem;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Интеллект)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_intellection.png";; 
+                *);;
+        *);;
+
+    

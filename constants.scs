@@ -32,6 +32,13 @@
     concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
     concept_function                                            <- sc_node_not_relation;; // Функция
     concept_element                                             <- sc_node_not_relation;; // Элемент
+    concept_organism                                            <- sc_node_not_relation;; // Организм
+    concept_organ                                               <- sc_node_not_relation;; // Орган
+    concept_computer                                            <- sc_node_not_relation;; // Компьютер
+    concept_creature                                            <- sc_node_not_relation;; // Существо
+    concept_intellection                                        <- sc_node_not_relation;; // Интеллект
+    concept_speech                                              <- sc_node_not_relation;; // Речь
+    concept_animal                                              <- sc_node_not_relation;; // Животное
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
@@ -53,14 +60,17 @@
     concept_avenue                                              <- sc_node_not_relation;; // Проспект
     concept_district                                            <- sc_node_not_relation;; // Район
     concept_appartment                                          <- sc_node_not_relation;; // Квартира
+    concept_mechanism                                           <- sc_node_not_relation;; // Механизм
+    concept_material                                            <- sc_node_not_relation;; // Материал, ткань
+    concept_community                                           <- sc_node_not_relation;; // Общность
+    concept_cognition                                           <- sc_node_not_relation;; // Познание
+    concept_problem                                             <- sc_node_not_relation;; // Проблем
+
     
-    concept_organism                                            <- sc_node_not_relation;; // Организм
-    concept_organ                                               <- sc_node_not_relation;; // Орган
-    concept_mechsnism                                           <- sc_node_not_relation;; // Механизм
-    concept_computer                                            <- sc_node_not_relation;; // Компьютер
-    concept_creature                                            <- sc_node_not_relation;; // Существо
-    concept_intellection                                        <- sc_node_not_relation;; // Интеллект
-    concept_speech                                              <- sc_node_not_relation;; // Речь
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи
+    nrel_feel                                                   <- sc_node_norole_relation;; // Чувствовать
+    nrel_transformation                                         <- sc_node_norole_relation;; // Изменять, трансформировать
+    nrel_speak                                                  <- sc_node_norole_relation;; // Говорить
+    nrel_sequencel                                              <- sc_node_norole_relation;; // Последовательность

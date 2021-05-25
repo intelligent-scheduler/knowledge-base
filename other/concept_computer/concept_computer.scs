@@ -1,0 +1,54 @@
+concept_computer
+
+    <= nrel_inclusion: concept_device;
+
+    => nrel_main_idtf:
+        [Компьютер]
+        (*<-lang_ru;;*);
+        [Computer]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [Компьютер]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Компьютер)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_computer.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> logical_operation;; 
+                    -> nrel_sequencel;;
+                    -> concept_device;;
+                    -> _system;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Компьютер)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_computer.png";; 
+                *);;
+        *);;
+
+    
