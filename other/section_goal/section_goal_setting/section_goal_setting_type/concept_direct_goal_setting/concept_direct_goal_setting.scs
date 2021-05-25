@@ -1,0 +1,53 @@
+concept_direct_goal_setting
+
+    <= nrel_inclusion: section_subject_domain_of_goal_setting_type;
+    
+    => nrel_main_idtf:
+        [прямая постановка цели]
+        (*<- lang_ru;;*);
+        [direct goal setting]
+        (* <- lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+
+        <= nrel_sc_text_translation: ... 
+        (* 
+            -> rrel_example: 
+                "file://html/definition_concept_direct_goal_setting.html" 
+                (*<-lang_ru;;*);; 
+        *);;
+
+        => nrel_main_idtf: 
+            [Опр.(Прямая постановка цели)] 
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_goal;;
+                -> concept_completion;;
+            *);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- statement;;
+
+        <= nrel_sc_text_translation: ...
+            (* 
+                -> rrel_example:
+                    "file://html/statement_concept_direct_goal_setting.html"
+                    (*<-lang_ru;;*);;
+            *);;
+
+        => nrel_main_idtf: 
+            [Утв.(О прямой постановке цели)]
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_goal;;
+                -> concept_goal_characteristic;;
+            *);;
+    *);;

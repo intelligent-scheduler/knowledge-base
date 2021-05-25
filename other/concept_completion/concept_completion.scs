@@ -1,0 +1,66 @@
+concept_completion
+
+    => nrel_main_idtf: 
+        [выполнение]
+        (*<-lang_ru;;*);
+        [completion]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+
+        <= nrel_sc_text_translation: ... 
+        (* 
+            -> rrel_example: 
+                "file://html/definition_concept_completion.html"
+                (*<-lang_ru;;*);; 
+        *);;
+
+        => nrel_main_idtf: 
+            [Опр.(Выполнение)] 
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+                (*
+                    -> concept_goal;;
+                *);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- statement;;
+
+        <= nrel_sc_text_translation: ...
+            (* 
+                -> rrel_example:
+                    "file://html/statement_concept_completion.html"
+                    (*<-lang_ru;;*);;
+            *);;
+
+        => nrel_main_idtf: 
+            [Утв.(О выполнении)]
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> ui_user;;
+                -> concept_goal;;
+                -> concept_need;;
+            *);;
+    *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Выполнение)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://images/illustration_concept_completion.jpg";; 
+                *);;
+        *);;

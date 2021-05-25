@@ -1,0 +1,38 @@
+section_subject_domain_of_goal_setting
+
+    <= nrel_inclusion: section_subject_domain_of_goal;
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область постановки цели]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of goal setting]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_goal_setting;
+        concept_goal_setting;
+
+    <= nrel_section_decomposition: {
+        section_subject_domain_of_goal_setting_type
+    };;
+
+    section_subject_domain_of_goal_setting = [*
+        subject_domain_of_goal_setting
+
+            <- structure;
+
+            <= nrel_private_subject_domain: subject_domain_of_goal;
+
+            => nrel_main_idtf:
+                [Предметная область постановки цели]
+                (*<-lang_ru;;*);
+                [Subject domain of goal setting]
+                (*<-lang_en;;*);
+
+            -> rrel_minimum_studied_object_class:
+                concept_direct_goal_setting;
+                concept_indirect_goal_setting;
+
+            -> rrel_maximum_studied_object_class:
+                concept_goal_setting;;
+    *];;

@@ -1,0 +1,30 @@
+concept_positive_motivation
+
+    <= nrel_inclusion: section_subject_domain_of_motivation_stimulus;
+
+    => nrel_main_idtf: 
+        [положительная мотивация]
+        (*<-lang_ru;;*);
+        [positive motivation]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+
+        <= nrel_sc_text_translation: ... 
+        (* 
+            -> rrel_example: 
+                "file://html/definition_concept_positive_motivation.html" 
+                (*<-lang_ru;;*);; 
+        *);;
+
+        => nrel_main_idtf: 
+            [Опр.(Положительная мотивация)] 
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_motivation;;
+            *);;
+    *);;
