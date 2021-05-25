@@ -1,0 +1,46 @@
+concept_map_label
+
+    => nrel_main_idtf:
+        [метка на карте]
+        (*<-lang_ru;;*);
+        [map label]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Метка на карте)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_map_label.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_coordinates;;
+                    -> concept_city;;
+                    -> concept_district;;
+                    -> concept_residential_building;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Метка на карте)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_map_label.png";; 
+                *);;
+        *);;
