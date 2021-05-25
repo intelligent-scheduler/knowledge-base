@@ -1,0 +1,32 @@
+section_subject_domain_of_motivation_source
+
+    <= nrel_inclusion: section_subject_domain_of_motivation_type;
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область источника мотивации]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of motivation source]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_motivation_source;
+        concept_internal_motivation;
+        concept_external_motivation;;
+
+    section_subject_domain_of_motivation_source = [*
+        subject_domain_of_motivation_source
+
+            <- structure;
+
+            <= nrel_private_subject_domain: subject_domain_of_motivation_type;
+
+            => nrel_main_idtf:
+                [Предметная область источника мотивации]
+                (*<-lang_ru;;*);
+                [Subject domain of motivation source]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class:
+                concept_internal_motivation;
+                concept_external_motivation;;
+    *];;

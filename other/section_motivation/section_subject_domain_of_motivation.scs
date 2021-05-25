@@ -1,0 +1,36 @@
+section_subject_domain_of_motivation
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область мотивации]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of motivation]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_motivation;
+        concept_motivation;
+
+    <= nrel_section_decomposition: {
+        section_subject_domain_of_motivation_type
+    };;
+
+    section_subject_domain_of_motivation = [*
+        subject_domain_of_motivation
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область мотивации]
+                (*<-lang_ru;;*);
+                [Subject domain of motivation]
+                (*<-lang_en;;*);
+
+            -> rrel_minimum_studied_object_class:
+                concept_internal_motivation;
+                concept_external_motivation;
+                concept_positive_motivation;
+                concept_negative_motivation;
+
+            -> rrel_maximum_studied_object_class:
+                concept_motivation;;
+    *];;

@@ -1,0 +1,32 @@
+section_subject_domain_of_goal_type
+
+    <= nrel_inclusion: section_subject_domain_of_goal;
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область типа цели]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of goal type]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_goal_type;
+        concept_final_goal;
+        concept_intermediate_goal;;
+
+    section_subject_domain_of_goal_type = [*
+        subject_domain_of_goal_type
+
+            <- structure;
+
+            <= nrel_private_subject_domain: subject_domain_of_goal;
+
+            => nrel_main_idtf:
+                [Предметная область типа цели]
+                (*<-lang_ru;;*);
+                [Subject domain of goal type]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class:
+                concept_intermediate_goal;
+                concept_final_goal;;
+    *];;

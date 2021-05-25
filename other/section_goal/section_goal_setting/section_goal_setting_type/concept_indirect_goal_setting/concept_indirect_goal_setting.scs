@@ -1,0 +1,55 @@
+concept_indirect_goal_setting
+
+    <= nrel_inclusion: section_subject_domain_of_goal_setting_type;
+    
+    => nrel_main_idtf:
+        [опосредованная постановка цели]
+        (*<- lang_ru;;*);
+        [indirect goal setting]
+        (* <- lang_en;;*);
+
+    => nrel_idtf:
+        [непрямая постановка цели]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+
+        <= nrel_sc_text_translation: ... 
+        (* 
+            -> rrel_example: 
+                "file://html/definition_concept_indirect_goal_setting.html" 
+                (*<-lang_ru;;*);; 
+        *);;
+
+        => nrel_main_idtf: 
+            [Опр.(Опосредованная постановка цели)] 
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_goal;;
+            *);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- statement;;
+
+        <= nrel_sc_text_translation: ...
+            (* 
+                -> rrel_example:
+                    "file://html/statement_concept_indirect_goal_setting.html"
+                    (*<-lang_ru;;*);;
+            *);;
+
+        => nrel_main_idtf: 
+            [Утв.(Об опосредованной постановке цели)]
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_goal;;
+            *);;
+    *);;

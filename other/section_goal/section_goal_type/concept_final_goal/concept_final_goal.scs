@@ -1,0 +1,52 @@
+concept_final_goal
+
+    <= nrel_inclusion: section_subject_domain_of_goal_type;
+
+    => nrel_main_idtf: 
+        [конечная цель]
+        (*<-lang_ru;;*);
+        [final goal]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+
+        <= nrel_sc_text_translation: ... 
+        (* 
+            -> rrel_example: 
+                "file://html/definition_concept_final_goal.html" 
+                (*<-lang_ru;;*);; 
+        *);;
+
+        => nrel_main_idtf: 
+            [Опр.(Конечная цель)] 
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_goal;;
+            *);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- statement;;
+
+        <= nrel_sc_text_translation: ...
+            (* 
+                -> rrel_example:
+                    "file://html/statement_concept_final_goal.html"
+                    (*<-lang_ru;;*);;
+            *);;
+
+        => nrel_main_idtf: 
+            [Утв.(О конечной цели)]
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_goal;;
+                -> concept_completion;;
+            *);;
+    *);;

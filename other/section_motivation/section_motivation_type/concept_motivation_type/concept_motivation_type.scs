@@ -1,0 +1,49 @@
+concept_motivation_type
+
+    <= nrel_inclusion: section_subject_domain_of_motivation_type;
+
+    => nrel_main_idtf: 
+        [вид мотивации]
+        (*<-lang_ru;;*);
+        [motivation type]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- statement;;
+
+        <= nrel_sc_text_translation: ...
+            (* 
+                -> rrel_example:
+                    "file://html/statement_concept_motivation_type.html"
+                    (*<-lang_ru;;*);;
+            *);;
+
+        => nrel_main_idtf: 
+            [Утв.(О виде мотивации)]
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_motivation;;
+                -> concept_positive_motivation;;
+                -> concept_negative_motivation;;
+                -> concept_internal_motivation;;
+                -> concept_external_motivation;;
+            *);;
+    *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Вид мотивации)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://images/illustration_concept_motivation_type.jpg";; 
+                *);;
+        *);;

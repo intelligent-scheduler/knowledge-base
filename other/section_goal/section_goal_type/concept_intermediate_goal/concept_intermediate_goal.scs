@@ -1,0 +1,54 @@
+concept_intermediate_goal
+
+    <= nrel_inclusion: section_subject_domain_of_goal_type;
+
+    => nrel_main_idtf: 
+        [промежуточная цель]
+        (*<-lang_ru;;*);
+        [intermediate goal]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- definition;;
+
+        <= nrel_sc_text_translation: ... 
+        (* 
+            -> rrel_example: 
+                "file://html/definition_concept_intermediate_goal.html" 
+                (*<-lang_ru;;*);; 
+        *);;
+
+        => nrel_main_idtf: 
+            [Опр.(Промежуточная цель)] 
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> nrel_object;;
+                -> concept_goal;;
+            *);;
+    *);
+
+    <- rrel_key_sc_element: ...
+    (*
+        <- statement;;
+
+        <= nrel_sc_text_translation: ...
+            (* 
+                -> rrel_example:
+                    "file://html/statement_concept_intermediate_goal.html"
+                    (*<-lang_ru;;*);;
+            *);;
+
+        => nrel_main_idtf: 
+            [Утв.(О промежуточной цели)]
+            (*<-lang_ru;;*);;
+
+        <= nrel_using_constants: ...
+            (*
+                -> concept_direct_goal_setting;;
+                -> concept_indirect_goal_setting;;
+                -> concept_final_goal;;
+            *);;
+    *);;

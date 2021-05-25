@@ -1,0 +1,41 @@
+section_subject_domain_of_motivation_type
+
+    <= nrel_inclusion: section_subject_domain_of_motivation;
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область вида мотивации]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of motivation type]
+        (*<-lang_en;;*);
+
+    -> rrel_key_sc_element:
+        subject_domain_of_motivation_type;
+        concept_motivation_type;
+
+    <= nrel_section_decomposition: {
+        section_subject_domain_of_motivation_stimulus;
+        section_subject_domain_of_motivation_source
+    };;
+
+    section_subject_domain_of_motivation_type = [*
+        subject_domain_of_motivation_type
+
+            <- structure;
+
+            <= nrel_private_subject_domain: subject_domain_of_motivation;
+
+            => nrel_main_idtf:
+                [Предметная область вида мотивации]
+                (*<-lang_ru;;*);
+                [Subject domain of motivation type]
+                (*<-lang_en;;*);
+
+            -> rrel_minimum_studied_object_class:
+                concept_positive_motivation;
+                concept_negative_motivation;
+                concept_internal_motivation;
+                concept_external_motivation;
+
+            -> rrel_maximum_studied_object_class:
+                concept_motivation_type;;
+    *];;
