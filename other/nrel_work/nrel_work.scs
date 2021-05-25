@@ -1,0 +1,57 @@
+nrel_work
+
+    <- asymmetric_relation;
+    <- transitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    <= nrel_inclusion: concept_task_relation;
+
+    => nrel_first_domain: concept_application;
+    => nrel_second_domain: action; //ims
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    concept_application;
+                    action
+                };;
+        *);
+
+    <= nrel_inclusion: concept_task_relation ;
+
+    => nrel_main_idtf:
+        [Работа]
+        (*<-lang_ru;;*);
+        [Work]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [Работа]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Работа)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/nrel_work.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_organism;; 
+                    -> concept_community;;
+                    -> concept_mechanism;; 
+                    -> _system;;//ims
+                *);;
+        *);;
+
+    

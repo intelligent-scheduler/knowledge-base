@@ -1,6 +1,24 @@
-concept_functionality
+nrel_functionality
+  
 
-    <= nrel_inclusion: concept_software;
+    <- asymmetric_relation;
+    <- transitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    <= nrel_inclusion: concept_task_relation;
+
+    => nrel_first_domain: concept_application;
+    => nrel_second_domain: action; //ims
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    concept_application;
+                    action
+                };;
+        *);
+
 
     => nrel_main_idtf:
         [Функционал]
@@ -23,7 +41,7 @@ concept_functionality
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/concept_functionality.html"
+                        "file://html/nrel_functionality.html"
                         (*<-lang_ru;;*);; 
                 *);;
 

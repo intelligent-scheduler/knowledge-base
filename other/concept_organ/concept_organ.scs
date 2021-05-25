@@ -1,0 +1,52 @@
+concept_organ
+
+    <= nrel_inclusion: concept_creature ;
+
+    => nrel_main_idtf:
+        [Орган]
+        (*<-lang_ru;;*);
+        [Organ]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [Орган]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Орган)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_organ.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_material;; 
+                    -> concept_function;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Орган)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_organ.png";; 
+                *);;
+        *);;
+
+    

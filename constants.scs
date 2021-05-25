@@ -27,7 +27,6 @@
     concept_country                                             <- sc_node_not_relation;; // Страна
     concept_square                                              <- sc_node_not_relation;; // Городская площадь
     concept_software                                            <- sc_node_not_relation;; // Программное обеспечение
-    concept_functionality                                       <- sc_node_not_relation;; // Функционал
     concept_device                                              <- sc_node_not_relation;; // Устройство
     concept_human                                               <- sc_node_not_relation;; // Человек
     concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
@@ -42,7 +41,8 @@
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время выполнения задачи
     nrel_start_task_completion                                  <- sc_node_norole_relation;; // Начало выполнения задачи 
     nrel_end_of_task_completion                                 <- sc_node_norole_relation;; // Завершение выполнения задачи
-
+    nrel_work                                                   <- sc_node_norole_relation;; // Работа
+    nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
 //wanted
     //concepts
     concept_text                                                <- sc_node_not_relation;; // Текст
@@ -53,6 +53,14 @@
     concept_avenue                                              <- sc_node_not_relation;; // Проспект
     concept_district                                            <- sc_node_not_relation;; // Район
     concept_appartment                                          <- sc_node_not_relation;; // Квартира
+    
+    concept_organism                                            <- sc_node_not_relation;; // Организм
+    concept_organ                                               <- sc_node_not_relation;; // Орган
+    concept_mechsnism                                           <- sc_node_not_relation;; // Механизм
+    concept_computer                                            <- sc_node_not_relation;; // Компьютер
+    concept_creature                                            <- sc_node_not_relation;; // Существо
+    concept_intellection                                        <- sc_node_not_relation;; // Интеллект
+    concept_speech                                              <- sc_node_not_relation;; // Речь
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи

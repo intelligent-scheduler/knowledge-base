@@ -1,15 +1,15 @@
-concept_function
+concept_creature
 
-    <= nrel_inclusion: concept_invention ;
+    <= nrel_inclusion: concept_organism;
 
     => nrel_main_idtf:
-        [Функция]
+        [Существо]
         (*<-lang_ru;;*);
-        [function]
+        [Creature]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [функция]
+        [Существо]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...
@@ -17,23 +17,20 @@ concept_function
             <- definition;;
 
             => nrel_main_idtf:
-                [Опр.(Функция)]
+                [Опр.(Существо)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/concept_function.html"
+                        "file://html/concept_creature.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constants: ...
                 (*
-                    -> concept_organ;; 
-                    -> nrel_work;;
                     -> concept_organism;; 
-                    -> concept_device;;
+                    -> concept_animal;;
                 *);;
         *);;
-
     

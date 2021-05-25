@@ -30,7 +30,7 @@ concept_software
             <= nrel_using_constants: ...
                 (*
                     -> concept_programm;;
-                    -> concept_compucter;;
+                    -> concept_computer;;
                     -> nrel_manage;;
                 *);;
         *);
