@@ -25,6 +25,7 @@
     concept_residential_building                                <- sc_node_not_relation;; // Жилой дом
     concept_country                                             <- sc_node_not_relation;; // Страна
     concept_square                                              <- sc_node_not_relation;; // Городская площадь
+<<<<<<< HEAD
     concept_appartment                                          <- sc_node_not_relation;; // Квартира
     concept_room                                                <- sc_node_not_relation;; // Комната
     concept_road                                                <- sc_node_not_relation;; // Дорога
@@ -32,6 +33,9 @@
     concept_boulevar                                            <- sc_node_not_relation;; // Бульвар
     concept_avenue                                              <- sc_node_not_relation;; // Проспект
     concept_district                                            <- sc_node_not_relation;; // Район
+=======
+    concept_map_of_task_locations                               <- sc_node_not_relation;; // Карта местоположений всех пользовательских задач
+>>>>>>> start
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
