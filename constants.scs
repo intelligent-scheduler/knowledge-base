@@ -82,6 +82,13 @@
     concept_completion                                          <- sc_node_not_relation;; // Выполнение
     concept_efficiency                                          <- sc_node_not_relation;; // Эффективность
     
+    concept_task_relation                                       <- sc_node_not_relation;;
+    concept_intelligent_scheduler                               <- sc_node_not_relation;;
+    concept_property                                            <- sc_node_not_relation;;
+    concept_task_property                                       <- sc_node_not_relation;;
+    concept_user_task_template                                  <- sc_node_not_relation;; // Шаблон пользовательской задачи
+    concept_to_do_list                                          <- sc_node_not_relation;; // To-Do list (Список дел)
+    concept_shopping_list                                       <- sc_node_not_relation;; // Список покупок           
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
@@ -116,11 +123,16 @@
     concept_community                                           <- sc_node_not_relation;; // Общность
     concept_cognition                                           <- sc_node_not_relation;; // Познание
     concept_problem                                             <- sc_node_not_relation;; // Проблем
+    concept_empty_task                                          <- sc_node_not_relation;; // Пустая задача
+    concept_empty_property                                      <- sc_node_not_relation;; // Пустое свойство
+    concept_intelligent_scheduler_interface                     <- sc_node_not_relation;; // Интерфейс Интеллектуального планировщика
+    concept_action_purchase                                     <- sc_node_not_relation;; // Купить   
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_part_of_building                                       <- sc_node_norole_relation;; // Часть строения
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     
+>>>>>>> add user task template and additions to it + fix errors
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи

@@ -52,7 +52,7 @@ nrel_end_of_task_completion
                     -> task;; //ims
                     -> completion;; //ims
                 *);;
-        *);;
+        *);
 
     <- rrel_key_sc_element: ...
         (*

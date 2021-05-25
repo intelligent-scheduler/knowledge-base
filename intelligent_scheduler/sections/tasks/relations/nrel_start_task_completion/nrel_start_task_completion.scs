@@ -53,7 +53,7 @@ nrel_start_task_completion
                     -> task;; //ims
                     -> begin;; //ims
                 *);;
-        *);;
+        *);
 
     <- rrel_key_sc_element: ... 
         (*
