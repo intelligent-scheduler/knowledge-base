@@ -50,6 +50,7 @@
     nrel_end_of_task_completion                                 <- sc_node_norole_relation;; // Завершение выполнения задачи
     nrel_work                                                   <- sc_node_norole_relation;; // Работа
     nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
+
 //wanted
     //concepts
     concept_text                                                <- sc_node_not_relation;; // Текст
