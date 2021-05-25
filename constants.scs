@@ -56,6 +56,7 @@
     //concept_device                                              <- sc_node_not_relation;; // Устройство
     //concept_human                                               <- sc_node_not_relation;; // Человек
     concept_address                                             <- sc_node_not_relation;; // Адрес
+    concept_function_set                                        <- sc_node_not_relation;; // Набор возможностей
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи
