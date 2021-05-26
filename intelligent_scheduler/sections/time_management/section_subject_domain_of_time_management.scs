@@ -15,7 +15,7 @@ section_subject_domain_of_time_management
         concept_abcd_analysis;
         concept_eisenhower_matrix;;
 
-    section_subject_domain_of_tasks  = [*
+    section_subject_domain_of_time_management  = [*
         subject_domain_of_time_management
 
             <- structure;
