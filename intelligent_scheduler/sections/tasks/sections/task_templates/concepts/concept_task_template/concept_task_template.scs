@@ -1,16 +1,16 @@
-concept_user_task_template
+concept_task_template
 
   <- task; //ims
 
   => nrel_main_idtf: 
-      [шаблон пользовательской задачи] (*<-lang_ru;;*);
-      [user task template] (*<-lang_en;;*);
+      [шаблон задачи] (*<-lang_ru;;*);
+      [task template] (*<-lang_en;;*);
 
 
   <- rrel_key_sc_element: ... (*
       <- definition;;
       => nrel_main_idtf:
-        [Опр. (Шаблон пользовательской задачи)] (* <- lang_ru;; *);;
+        [Опр. (Шаблон задачи)] (* <- lang_ru;; *);;
       => nrel_using_constants: ...
       (*
         -> task;; //ims
@@ -30,7 +30,7 @@ concept_user_task_template
         [Утв.(Шаблон пользовательской задачи)] (* <- lang_ru;; *);;
       => nrel_using_constants: ...
           (*
-            -> ui_user;; //ims 
+            -> subject;; //ims 
           *);;
       <= nrel_sc_text_translation: ... (*
         -> rrel_example:
