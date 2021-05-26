@@ -3,7 +3,6 @@
     section_subject_domain_of_intelligent_scheduler             <- non_atomic_section;; // Раздел. Предметная область интеллектуального планировщика
     section_subject_domain_of_tasks                             <- non_atomic_section;; // Раздел. Предметная область задач
     section_subject_domain_of_application                       <- non_atomic_section;; // Раздел. Предметная область приложения "Интеллектуальный планировщик"
-<<<<<<< HEAD
     section_subject_domain_of_goal                              <- non_atomic_section;; // Раздел. Предметная область цели
     section_subject_domain_of_goal_type                         <- non_atomic_section;; // Раздел. Предметная область вида цели
     section_subject_domain_of_goal_characteristic               <- non_atomic_section;; // Раздел. Предметная область характеристики цели
@@ -13,14 +12,12 @@
     section_subject_domain_of_motivation_type                   <- non_atomic_section;; // Раздел. Предметная область вида мотивации
     section_subject_domain_of_motivation_source                 <- non_atomic_section;; // Раздел. Предметная область источника мотивации
     section_subject_domain_of_motivation_stimulus               <- non_atomic_section;; // Раздел. Предметная область стимула мотивации
-=======
->>>>>>> add concepts: ABCD and Eisenhower, time_management, add nrels: ABCD and Eisenhower, update section_time_management and constants, add other: mathematical_object and matrix
     section_subject_domain_of_time_management                   <- non_atomic_section;; // Раздел. Предметная область управления временем   
+
     //subject domains
     subject_domain_of_intelligent_scheduler                     <- subject_domain;; // Предметная область интеллектуального планировщика
     subject_domain_of_tasks                                     <- subject_domain;; // Предметная область задач
     subject_domain_of_application                               <- subject_domain;; // Предметная область приложения "Интеллектуальный планировщик"
-<<<<<<< HEAD
     subject_domain_of_goal_type                                 <- subject_domain;; // Предметная область вида цели
     subject_domain_of_goal_characteristic                       <- subject_domain;; // Предметная область характеристики цели
     subject_domain_of_goal_setting                              <- subject_domain;; // Предметная область постановки цели
@@ -29,9 +26,8 @@
     subject_domain_of_motivation_type                           <- subject_domain;; // Предметная область вида мотивации
     subject_domain_of_motivation_source                         <- subject_domain;; // Предметная область источника мотивации
     subject_domain_of_motivation_stimulus                       <- subject_domain;; // Предметная область стимула мотивации
-=======
->>>>>>> add concepts: ABCD and Eisenhower, time_management, add nrels: ABCD and Eisenhower, update section_time_management and constants, add other: mathematical_object and matrix
     subject_domain_of_time_management                           <- subject_domain;; // Предметная область управления временем
+
     //concepts
     concept_task_relation                                       <- sc_node_not_relation;; // Отношение на множестве задач
     concept_intelligent_scheduler                               <- sc_node_not_relation;; // Интеллектуальный планировщик
@@ -104,6 +100,7 @@
     concept_mathematical_object                                 <- sc_node_not_relation;; // Математический объект
     concept_abcd_analysis                                       <- sc_node_not_relation;; // ABCD-анализ
     concept_eisenhower_matrix                                   <- sc_node_not_relation;; // Матрица Эйзенхауэра
+
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
@@ -161,13 +158,10 @@
     concept_diagonal_matrix                                     <- sc_node_not_relation;; // Диагональная матрица
     concept_identity_matrix                                     <- sc_node_not_relation;; // Единичная матрица
     concept_orthogonal_matrix                                   <- sc_node_not_relation;; // Ортогональная матрица
-    //relations
-    nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
-    nrel_part_of_building                                       <- sc_node_norole_relation;; // Часть строения
-    nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
+    nrel_part_of_building                                       <- sc_node_norole_relation;; // Часть строения
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи
     nrel_feel                                                   <- sc_node_norole_relation;; // Чувствовать
     nrel_transformation                                         <- sc_node_norole_relation;; // Изменять, трансформировать
