@@ -1,0 +1,74 @@
+nrel_basic_language_unit
+
+    <- asymmetric_relation;
+    <- antitransitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    <= nrel_inclusion: norole_relation;
+
+    => nrel_first_domain: concept_language;
+    => nrel_second_domain: material_entity;
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    concept_language;
+                    material_entity
+                };;
+        *);
+
+    => nrel_main_idtf:
+        [базовый знак языка]
+        (*<-lang_ru;;*);
+        [базовый знак языка]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [базовый знак языка]
+        (*<- lang_ru;;*);
+        
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Базовый знак языка)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_nrel_basic_language_unit.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> material_entity;;
+                    -> rrel_denotatum;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн.(Базового знака языка)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/explanation_nrel_basic_language_unit.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_word;;
+                    -> concept_sentence;;
+                *);;
+        *);;
+ 

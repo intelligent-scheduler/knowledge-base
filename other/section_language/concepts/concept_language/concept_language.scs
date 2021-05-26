@@ -1,0 +1,36 @@
+concept_language
+
+    <= nrel_inclusion: concept_sign_system; //ims
+
+    => nrel_main_idtf:
+        [язык]
+        (*<-lang_ru;;*);
+        [language]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [Язык]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Язык)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_language.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> nrel_basic_language_unit;;
+                    -> material_entity;; //ims
+                    -> relation;; //ims
+                *);;
+        *);;
