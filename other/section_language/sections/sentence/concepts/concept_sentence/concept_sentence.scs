@@ -1,0 +1,74 @@
+concept_sentence
+
+    <= nrel_basic_language_unit: concept_language;
+
+    => nrel_main_idtf:
+        [предложение]
+        (*<-lang_ru;;*);
+        [sentence]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [единица языка]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Предложение)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_sentence.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_nrel_basic_language_unit;;
+                    -> concept_word;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(О предложении)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_concept_sentence.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_word;;
+                    -> concept_text;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн.(Предложения)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/explanation_concept_sentence.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+        *);;

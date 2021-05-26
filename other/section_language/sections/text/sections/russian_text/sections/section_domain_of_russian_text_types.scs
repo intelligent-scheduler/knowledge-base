@@ -1,0 +1,37 @@
+section_subject_domain_of_text
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область стилей русского текста]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of russian text styles]
+        (*<-lang_en;;*);
+
+    -> rrel_key_sc_element:
+        subject_domain_of_text_types;
+        concept_russian_description_text_type;
+        concept_russian_narrative_text_type;
+        concept_russian_reasoning_text_type;
+        concept_russian_text_types;
+
+    <= nrel_section_decomposition: {
+        concept_russian_description_text_type;
+        concept_russian_narrative_text_type;
+        concept_russian_reasoning_text_type
+    };;
+
+    section_subject_domain_of_text  = [*
+        subject_domain_of_text_types
+
+            <- structure;
+
+            <= nrel_private_subject_domain: section_subject_domain_of_russian_text;
+
+            => nrel_main_idtf:
+                [Предметная область стилей русского текста]
+                (*<-lang_ru;;*);
+                [Subject domain of russian text styles]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class: concept_russian_text_types;;
+    *];;
+    

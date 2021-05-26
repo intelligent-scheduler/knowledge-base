@@ -1,0 +1,58 @@
+concept_sign_system
+
+    <= nrel_inclusion: set; //ims
+
+    => nrel_main_idtf:
+        [знаковая система]
+        (*<-lang_ru;;*);
+        [sign system]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [Система знаков]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Знаковая система)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_sign_system.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> nrel_basic_language_unit;;
+                    -> material_entity;; //ims
+                    -> relation;; //ims
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн.(Знаковой системы)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/explanation_concept_sign_system.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_sign_system;;
+                    -> concept_language;;
+                *);;
+        *);;

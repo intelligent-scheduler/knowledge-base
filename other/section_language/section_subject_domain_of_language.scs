@@ -1,0 +1,41 @@
+section_subject_domain_of_language
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область языка]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of language]
+        (*<-lang_en;;*);
+
+    -> rrel_key_sc_element:
+        concept_language;
+        subject_domain_of_language;
+        concept_sign_system;
+        nrel_basic_language_unit;
+        rrel_denotatum;
+        nrel_language_representation;
+
+    <= nrel_section_decomposition: {
+        section_subject_domain_of_word;
+        section_subject_domain_of_text;
+        section_subject_domain_of_sentence
+    };;
+
+    section_subject_domain_of_words  = [*
+        subject_domain_of_language
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область языка]
+                (*<-lang_ru;;*);
+                [Subject domain of language]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class: concept_language;
+
+            -> rrel_explored_relation:
+                nrel_basic_language_unit;
+                rrel_denotatum;
+                nrel_language_representation;;               
+    *];;
+    

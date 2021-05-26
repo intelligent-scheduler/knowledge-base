@@ -1,0 +1,87 @@
+concept_russian_description_text_type
+
+    <- concept_russian_text_type;
+
+    => nrel_main_idtf:
+        [текст описание]
+        (*<-lang_ru;;*);
+        [description text]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [текст описание]
+        (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Текст описание)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_russian_description_text_type.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_text;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(О тексте описании)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_concept_russian_description_text_type.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_text;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн.(Текста описания)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/explanation_concept_russian_description_text_type.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+        *);
+    
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Текст описание)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/illustration_concept_russian_description_text_type.png";; 
+                *);;
+        *);;
+        

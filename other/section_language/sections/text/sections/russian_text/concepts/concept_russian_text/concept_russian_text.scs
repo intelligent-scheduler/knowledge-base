@@ -1,0 +1,15 @@
+concept_russian_text 
+
+    <- concept_text;
+
+    <= nrel_writen_in: concept_russian_language;
+
+    => nrel_main_idtf:
+        [текст на русском языке]
+        (*<-lang_ru;;*);
+        [russian text]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [текст на русском языке]
+        (*<-lang_ru;;*);;
