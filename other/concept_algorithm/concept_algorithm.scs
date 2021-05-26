@@ -1,15 +1,15 @@
-concept_computer
+concept_algorithm
 
-    <- nrel_inclusion: concept_device;
+    <- concept_tool;
 
     => nrel_main_idtf:
-        [компьютер]
+        [алгоритм]
         (*<-lang_ru;;*);
-        [computer]
+        [algorithm]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [Компьютер]
+        [алгоритм]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...
@@ -17,38 +17,42 @@ concept_computer
             <- definition;;
 
             => nrel_main_idtf:
-                [Опр.(Компьютер)]
+                [Опр.(Алгоритм)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/concept_computer.html"
+                        "file://html/concept_algorithm.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constants: ...
                 (*
                     -> logical_operation;; //ims
-                    -> nrel_sequencel;;
-                    -> concept_device;;
-                    -> _system;;//ims
+                    -> _system;; //ims
+                    -> _rules;; //ims
                 *);;
         *);
 
-    <- rrel_key_sc_element: ... 
+        <- rrel_key_sc_element: ...
         (*
-            <- illustration;;
+            <- statement;;
 
             => nrel_main_idtf:
-                [Рис.(Компьютер)]
+                [Утв.(Об алгоритме)]
                 (*<-lang_ru;;*);;
 
-            <= nrel_sc_text_translation: ... 
+            <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://png/concept_computer.png";; 
+                        "file://html/about_concept_algorithm.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> nrel_sequencel;; 
                 *);;
         *);;
 
-    
