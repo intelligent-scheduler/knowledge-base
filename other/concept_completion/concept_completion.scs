@@ -23,7 +23,7 @@ concept_completion
 
         <= nrel_using_constants: ...
                 (*
-                    -> concept_goal;;
+                    -> nrel_result;;
                 *);;
     *);
 
@@ -44,8 +44,8 @@ concept_completion
 
         <= nrel_using_constants: ...
             (*
-                -> ui_user;;
-                -> concept_goal;;
+                -> subject;;
+                -> nrel_result;;
                 -> concept_need;;
             *);;
     *);

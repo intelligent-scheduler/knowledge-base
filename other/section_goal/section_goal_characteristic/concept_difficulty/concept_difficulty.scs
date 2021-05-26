@@ -25,6 +25,7 @@ concept_difficulty
 
         <= nrel_using_constants: ...
                 (*
+                    -> nrel_result;;
                     -> concept_goal_characteristic;;
                 *);;
     *);
