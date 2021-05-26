@@ -1,0 +1,47 @@
+nrel_style_of_the_text
+
+    <- asymmetric_relation;
+    <- antitransitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    <= nrel_inclusion: norole_relation;
+
+    => nrel_first_domain: concept_text_style;
+    => nrel_second_domain: concept_text;
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    concept_text_style;
+                    concept_text
+                };;
+        *);
+
+    => nrel_main_idtf:
+        [стиль текста (отношение)]
+        (*<-lang_ru;;*);
+        [style of the text]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Стиль текста (отношение))]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_nrel_style_of_the_text.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> nrel_writen_in;;
+                    -> concept_text;;
+                *);;
+        *);;

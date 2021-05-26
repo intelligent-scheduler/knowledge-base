@@ -1,0 +1,63 @@
+concept_russian_reasoning_text_type
+
+    <- concept_russian_text_type;
+
+    => nrel_main_idtf:
+        [текст рассуждение]
+        (*<-lang_ru;;*);
+        [reasoning text]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [текст рассуждение]
+        (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Текст рассуждение)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_russian_reasoning_text_type.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн.(Текста рассуждения)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/explanation_concept_russian_reasoning_text_type.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+        *);
+    
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Текст рассуждение)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/illustration_concept_russian_reasoning_text_type.jpg";; 
+                *);;
+        *);;
+        

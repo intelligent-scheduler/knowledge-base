@@ -1,0 +1,60 @@
+concept_russian_text_style
+
+    <- concept_text_style;
+
+    => nrel_main_idtf:
+        [тип русского текста]
+        (*<-lang_ru;;*);
+        [russian text style]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [стиль русского текста]
+        (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Тип русского текста)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_russian_text_style.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_russian_language;;
+                    -> concept_russian_text;;
+                *);;
+        *);
+
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн.(Тип русского текста)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/explanation_concept_russian_text_style.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_russian_narrative_text_type;;
+                    -> concept_russian_description_text_type;;
+                    -> concept_russian_reasoning_text_type;;                    
+                    -> concept_russian_text_style;;
+                *);;
+        *);;
