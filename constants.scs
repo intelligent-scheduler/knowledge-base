@@ -42,6 +42,7 @@
     concept_residential_building                                <- sc_node_not_relation;; // Жилой дом
     concept_country                                             <- sc_node_not_relation;; // Страна
     concept_square                                              <- sc_node_not_relation;; // Городская площадь
+<<<<<<< HEAD
     concept_appartment                                          <- sc_node_not_relation;; // Квартира
     concept_room                                                <- sc_node_not_relation;; // Комната
     concept_road                                                <- sc_node_not_relation;; // Дорога
@@ -82,6 +83,8 @@
     concept_completion                                          <- sc_node_not_relation;; // Выполнение
     concept_efficiency                                          <- sc_node_not_relation;; // Эффективность
     
+=======
+>>>>>>> 3e8e6c767119db684022c4c02f38e22d189498ee
     concept_task_relation                                       <- sc_node_not_relation;;
     concept_intelligent_scheduler                               <- sc_node_not_relation;;
     concept_property                                            <- sc_node_not_relation;;
