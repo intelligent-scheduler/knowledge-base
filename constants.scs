@@ -33,6 +33,9 @@
     concept_user_task_template                                  <- sc_node_not_relation;; // Шаблон пользовательской задачи
     concept_to_do_list                                          <- sc_node_not_relation;; // To-Do list (Список дел)
     concept_shopping_list                                       <- sc_node_not_relation;; // Список покупок           
+    concept_user_task                                           <- sc_node_not_relation;; // Пользовательская задача
+    concept_empty_task                                          <- sc_node_not_relation;; // Пустая задача
+    concept_defined_task                                        <- sc_node_not_relation;; // Заданная задача
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
@@ -58,10 +61,11 @@
     concept_avenue                                              <- sc_node_not_relation;; // Проспект
     concept_district                                            <- sc_node_not_relation;; // Район
     concept_appartment                                          <- sc_node_not_relation;; // Квартира
-    concept_empty_task                                          <- sc_node_not_relation;; // Пустая задача
-    concept_empty_property                                      <- sc_node_not_relation;; // Пустое свойство
+    
     concept_intelligent_scheduler_interface                     <- sc_node_not_relation;; // Интерфейс Интеллектуального планировщика
     concept_action_purchase                                     <- sc_node_not_relation;; // Купить   
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи
+
+    

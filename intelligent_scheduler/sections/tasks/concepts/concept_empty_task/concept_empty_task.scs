@@ -1,0 +1,58 @@
+concept_empty_task 
+
+    <= nrel_inclusion: task; //ims
+
+    => nrel_main_idtf:
+        [пустая задача]
+        (*<-lang_ru;;*);
+        [empty task]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Задача)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_empty_task.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> task;; //ims
+                    -> nrel_task_property;;
+                    -> nrel_task_completion_time;;
+                    -> nrel_task_description;;
+                    -> nrel_task_place;;
+                    -> concept_completed_task;;
+                    -> concept_urgent_task;;
+                    -> concept_important_task;;  
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(О пустой и заданной задаче)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statemen_concept_empty_task.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_defined_task;;
+                *);;
+        *);;

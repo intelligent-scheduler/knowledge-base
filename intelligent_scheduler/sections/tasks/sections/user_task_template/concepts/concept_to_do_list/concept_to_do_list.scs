@@ -1,22 +1,64 @@
 concept_to_do_list
 
-<= concept_user_task_template;
+    <- concept_user_task_template;
 
-=> nrel_main_idtf: 
-    [to-do list] (*<-lang_en;;*); 
-    [cписок дел] (*<-lang_ru;;*);
+    => nrel_main_idtf: 
+        [to-do list] (*<-lang_en;;*); 
+        [cписок дел] (*<-lang_ru;;*);
 
-<- rrel_key_sc_element: ... (*
-    <- definition;;
-    => nrel_main_idtf:
-      [Опр. (To-Do List)] (* <- lang_ru;; *);;
-    => nrel_using_constants: ... (*
-        -> concept_user_task_template;;
-        -> nrel_subtask;;
-        -> concept_empty_task;;
-    *);;
-    <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        "file://html/definition_concept_to_do_list.html"(* <- lang_ru;; => nrel_format: format_html;;*);;
-    *);;
-*);;
+    <- rrel_key_sc_element: ... 
+        (*
+          <- definition;;
+          => nrel_main_idtf:
+            [Опр. (To-Do List)] (* <- lang_ru;; *);;
+          => nrel_using_constants: ... 
+            (*
+                -> concept_user_task_template;;
+                -> nrel_subtask;;
+                -> concept_empty_task;;
+            *);;
+          <= nrel_sc_text_translation: ... 
+              (*
+                -> rrel_example:
+                      "file://html/definition_concept_to_do_list.html"
+                      (*<-lang_ru;;*);;
+              *);;
+        *);
+        
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(*Об основном идентификаторе задачи*)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_concept_to_do_list.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> ui_user;;
+                    -> concept_empty_task;;
+                    -> concept_defined_task;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- description_of_a_typical_instance;;
+
+            => nrel_main_idtf:
+                [Прим. (Списка дел)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_to_do_list_example.png";;
+                *);;
+        *);;
