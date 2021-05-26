@@ -1,0 +1,31 @@
+section_subject_domain_of_streets
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область улиц]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of streets]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_streets;
+        concept_street;
+        concept_boulevar;
+        concept_avenue;; 
+
+    section_subject_domain_of_streets = [*
+        subject_domain_of_streets
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область улиц]
+                (*<-lang_ru;;*);
+                [Subject domain of streets]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class: concept_street;
+
+            -> rrel_not_maximum_studied_object_class:
+                concept_boulevar;
+                concept_avenue;;
+    *];;

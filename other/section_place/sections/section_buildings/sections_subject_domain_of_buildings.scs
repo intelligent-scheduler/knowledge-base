@@ -1,0 +1,39 @@
+section_subject_domain_of_buildings
+
+    <- non_atomic_section;
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область строений]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of buildings]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_buildings;
+        concept_residential_building;
+        nrel_part_of_building;
+        concept_building;
+
+    <= nrel_section_decomposition: {
+        section_subject_domain_of_apartments
+    };; 
+
+    section_subject_domain_of_buildings = [*
+        subject_domain_of_buildings
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область строений]
+                (*<-lang_ru;;*);
+                [Subject domain of buildings]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class: concept_building;
+
+            -> rrel_not_maximum_studied_object_class:
+                concept_residential_building;
+
+            -> rrel_explored_relation:
+                nrel_part_of_building;;
+    *];;

@@ -1,0 +1,29 @@
+section_subject_domain_of_roads
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область дорог]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of roads]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_roads;
+        concept_road;
+        concept_crossroads;;
+
+    section_subject_domain_of_roads = [*
+        subject_domain_of_roads
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область дорог]
+                (*<-lang_ru;;*);
+                [Subject domain of roads]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class: concept_road;
+
+            -> rrel_not_maximum_studied_object_class:
+                concept_crossroads;;
+    *];;

@@ -1,0 +1,29 @@
+section_subject_domain_of_settlements
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область населенных пунктов]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of settlements]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_settlements;
+        concept_settlement;
+        concept_city;;
+
+    section_subject_domain_of_settlements = [*
+        subject_domain_of_settlements
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область населенных пунктов]
+                (*<-lang_ru;;*);
+                [Subject domain of settlements]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class: concept_settlement;
+
+            -> rrel_not_maximum_studied_object_class:
+                concept_city;;
+    *];;

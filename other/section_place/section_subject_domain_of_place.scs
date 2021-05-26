@@ -1,0 +1,36 @@
+section_subject_domain_of_place
+
+    <- non_atomic_section;
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область места]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of place]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_place;
+        concept_place;
+        nrel_place_address;
+
+    <= nrel_section_decomposition: {
+        section_subject_domain_of_territory;
+        section_subject_domain_of_buildings
+    };; 
+
+    section_subject_domain_of_place = [*
+        subject_domain_of_place
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область места]
+                (*<-lang_ru;;*);
+                [Subject domain of place]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class: concept_place;
+
+            -> rrel_explored_relation:
+                nrel_place_address;;
+    *];;

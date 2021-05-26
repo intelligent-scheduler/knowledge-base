@@ -1,0 +1,38 @@
+section_subject_domain_of_apartments
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область квартир]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of apartments]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_apartments;
+        concept_appartment;
+        concept_room;
+        nrel_entrance_number;
+        nrel_floor_number;
+        nrel_appartment_number;;
+ 
+
+    section_subject_domain_of_apartments = [*
+        subject_domain_of_apartments
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область квартир]
+                (*<-lang_ru;;*);
+                [Subject domain of apartments]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class: concept_appartment;
+
+            -> rrel_not_maximum_studied_object_class:
+                concept_room;
+
+            -> rrel_explored_relation:
+                nrel_floor_number;
+                nrel_entrance_number;
+                nrel_appartment_number;;
+    *];;
