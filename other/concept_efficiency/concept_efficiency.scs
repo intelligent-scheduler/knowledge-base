@@ -39,7 +39,7 @@ concept_efficiency
 
         <= nrel_using_constants: ...
             (*
-                -> ui_user;;
+                -> subject;;
             *);;
     *);
 
