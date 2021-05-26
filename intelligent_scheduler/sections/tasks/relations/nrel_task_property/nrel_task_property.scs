@@ -8,13 +8,21 @@ nrel_task_property
     <|- order_relation;
 
     => nrel_first_domain: task; //ims
-    => nrel_second_domain: parameter; //ims
+    => nrel_second_domain:  ...
+        (*
+            <= nrel_combination:
+                {
+                    parameter; //ims
+                    concept_defined_property
+                };;
+        *);
     => nrel_definitional_domain: ...
         (*
             <= nrel_combination:
                 {
                     task; //ims
-                    parameter //ims
+                    parameter; //ims
+                    concept_defined_property
                 };;
         *);
     

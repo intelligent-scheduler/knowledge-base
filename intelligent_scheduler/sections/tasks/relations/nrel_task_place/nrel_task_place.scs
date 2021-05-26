@@ -9,13 +9,21 @@ nrel_task_place
 
     <= nrel_inclusion: nrel_location;
 
-    => nrel_first_domain: task;
-    => nrel_second_domain: concept_place;
+    => nrel_first_domain: task; // ims
+    => nrel_second_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    concept_defined_property;
+                    concept_place
+                };;
+        *);
     => nrel_definitional_domain: ...
         (*
             <= nrel_combination:
                 {
-                    task;
+                    task; // ims
+                    concept_defined_property;
                     concept_place
                 };;
         *);

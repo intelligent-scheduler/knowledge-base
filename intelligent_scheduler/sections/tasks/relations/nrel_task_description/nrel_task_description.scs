@@ -12,13 +12,21 @@ nrel_task_description
 
     //FIX domains
     => nrel_first_domain: task; //ims
-    => nrel_second_domain: concept_text;
+    => nrel_second_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    concept_text;
+                    concept_defined_property
+                };;
+        *);
     => nrel_definitional_domain: ...
         (*
             <= nrel_combination:
                 {
                     task; //ims
-                    concept_text
+                    concept_text;
+                    concept_defined_property
                 };;
         *);
 

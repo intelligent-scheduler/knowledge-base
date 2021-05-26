@@ -1,11 +1,11 @@
-concept_empty_task 
+concept_empty_property
 
-    <= nrel_inclusion: task; //ims
+    <- immeasurable_parameter; // ims
 
     => nrel_main_idtf:
-        [пустая задача]
+        [пустое свойство]
         (*<-lang_ru;;*);
-        [empty task]
+        [empty property]
         (*<-lang_en;;*);
 
     <- rrel_key_sc_element: ...
@@ -13,26 +13,25 @@ concept_empty_task
             <- definition;;
 
             => nrel_main_idtf:
-                [Опр.(Задача)]
+                [Опр.(Пустое свойство)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/definition_concept_empty_task.html"
+                        "file://html/definition_concept_empty_property.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constants: ...
                 (*
-                    -> task;; //ims
-                    -> nrel_task_property;;
+                    -> immeasurable_parameter;; // ims
+                    -> task;; // ims
                     -> nrel_task_completion_time;;
-                    -> nrel_task_description;;
+                    -> nrel_start_task_completion;;
+                    -> nrel_end_of_task_completion;;
+                    -> nrel_description;;
                     -> nrel_task_place;;
-                    -> concept_completed_task;;
-                    -> concept_urgent_task;;
-                    -> concept_important_task;;  
                 *);;
         *);
 
@@ -41,18 +40,18 @@ concept_empty_task
             <- statement;;
 
             => nrel_main_idtf:
-                [Утв.(О пустой и заданной задаче)]
+                [Утв.(*Об основном идентификаторе задачи*)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/statement_concept_empty_task.html" 
+                        "file://html/statement_concept_empty_property.html" 
                         (*<-lang_ru;;*);; 
                 *);;
 
             <= nrel_using_constants: ...
                 (*
-                    -> concept_defined_task;;
+                    -> concept_task_template;;
                 *);;
         *);;
