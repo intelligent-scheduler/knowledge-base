@@ -46,7 +46,7 @@ concept_human
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/about-concept-human.html" 
+                        "file://html/about_concept_human.html" 
                         (*<-lang_ru;;*);; 
                 *);;
 
@@ -69,7 +69,7 @@ concept_human
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/concept-human.png";; 
+                        "file://png/concept_human.png";; 
                 *);;
         *);;
 

@@ -38,7 +38,7 @@ nrel_functionality
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/nrel_functionality.html"
+                        "file://html/about_nrel_functionality.html"
                         (*<-lang_ru;;*);; 
                 *);;
 

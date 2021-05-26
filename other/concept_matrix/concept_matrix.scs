@@ -5,8 +5,8 @@ concept_matrix
     <= nrel_subdividing: ...
         (*
             => nrel_main_idtf:
-            [Виды матриц](* <-lang_ru;; *);
-            [Types of matrix](* <-lang_en;; *);;
+            [тиды матриц](* <-lang_ru;; *);
+            [types of matrix](* <-lang_en;; *);;
             ->
             concept_square_matrix;
             concept_symmetric_matrix;
@@ -33,7 +33,7 @@ concept_matrix
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/concept_matrix.html"
+                        "file://html/definition_concept_matrix.html"
                         (*<-lang_ru;;*);; 
                 *);;
 
@@ -57,7 +57,7 @@ concept_matrix
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/statement_concept_matrix*.html" 
+                        "file://html/statement_concept_matrix.html" 
                         (*<-lang_ru;;*);; 
                 *);;
 

@@ -46,7 +46,7 @@ concept_software
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://html/about-concept-software.html" 
+                        "file://html/about_concept_software.html" 
                         (*<-lang_ru;;*);; 
                 *);;
 
