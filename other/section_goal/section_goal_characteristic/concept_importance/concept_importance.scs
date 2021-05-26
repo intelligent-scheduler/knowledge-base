@@ -25,6 +25,7 @@ concept_importance
 
         <= nrel_using_constants: ...
                 (*
+                    -> subject;;
                     -> concept_goal_characteristic;;
                 *);;
     *);
