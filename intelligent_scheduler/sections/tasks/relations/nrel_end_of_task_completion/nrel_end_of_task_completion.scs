@@ -42,7 +42,7 @@ nrel_end_of_task_completion
             <= nrel_sc_text_translation: ...
                 (*
                     -> rrel_example:
-                        "file://html/definition_nrel_end_of_task_completion.html"
+                        "file://html/definition_nrel_start_task_completion.html"
                         (*<-lang_ru;;*);;
                 *);;
 
