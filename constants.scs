@@ -12,6 +12,7 @@
     section_subject_domain_of_motivation_type                   <- non_atomic_section;; // Раздел. Предметная область вида мотивации
     section_subject_domain_of_motivation_source                 <- non_atomic_section;; // Раздел. Предметная область источника мотивации
     section_subject_domain_of_motivation_stimulus               <- non_atomic_section;; // Раздел. Предметная область стимула мотивации
+    section_subject_domain_of_time_management                   <- non_atomic_section;; // Раздел. Предметная область управления временем   
     //subject domains
     subject_domain_of_intelligent_scheduler                     <- subject_domain;; // Предметная область интеллектуального планировщика
     subject_domain_of_tasks                                     <- subject_domain;; // Предметная область задач
@@ -24,6 +25,7 @@
     subject_domain_of_motivation_type                           <- subject_domain;; // Предметная область вида мотивации
     subject_domain_of_motivation_source                         <- subject_domain;; // Предметная область источника мотивации
     subject_domain_of_motivation_stimulus                       <- subject_domain;; // Предметная область стимула мотивации
+    subject_domain_of_time_management                           <- subject_domain;; // Предметная область управления временем
     //concepts
     concept_task_relation                                       <- sc_node_not_relation;; // Отношение на множестве задач
     concept_intelligent_scheduler                               <- sc_node_not_relation;; // Интеллектуальный планировщик
@@ -42,7 +44,6 @@
     concept_residential_building                                <- sc_node_not_relation;; // Жилой дом
     concept_country                                             <- sc_node_not_relation;; // Страна
     concept_square                                              <- sc_node_not_relation;; // Городская площадь
-<<<<<<< HEAD
     concept_appartment                                          <- sc_node_not_relation;; // Квартира
     concept_room                                                <- sc_node_not_relation;; // Комната
     concept_road                                                <- sc_node_not_relation;; // Дорога
@@ -82,9 +83,6 @@
     concept_external_motivation                                 <- sc_node_not_relation;; // Внешняя мотивация
     concept_completion                                          <- sc_node_not_relation;; // Выполнение
     concept_efficiency                                          <- sc_node_not_relation;; // Эффективность
-    
-=======
->>>>>>> 3e8e6c767119db684022c4c02f38e22d189498ee
     concept_task_relation                                       <- sc_node_not_relation;;
     concept_intelligent_scheduler                               <- sc_node_not_relation;;
     concept_property                                            <- sc_node_not_relation;;
@@ -95,6 +93,12 @@
     concept_user_task                                           <- sc_node_not_relation;; // Пользовательская задача
     concept_empty_task                                          <- sc_node_not_relation;; // Пустая задача
     concept_defined_task                                        <- sc_node_not_relation;; // Заданная задача
+    concept_time_management                                     <- sc_node_not_relation;; // Управление временем
+    concept_matrix                                              <- sc_node_not_relation;; // Матрица
+    concept_mathematical_object                                 <- sc_node_not_relation;; // Математический объект
+    concept_abcd_analysis                                       <- sc_node_not_relation;; // ABCD-анализ
+    concept_eisenhower_matrix                                   <- sc_node_not_relation;; // Матрица Эйзенхауэра
+
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
@@ -110,7 +114,8 @@
     nrel_intelligent_functionality                              <- sc_node_norole_relation;; // Интеллектуальный функционал
     nrel_work                                                   <- sc_node_norole_relation;; // Работа
     nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
-
+    nrel_eisenhower_matrix_analysis                             <- sc_node_norole_relation;; // Матрица Эйзенхауэра
+    nrel_abcd_analysis                                          <- sc_node_norole_relation;; // ABCD - анализ
 
 //wanted
     //concepts
@@ -133,6 +138,24 @@
     concept_empty_property                                      <- sc_node_not_relation;; // Пустое свойство
     concept_intelligent_scheduler_interface                     <- sc_node_not_relation;; // Интерфейс Интеллектуального планировщика
     concept_action_purchase                                     <- sc_node_not_relation;; // Купить   
+    concept_table                                               <- sc_node_not_relation;; // Таблица
+    concept_field_algebra                                       <- sc_node_not_relation;; // Поле (алгебра)
+    concept_abstract_object                                     <- sc_node_not_relation;; // Абстрактный объект
+    concept_scroll                                              <- sc_node_not_relation;; // Перечень
+    concept_list                                                <- sc_node_not_relation;; // Список
+    concept_name                                                <- sc_node_not_relation;; // Название
+    concept_mathematics                                         <- sc_node_not_relation;; // Математика
+    concept_philosophy_of_mathematics                           <- sc_node_not_relation;; // Философия математики
+    concept_triangle                                            <- sc_node_not_relation;; // Треугольник
+    concept_analysis                                            <- sc_node_not_relation;; // Анализ
+    concept_technology                                          <- sc_node_not_relation;; // Технология
+    concept_organization                                        <- sc_node_not_relation;; // Организация
+    concept_square_matrix                                       <- sc_node_not_relation;; // Квадратная матрица
+    concept_symmetric_matrix                                    <- sc_node_not_relation;; // Симметричная матрица
+    concept_triangular_matrix                                   <- sc_node_not_relation;; // Треугольная матрица
+    concept_diagonal_matrix                                     <- sc_node_not_relation;; // Диагональная матрица
+    concept_identity_matrix                                     <- sc_node_not_relation;; // Единичная матрица
+    concept_orthogonal_matrix                                   <- sc_node_not_relation;; // Ортогональная матрица
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_part_of_building                                       <- sc_node_norole_relation;; // Часть строения
@@ -145,3 +168,8 @@
     nrel_transformation                                         <- sc_node_norole_relation;; // Изменять, трансформировать
     nrel_speak                                                  <- sc_node_norole_relation;; // Говорить
     nrel_sequencel                                              <- sc_node_norole_relation;; // Последовательность
+    nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
+    nrel_method                                                 <- sc_node_norole_relation;; // Метод
+    nrel_criterion                                              <- sc_node_norole_relation;; // Критерий
+    nrel_group                                                  <- sc_node_norole_relation;; // Группа
+    nrel_rise                                                   <- sc_node_norole_relation;; // Повышение
