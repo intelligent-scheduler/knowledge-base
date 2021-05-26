@@ -112,6 +112,7 @@
     concept_latitude                                            <- sc_node_not_relation;; // Широта
     concept_longitude                                           <- sc_node_not_relation;; // Долгота
     concept_technology                                          <- sc_node_not_relation;; // Технология
+    concept_language 											<- sc_node_not_relation;; // Язык
 
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
