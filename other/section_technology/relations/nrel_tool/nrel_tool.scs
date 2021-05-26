@@ -57,7 +57,7 @@ nrel_tool
             <= nrel_sc_text_translation: ...
                 (* 
                     -> rrel_example: 
-                        "file://statement_nrel_tool.html" 
+                        "file://html/statement_nrel_tool.html" 
                         (*<-lang_ru;;*);; 
                 *);;
 
