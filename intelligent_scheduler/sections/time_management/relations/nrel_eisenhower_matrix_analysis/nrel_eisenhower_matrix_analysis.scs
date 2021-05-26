@@ -1,0 +1,87 @@
+nrel_eisenhower_matrix_analysis
+
+    <- concept_time_management;
+
+    <- symmetric_relation;
+    <- transitive_relation;
+    <- reflexive_relation;
+    <|-  order_relation;
+
+    => nrel_first_domain: task;
+    => nrel_second_domain: concept_eisenhower_matrix;
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    task; //ims
+                    concept_eisenhower_matrix
+                };;
+        *);
+
+    => nrel_main_idtf:
+        [анализ по принципу матрицы Эйзенхауэра]
+        (*<-lang_ru;;*);
+        [Eisenhower matrix analysis]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.Анализ по принципу матрицы Эйзенхауэра]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_nrel_eisenhower_matrix_analysis.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> relation;; //ims
+                    -> task;; //ims
+                    -> concept_eisenhower_matrix;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.Об анализе по принципу матрицы Эйзенхауэра]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_nrel_eisenhower_matrix_analysis.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> task;; //ims
+                    -> nrel_context_of_action;; //ims
+                    -> set;; //ims
+                    -> nrel_subtask;;
+                *);;
+        *);
+
+            <- rrel_key_sc_element: ... 
+        (*
+            <- description_of_a_typical_instance;;
+
+            => nrel_main_idtf:
+                [Прим. (*Основного идентификатора*)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/nrel_eisenhower_matrix_analysis.png";;
+                *);;
+        *);;
