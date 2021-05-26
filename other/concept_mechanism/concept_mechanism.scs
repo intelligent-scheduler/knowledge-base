@@ -1,0 +1,36 @@
+concept_mechanism
+
+    <= nrel_inclusion: concept_device;
+
+    => nrel_main_idtf:
+        [механизм]
+        (*<-lang_ru;;*);
+        [mechanism]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [механизм]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Механизм)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_mechanism.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_machine;; 
+                    -> nrel_movement;;
+                    -> concept_device;;
+                *);;
+        *);;

@@ -1,0 +1,55 @@
+nrel_movement
+
+    <- asymmetric_relation;
+    <- transitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    <= nrel_inclusion: concept_task_relation;
+
+    => nrel_first_domain: concept_creature;
+    => nrel_second_domain: action; //ims
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    concept_creature;
+                    action
+                };;
+        *);
+
+
+    => nrel_main_idtf:
+        [движение]
+        (*<-lang_ru;;*);
+        [movement]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [движение]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Движение)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/nrel_movement.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> nrel_transformation;; 
+                    -> nrel_change;;
+                    -> concept;;//ims
+                *);;
+        *);;
+
+    

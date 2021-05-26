@@ -32,6 +32,20 @@
     concept_boulevar                                            <- sc_node_not_relation;; // Бульвар
     concept_avenue                                              <- sc_node_not_relation;; // Проспект
     concept_district                                            <- sc_node_not_relation;; // Район
+    concept_software                                            <- sc_node_not_relation;; // Программное обеспечение
+    concept_device                                              <- sc_node_not_relation;; // Устройство
+    concept_human                                               <- sc_node_not_relation;; // Человек
+    concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
+    concept_function                                            <- sc_node_not_relation;; // Функция
+    concept_element                                             <- sc_node_not_relation;; // Элемент
+    concept_organism                                            <- sc_node_not_relation;; // Организм
+    concept_organ                                               <- sc_node_not_relation;; // Орган
+    concept_computer                                            <- sc_node_not_relation;; // Компьютер
+    concept_creature                                            <- sc_node_not_relation;; // Существо
+    concept_intellection                                        <- sc_node_not_relation;; // Интеллект
+    concept_speech                                              <- sc_node_not_relation;; // Речь
+    concept_animal                                              <- sc_node_not_relation;; // Животное
+    
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
     nrel_task_property                                          <- sc_node_norole_relation;; // Свойство задачи
@@ -45,20 +59,36 @@
     nrel_appartment_number                                      <- sc_node_norole_relation;; // Номер квартиры
     nrel_entrance_number                                        <- sc_node_norole_relation;; // Номер подъезда
     nrel_intelligent_functionality                              <- sc_node_norole_relation;; // Интеллектуальный функционал
+    nrel_work                                                   <- sc_node_norole_relation;; // Работа
+    nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
+
 
 //wanted
     //concepts
-    concept_task_managment                                      <- sc_node_not_relation;; // Управление задачами
     concept_text                                                <- sc_node_not_relation;; // Текст
     concept_description                                         <- sc_node_not_relation;; // Описание
     concept_task_set                                            <- sc_node_not_relation;; // Множество задач
-    concept_software                                            <- sc_node_not_relation;; // Программное обеспечение
-    //concept_device                                              <- sc_node_not_relation;; // Устройство
-    //concept_human                                               <- sc_node_not_relation;; // Человек
     concept_address                                             <- sc_node_not_relation;; // Адрес
     concept_function_set                                        <- sc_node_not_relation;; // Набор возможностей
+    concept_crossroads                                          <- sc_node_not_relation;; // Перекресток
+    concept_boulevar                                            <- sc_node_not_relation;; // Бульвар
+    concept_avenue                                              <- sc_node_not_relation;; // Проспект
+    concept_district                                            <- sc_node_not_relation;; // Район
+    concept_appartment                                          <- sc_node_not_relation;; // Квартира
+    concept_mechanism                                           <- sc_node_not_relation;; // Механизм
+    concept_material                                            <- sc_node_not_relation;; // Материал, ткань
+    concept_community                                           <- sc_node_not_relation;; // Общность
+    concept_cognition                                           <- sc_node_not_relation;; // Познание
+    concept_problem                                             <- sc_node_not_relation;; // Проблем
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_part_of_building                                       <- sc_node_norole_relation;; // Часть строения
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
-    nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
+    
+    //relations
+    nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
+    nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи
+    nrel_feel                                                   <- sc_node_norole_relation;; // Чувствовать
+    nrel_transformation                                         <- sc_node_norole_relation;; // Изменять, трансформировать
+    nrel_speak                                                  <- sc_node_norole_relation;; // Говорить
+    nrel_sequencel                                              <- sc_node_norole_relation;; // Последовательность

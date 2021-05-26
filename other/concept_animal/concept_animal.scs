@@ -1,0 +1,53 @@
+concept_animal
+
+    <- nrel_inclusion: concept_creature;
+
+    => nrel_main_idtf:
+        [животное]
+        (*<-lang_ru;;*);
+        [animal]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [животное]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Животное)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_animal.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_creature;; 
+                    -> nrel_feel;;
+                    -> nrel_movement;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Животное)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_animal.png";; 
+                *);;
+        *);;
+
+    

@@ -1,0 +1,75 @@
+concept_human
+
+    <= nrel_inclusion: concept_creature;
+
+    => nrel_main_idtf:
+        [человек]
+        (*<-lang_ru;;*);
+        [human]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [человек]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Человек)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_human.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_creature;;
+                    -> concept_intellection;;
+                    -> concept_speech;;
+                *);;
+        *);
+
+        <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(О человеке)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/about-concept-human.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_tool;;
+                    -> nrel_use;;
+                    -> nrel_create;;
+                *);;
+        *);
+
+        <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Человек)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept-human.png";; 
+                *);;
+        *);;
+

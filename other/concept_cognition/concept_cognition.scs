@@ -1,0 +1,58 @@
+concept_cognition
+
+    => nrel_main_idtf:
+        [познание]
+        (*<-lang_ru;;*);
+        [cognition]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [познание]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Познание)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_cognition.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> knowledge;; //ims
+                    -> concept_phenomenon;;
+                    -> nrel_regularity;;
+                    -> concept_method;;
+                    -> concept_procedure;;
+                    -> concept_process;;
+                *);;
+        *);
+        
+         <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(О познании)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/about_concept_cognition.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_form;;
+                *);;
+        *);;

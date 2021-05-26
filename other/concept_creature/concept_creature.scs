@@ -1,0 +1,36 @@
+concept_creature
+
+    <- nrel_inclusion: concept_organism;
+
+    => nrel_main_idtf:
+        [cущество]
+        (*<-lang_ru;;*);
+        [creature]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [существо]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Существо)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_creature.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_organism;; 
+                    -> concept_animal;;
+                *);;
+        *);;
+    

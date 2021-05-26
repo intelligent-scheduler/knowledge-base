@@ -1,0 +1,34 @@
+concept_problem
+
+    => nrel_main_idtf:
+        [проблема]
+        (*<-lang_ru;;*);
+        [problem]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [проблема]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Проблема)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_problem.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> question;; //ims
+                    -> nrel_examine;;
+                    -> nrel_fix;;
+                *);;
+        *);;

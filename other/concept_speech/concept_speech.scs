@@ -1,0 +1,36 @@
+concept_speech
+
+    <= nrel_inclusion: concept_human;
+
+    => nrel_main_idtf:
+        [речь]
+        (*<-lang_ru;;*);
+        [speech]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [Речь]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Речь)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_speech.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (* 
+                    -> nrel_speak;;
+                *);;
+        *);;
+
+    

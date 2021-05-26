@@ -1,0 +1,51 @@
+concept_organism
+
+    => nrel_main_idtf:
+        [организм]
+        (*<-lang_ru;;*);
+        [organism]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [организм]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Организм)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_organism.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_organ;; 
+                    -> concept_creature;;
+                    -> concept_organism;; 
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Организм)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_organism.png";; 
+                *);;
+        *);;
+
+    

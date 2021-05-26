@@ -1,0 +1,53 @@
+nrel_part
+
+    <- asymmetric_relation;
+    <- transitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+
+    => nrel_first_domain: task;//ims
+    => nrel_second_domain: nrel_subtask; //ims
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    task;
+                    nrel_subtask
+                };;
+        *);
+
+
+    => nrel_main_idtf:
+        [часть]
+        (*<-lang_ru;;*);
+        [part]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [часть]
+        (*<- lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Часть)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/nrel_part.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_organism;; 
+                    -> concept_mechanism;;
+                *);;
+        *);;
+
+    
