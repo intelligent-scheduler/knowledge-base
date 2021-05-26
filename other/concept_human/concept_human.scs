@@ -32,6 +32,7 @@ concept_human
                     -> concept_creature;;
                     -> concept_intellection;;
                     -> concept_speech;;
+                    -> intellectual_task;;//ims
                 *);;
         *);
 
