@@ -1,0 +1,47 @@
+concept_abcd_analysis
+
+    <- concept_time_management;
+
+    => nrel_main_idtf:
+        [abcd-анализ]
+        (*<-lang_ru;;*);
+        [abcd-analysis]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.ABCD-анализ]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_abcd_analysis.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> nrel_method;;
+                    -> task;; //ims
+                    -> nrel_group;;
+                *);;
+        *);
+    
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.ABCD-анализ]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_abcd_analysis.png";; 
+                *);;
+        *);;

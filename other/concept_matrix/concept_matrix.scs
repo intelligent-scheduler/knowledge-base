@@ -1,0 +1,85 @@
+concept_matrix
+
+    <- concept_mathematical_object;
+
+    <= nrel_subdividing: ...
+        (*
+            => nrel_main_idtf:
+            [Виды матриц](* <-lang_ru;; *);
+            [Types of matrix](* <-lang_en;; *);;
+            ->
+            concept_square_matrix;
+            concept_symmetric_matrix;
+            concept_triangular_matrix;
+            concept_diagonal_matrix;
+            concept_identity_matrix;
+            concept_orthogonal_matrix;;
+        *);
+
+    => nrel_main_idtf:
+        [матрица]
+        (*<-lang_ru;;*);
+        [matrix]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр. Матрица]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/concept_matrix.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_mathematical_object;;
+                    -> concept_table;;
+                    -> concept_element;;
+                    -> concept_field_algebra;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв. О матрице]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_concept_matrix*.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_matrix;;
+                    -> nrel_multiplication_of_numbers;; //ims
+                *);;
+        *);
+
+    
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис. Матрица]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/concept_matrix.png";; 
+                *);;
+        *);;
