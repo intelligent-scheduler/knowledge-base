@@ -17,7 +17,8 @@ section_subject_domain_of_tasks
         nrel_task_description;
         nrel_task_completion_time;
         nrel_start_task_completion;
-        nrel_end_of_task_completion;;
+        nrel_end_of_task_completion;
+        nrel_task_place;;
 
     section_subject_domain_of_tasks  = [*
         subject_domain_of_tasks
@@ -43,6 +44,7 @@ section_subject_domain_of_tasks
                 nrel_task_description;
                 nrel_task_completion_time;
                 nrel_start_task_completion;
-                nrel_end_of_task_completion;;
+                nrel_end_of_task_completion;
+                nrel_task_place;;
     *];;
     

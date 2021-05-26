@@ -144,17 +144,11 @@
     concept_task_set                                            <- sc_node_not_relation;; // Множество задач
     concept_address                                             <- sc_node_not_relation;; // Адрес
     concept_function_set                                        <- sc_node_not_relation;; // Набор возможностей
-    concept_crossroads                                          <- sc_node_not_relation;; // Перекресток
-    concept_boulevar                                            <- sc_node_not_relation;; // Бульвар
-    concept_avenue                                              <- sc_node_not_relation;; // Проспект
-    concept_district                                            <- sc_node_not_relation;; // Район
-    concept_appartment                                          <- sc_node_not_relation;; // Квартира
     concept_mechanism                                           <- sc_node_not_relation;; // Механизм
     concept_material                                            <- sc_node_not_relation;; // Материал, ткань
     concept_community                                           <- sc_node_not_relation;; // Общность
     concept_cognition                                           <- sc_node_not_relation;; // Познание
     concept_problem                                             <- sc_node_not_relation;; // Проблем
-    concept_empty_task                                          <- sc_node_not_relation;; // Пустая задача
     concept_empty_property                                      <- sc_node_not_relation;; // Пустое свойство
     concept_intelligent_scheduler_interface                     <- sc_node_not_relation;; // Интерфейс Интеллектуального планировщика
     concept_action_purchase                                     <- sc_node_not_relation;; // Купить   
@@ -176,23 +170,17 @@
     concept_identity_matrix                                     <- sc_node_not_relation;; // Единичная матрица
     concept_orthogonal_matrix                                   <- sc_node_not_relation;; // Ортогональная матрица
 
-    concept_common                                              <- sc_node_not_relation;; // Общность, совокупность
-    concept_completion                                          <- sc_node_not_relation;; 
+    concept_common                                              <- sc_node_not_relation;; // Общность, совокупность 
     concept_operation                                           <- sc_node_not_relation;;
 
     
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_part_of_building                                       <- sc_node_norole_relation;; // Часть строения
-    nrel_task_completion_time                                   <- sc_node_norole_relation;; // Время действия задачи
     nrel_feel                                                   <- sc_node_norole_relation;; // Чувствовать
     nrel_transformation                                         <- sc_node_norole_relation;; // Изменять, трансформировать
     nrel_speak                                                  <- sc_node_norole_relation;; // Говорить
     nrel_sequencel                                              <- sc_node_norole_relation;; // Последовательность
-    nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
-    nrel_method                                                 <- sc_node_norole_relation;; // Метод
     nrel_criterion                                              <- sc_node_norole_relation;; // Критерий
     nrel_group                                                  <- sc_node_norole_relation;; // Группа
     nrel_rise                                                   <- sc_node_norole_relation;; // Повышение
-    nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
-    nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
