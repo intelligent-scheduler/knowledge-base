@@ -25,7 +25,7 @@ concept_final_goal
 
         <= nrel_using_constants: ...
             (*
-                -> concept_goal;;
+                -> nrel_result;;
             *);;
     *);
 
@@ -46,7 +46,7 @@ concept_final_goal
 
         <= nrel_using_constants: ...
             (*
-                -> concept_goal;;
+                -> nrel_result;;
                 -> concept_completion;;
             *);;
     *);;

@@ -26,7 +26,7 @@ concept_intermediate_goal
         <= nrel_using_constants: ...
             (*
                 -> nrel_object;;
-                -> concept_goal;;
+                -> nrel_result;;
             *);;
     *);
 
