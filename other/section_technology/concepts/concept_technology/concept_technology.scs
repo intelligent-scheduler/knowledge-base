@@ -1,0 +1,59 @@
+concept_technology
+
+    => nrel_main_idtf:
+        [технология]
+        (*<-lang_ru;;*);
+        [technology]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [concept_technology]
+        (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Технология)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_technology.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_common;;
+                    -> nrel_method;;
+                    -> nrel_tool;;
+                    -> result;; //ims
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн.(Технологии)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/explanation_concept_technology.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> task;; //ims
+                    -> nrel_inclusion;; //ims
+                    -> question;; //ims
+                *);;
+        *);;
+

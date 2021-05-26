@@ -1,0 +1,70 @@
+nrel_tool
+
+    <- asymmetric_relation;
+    <- antitransitive_relation;
+    <- antireflexive_relation;
+    <|-  order_relation;
+
+    => nrel_first_domain: subject;
+    => nrel_second_domain: concept_tool;
+    => nrel_definitional_domain: ...
+        (*
+            <= nrel_combination:
+                {
+                    subject;
+                    concept_tool
+                };;
+        *);
+
+    => nrel_main_idtf:
+        [инструмент* ]
+        (*<-lang_ru;;*);
+        [tool* ]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Инструмента)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_nrel_tool.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> nrel_means;;
+                    -> concept_device;;
+                    -> concept_completion;;
+                    -> concept_operation;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(*Об основном идентификаторе задачи*)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://statement_nrel_tool.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> parameter;;
+                    -> task;;
+                    -> concept_completion;;
+                *);;
+        *);;

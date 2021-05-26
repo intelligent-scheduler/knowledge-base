@@ -111,8 +111,10 @@
     concept_coordinates                                         <- sc_node_not_relation;; // Координаты
     concept_latitude                                            <- sc_node_not_relation;; // Широта
     concept_longitude                                           <- sc_node_not_relation;; // Долгота
-    concept_technology                                          <- sc_node_not_relation;; // Технология
     concept_language 											<- sc_node_not_relation;; // Язык
+    concept_means                                               <- sc_node_not_relation;;
+    concept_method                                              <- sc_node_not_relation;;
+    concept_technology                                          <- sc_node_not_relation;;
 
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
@@ -131,6 +133,9 @@
     nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
     nrel_eisenhower_matrix_analysis                             <- sc_node_norole_relation;; // Матрица Эйзенхауэра
     nrel_abcd_analysis                                          <- sc_node_norole_relation;; // ABCD - анализ
+    nrel_method                                                 <- sc_node_norole_relation;; // Метод
+    nrel_tool                                                   <- sc_node_norole_relation;; // Инструмент  
+    nrel_means                                                  <- sc_node_norole_relation;;
 
 //wanted
     //concepts
@@ -172,6 +177,8 @@
     concept_orthogonal_matrix                                   <- sc_node_not_relation;; // Ортогональная матрица
 
     concept_common                                              <- sc_node_not_relation;; // Общность, совокупность
+    concept_completion                                          <- sc_node_not_relation;; 
+    concept_operation                                           <- sc_node_not_relation;;
 
     
     //relations
@@ -189,5 +196,3 @@
     nrel_rise                                                   <- sc_node_norole_relation;; // Повышение
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
-    nrel_method                                                 <- sc_node_norole_relation;; // Метод
-    nrel_tool                                                   <- sc_node_norole_relation;; // Инструмент  
