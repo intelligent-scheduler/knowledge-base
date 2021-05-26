@@ -1,11 +1,11 @@
 concept_device
 
-    <= nrel_inclusion: concept_invention ;
+    <- nrel_inclusion: concept_invention ;
 
     => nrel_main_idtf:
-        [Устройство]
+        [устройство]
         (*<-lang_ru;;*);
-        [Device]
+        [device]
         (*<-lang_en;;*);
 
     => nrel_idtf:

@@ -1,15 +1,13 @@
 concept_intellection
 
-    <= nrel_inclusion: concept_human;
-
     => nrel_main_idtf:
-        [Интеллект]
+        [интеллект]
         (*<-lang_ru;;*);
         [Intellection]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [Интеллект]
+        [интеллект]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...

@@ -3,9 +3,9 @@ concept_human
     <= nrel_inclusion: concept_creature;
 
     => nrel_main_idtf:
-        [Человек]
+        [человек]
         (*<-lang_ru;;*);
-        [Human]
+        [human]
         (*<-lang_en;;*);
 
     => nrel_idtf:

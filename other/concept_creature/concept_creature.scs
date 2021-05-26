@@ -1,6 +1,6 @@
 concept_creature
 
-    <= nrel_inclusion: concept_organism;
+    <- nrel_inclusion: concept_organism;
 
     => nrel_main_idtf:
         [cущество]

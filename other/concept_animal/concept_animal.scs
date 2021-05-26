@@ -1,6 +1,6 @@
 concept_animal
 
-    <= nrel_inclusion: concept_creature;
+    <- nrel_inclusion: concept_creature;
 
     => nrel_main_idtf:
         [животное]

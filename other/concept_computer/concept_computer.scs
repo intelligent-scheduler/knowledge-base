@@ -1,6 +1,6 @@
 concept_computer
 
-    <= nrel_inclusion: concept_device;
+    <- nrel_inclusion: concept_device;
 
     => nrel_main_idtf:
         [компьютер]

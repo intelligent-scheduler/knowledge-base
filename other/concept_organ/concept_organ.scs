@@ -1,7 +1,5 @@
 concept_organ
 
-    <= nrel_inclusion: concept_creature ;
-
     => nrel_main_idtf:
         [орган]
         (*<-lang_ru;;*);

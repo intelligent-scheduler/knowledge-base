@@ -1,6 +1,6 @@
 concept_element
 
-    <= nrel_inclusion: task;
+    <- nrel_inclusion: task;
 
     => nrel_main_idtf:
         [элемент]
