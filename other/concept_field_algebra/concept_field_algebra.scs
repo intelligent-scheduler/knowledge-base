@@ -1,0 +1,56 @@
+concept_field_algebra
+
+    <= nrel_inclusion: set; //ims
+
+    => nrel_main_idtf:
+        [поле в алгебре]
+        (*<-lang_ru;;*);
+        [field in algebra]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.Поле в алгебре]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_field_algebra.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> set;; //ims
+                    -> concept_element;;
+                    -> arithmetic_operation;; //ims
+                    -> nrel_sum_of_numbers;; //ims
+                    -> nrel_multiplication_of_numbers;; //ims
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн. Математического объекта]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/explanation_concept_field_algebra.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> rrel_example;; //ims
+                    -> number;; //ims
+                *);;
+        *);;
