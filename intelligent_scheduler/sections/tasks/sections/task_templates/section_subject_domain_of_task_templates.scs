@@ -14,7 +14,7 @@ section_subject_domain_of_task_templates
         concept_school_schedule;
         concept_shopping_list;;
 
-    section_subject_domain_of_tasks  = [*
+    section_subject_domain_of_task_templates  = [*
         section_subject_domain_of_task_templates
 
             <- structure;

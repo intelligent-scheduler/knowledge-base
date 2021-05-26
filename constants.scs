@@ -111,6 +111,7 @@
     concept_coordinates                                         <- sc_node_not_relation;; // Координаты
     concept_latitude                                            <- sc_node_not_relation;; // Широта
     concept_longitude                                           <- sc_node_not_relation;; // Долгота
+    concept_technology                                          <- sc_node_not_relation;; // Технология
 
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
@@ -161,7 +162,6 @@
     concept_philosophy_of_mathematics                           <- sc_node_not_relation;; // Философия математики
     concept_triangle                                            <- sc_node_not_relation;; // Треугольник
     concept_analysis                                            <- sc_node_not_relation;; // Анализ
-    concept_technology                                          <- sc_node_not_relation;; // Технология
     concept_organization                                        <- sc_node_not_relation;; // Организация
     concept_square_matrix                                       <- sc_node_not_relation;; // Квадратная матрица
     concept_symmetric_matrix                                    <- sc_node_not_relation;; // Симметричная матрица
@@ -169,6 +169,9 @@
     concept_diagonal_matrix                                     <- sc_node_not_relation;; // Диагональная матрица
     concept_identity_matrix                                     <- sc_node_not_relation;; // Единичная матрица
     concept_orthogonal_matrix                                   <- sc_node_not_relation;; // Ортогональная матрица
+
+    concept_common                                              <- sc_node_not_relation;; // Общность, совокупность
+
     
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
@@ -185,3 +188,5 @@
     nrel_rise                                                   <- sc_node_norole_relation;; // Повышение
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_functionality                                          <- sc_node_norole_relation;; // Функционал
+    nrel_method                                                 <- sc_node_norole_relation;; // Метод
+    nrel_tool                                                   <- sc_node_norole_relation;; // Инструмент  
