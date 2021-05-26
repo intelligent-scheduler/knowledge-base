@@ -1,0 +1,83 @@
+concept_mathematical_object
+
+    <= nrel_inclusion: concept_abstract_object;
+
+    => nrel_main_idtf:
+        [математический объект]
+        (*<-lang_ru;;*);
+        [mathematical object]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.Математический объект]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_mathematical_object.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_abstract_object;;
+                    -> concept_mathematics;;
+                    -> concept_philosophy_of_mathematics;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.О математическом объекте]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_concept_mathematical_object.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> parameter;; //ims
+                    -> rrel_axiom;; //ims
+                    -> concept_scroll;;
+                    -> concept_list;;
+                    -> concept_name;;
+
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ... 
+        (*
+            <- explanation;;
+
+            => nrel_main_idtf:
+                [Поясн. Математического объекта]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://html/explanation_concept_mathematical_object.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> rrel_example;; //ims
+                    -> set;; //ims
+                    -> nrel_functional_mapping;; //ims
+                    -> concept_triangle;;
+                    -> order_relation;; //ims
+                *);;
+        *);;
