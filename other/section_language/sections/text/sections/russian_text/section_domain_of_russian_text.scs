@@ -7,20 +7,20 @@ section_subject_domain_of_russian_text
         (*<-lang_en;;*);
 
     -> rrel_key_sc_element:
-        subject_domain_of_text;
+        subject_domain_of_russian_text;
         concept_russian_text;;
 
     section_subject_domain_of_text  = [*
-        subject_domain_of_text
+        subject_domain_of_russian_text
 
             <- structure;
 
             <= nrel_private_subject_domain: section_subject_domain_of_text;
 
             => nrel_main_idtf:
-                [Предметная область текста]
+                [Предметная область русского текста]
                 (*<-lang_ru;;*);
-                [Subject domain of text]
+                [Subject domain of russian text]
                 (*<-lang_en;;*);
 
             -> rrel_maximum_studied_object_class: concept_russian_text;;

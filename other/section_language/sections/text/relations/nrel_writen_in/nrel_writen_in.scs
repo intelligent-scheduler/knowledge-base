@@ -19,13 +19,13 @@ nrel_writen_in
         *);
 
     => nrel_main_idtf:
-        [быть написанным на]
+        [быть написанным на*]
         (*<-lang_ru;;*);
         [be writen in]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [быть написанным на]
+        [быть написанным на*]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...

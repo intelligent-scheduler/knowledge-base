@@ -19,13 +19,13 @@ nrel_language_representation
         *);
 
     => nrel_main_idtf:
-        [представление языка]
+        [представление языка*]
         (*<-lang_ru;;*);
-        [language representation]
+        [language representation*]
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [представление языка]
+        [представление языка*]
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...

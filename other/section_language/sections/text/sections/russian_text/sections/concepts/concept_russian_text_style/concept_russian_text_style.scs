@@ -9,7 +9,7 @@ concept_russian_text_style
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [стиль русского текста]
+        [тип русского текста]
         (*<-lang_ru;;*);
 
     <- rrel_key_sc_element: ...
