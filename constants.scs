@@ -20,6 +20,12 @@
     section_subject_domain_of_streets                           <- non_atomic_section;; // Раздел. Предметная область улиц
     section_subject_domain_of_roads                             <- non_atomic_section;; // Раздел. Предметная область дорог
     section_subject_domain_of_apartments                        <- non_atomic_section;; // Раздел. Предметная область квартир
+    section_subject_domain_of_language                          <- non_atomic_section;; // Раздел. Предметная область языка
+    section_subject_domain_of_sentence                          <- non_atomic_section;; // Раздел. Предметная область предложений
+    section_subject_domain_of_text                              <- non_atomic_section;; // Раздел. Предметная область текста
+    section_subject_domain_of_word                              <- non_atomic_section;; // Раздел. Предметная область слов
+    section_subject_domain_of_russian_text                      <- non_atomic_section;; // Раздел. Предметная область русского текста
+    section_subject_domain_of_russian_text_styles               <- non_atomic_section;; // Раздел. Предметная область типов русского текста 
 
     //subject domains
     subject_domain_of_intelligent_scheduler                     <- subject_domain;; // Предметная область интеллектуального планировщика
@@ -41,6 +47,12 @@
     subject_domain_of_streets                                   <- subject_domain;; // Предметная область улиц
     subject_domain_of_roads                                     <- subject_domain;; // Предметная область дорог
     subject_domain_of_apartments                                <- subject_domain;; // Предметная область квартир
+    subject_domain_of_sentence                                  <- subject_domain;; // Предметная область предложений
+    subject_domain_of_language                                  <- subject_domain;; // Предметная область языка
+    subject_domain_of_word                                      <- subject_domain;; // Предметная область слов
+    subject_domain_of_text                                      <- subject_domain;; // Предметная область текста
+    subject_domain_of_russian_text                              <- subject_domain;; // Предметная область русского текста
+    subject_domain_of_russian_text_types                        <- subject_domain;; // Предметная область типов русского текста
 
     //concepts
     concept_task_relation                                       <- sc_node_not_relation;; // Отношение на множестве задач
@@ -129,6 +141,18 @@
     concept_means                                               <- sc_node_not_relation;;
     concept_method                                              <- sc_node_not_relation;;
     concept_technology                                          <- sc_node_not_relation;;
+    concept_language                                            <- sc_node_not_relation;; // Язык
+    concept_russian_language                                    <- sc_node_not_relation;; // Русский язык
+    concept_sign_system                                         <- sc_node_not_relation;; // Знаковая система
+    concept_sentence                                            <- sc_node_not_relation;; // Предложение
+    concept_text                                                <- sc_node_not_relation;; // Текст
+    concept_text_style                                          <- sc_node_not_relation;; // Стиль текста
+    concept_russian_text                                        <- sc_node_not_relation;; // Русский текст
+    concept_russian_text_style                                  <- sc_node_not_relation;; // Тип русского текста
+    concept_russian_description_text_type                       <- sc_node_not_relation;; // Тие русского текста Описание
+    concept_russian_narrative_text_type                         <- sc_node_not_relation;; // Тип русского текста Повестование
+    concept_russian_reasoning_text_type                         <- sc_node_not_relation;; // Тип русского текста Рассуждение
+    concept_word                                                <- sc_node_not_relation;; // Слово
 
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
@@ -149,11 +173,15 @@
     nrel_abcd_analysis                                          <- sc_node_norole_relation;; // ABCD - анализ
     nrel_method                                                 <- sc_node_norole_relation;; // Метод
     nrel_tool                                                   <- sc_node_norole_relation;; // Инструмент  
-    nrel_means                                                  <- sc_node_norole_relation;;
+    nrel_means                                                  <- sc_node_norole_relation;; 
+    nrel_style_of_the_text                                      <- sc_node_norole_relation;; // Стиль текста
+    nrel_writen_in                                              <- sc_node_norole_relation;; // Текст написан на
+    nrel_basic_language_unit                                    <- sc_node_norole_relation;; // Базовая сущность языка
+    nrel_language_representation                                <- sc_node_norole_relation;; // Носитель представления языка
+    rrel_denotatum                                              <- sc_node_role_relation;; // Обозначаемый предмет
 
 //wanted
     //concepts
-    concept_text                                                <- sc_node_not_relation;; // Текст
     concept_description                                         <- sc_node_not_relation;; // Описание
     concept_task_set                                            <- sc_node_not_relation;; // Множество задач
     concept_address                                             <- sc_node_not_relation;; // Адрес
