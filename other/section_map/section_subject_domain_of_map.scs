@@ -1,0 +1,50 @@
+section_subject_domain_of_maps
+
+    <- non_atomic_section;
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область карт]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of map]
+        (*<-lang_en;;*);
+    
+    -> rrel_key_sc_element:
+        subject_domain_of_maps;
+        concept_conventional_sign;
+        concept_coordinates;
+        concept_digital_map;
+        concept_latitude;
+        concept_longitude;
+        concept_map;
+        concept_map_label;
+        concept_model;
+        concept_scope;
+
+    <= nrel_section_decomposition: {
+        section_subject_domain_of_place
+    };; 
+
+    section_subject_domain_of_maps = [*
+        subject_domain_of_maps
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область карт]
+                (*<-lang_ru;;*);
+                [Subject domain of maps]
+                (*<-lang_en;;*);
+
+            -> rrel_maximum_studied_object_class: concept_map;
+
+            -> rrel_not_maximum_studied_object_class:
+                    concept_conventional_sign;
+            
+                    concept_coordinates;
+                    concept_digital_map;
+                    concept_latitude;
+                    concept_longitude;
+                    concept_map_label;
+                    concept_model;
+                    concept_scope;;
+    *];;
