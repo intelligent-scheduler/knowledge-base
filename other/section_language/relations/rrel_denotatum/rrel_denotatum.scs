@@ -20,13 +20,13 @@ rrel_denotatum
 
 
     => nrel_main_idtf:
-        [денотат]
+        [денотат']
         (*<-lang_ru;;*);
-        [denotatum]
+        [denotatum']
         (*<-lang_en;;*);
 
     => nrel_idtf:
-        [обозначаемый предмет]
+        [обозначаемый предмет']
         (*<- lang_ru;;*);
 
     <- rrel_key_sc_element: ...

@@ -19,9 +19,9 @@ nrel_style_of_the_text
         *);
 
     => nrel_main_idtf:
-        [стиль текста (отношение)]
+        [стиль текста*]
         (*<-lang_ru;;*);
-        [style of the text]
+        [style of the text*]
         (*<-lang_en;;*);
 
     <- rrel_key_sc_element: ...
