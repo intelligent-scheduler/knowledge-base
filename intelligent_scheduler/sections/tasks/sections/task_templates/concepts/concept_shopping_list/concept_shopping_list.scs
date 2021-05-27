@@ -1,6 +1,6 @@
 concept_shopping_list
 
-    <- concept_user_task_template;
+    <- concept_task_template;
 
     => nrel_main_idtf: 
         [список покупок] 

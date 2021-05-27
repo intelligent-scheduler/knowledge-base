@@ -40,7 +40,7 @@ concept_defined_property
             <- statement;;
 
             => nrel_main_idtf:
-                [Утв.(Об заданном и пустом свойствах)]
+                [Утв.(О заданном и пустом свойствах)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...

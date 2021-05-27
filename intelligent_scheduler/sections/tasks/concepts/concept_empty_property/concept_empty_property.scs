@@ -40,7 +40,7 @@ concept_empty_property
             <- statement;;
 
             => nrel_main_idtf:
-                [Утв.(*Об основном идентификаторе задачи*)]
+                [Утв.(О пустом свойстве)]
                 (*<-lang_ru;;*);;
 
             <= nrel_sc_text_translation: ...

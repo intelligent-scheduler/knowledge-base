@@ -1,6 +1,6 @@
 concept_school_schedule
 
-    <- concept_user_task_template;
+    <- concept_task_template;
 
     => nrel_main_idtf: 
         [школьное расписание] (*<-lang_ru;;*);

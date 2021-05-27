@@ -1,6 +1,6 @@
 concept_to_do_list
 
-    <- concept_user_task_template;
+    <- concept_task_template;
 
     => nrel_main_idtf: 
         [to-do list] (*<-lang_en;;*); 
