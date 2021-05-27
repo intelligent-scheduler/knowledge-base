@@ -1,0 +1,29 @@
+concept_approach
+
+    => nrel_main_idtf:
+        [подход]
+        (*<-lang_ru;;*);
+        [approach]
+        (*<-lang_en;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Подхода)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_approach.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> set;; //ims
+                    -> concept_method;;
+                *);;
+        *);;   

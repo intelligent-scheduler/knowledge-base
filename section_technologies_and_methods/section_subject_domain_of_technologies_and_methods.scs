@@ -1,0 +1,30 @@
+section_subject_domain_of_technologies_and_methods
+
+    <- not_enough_formed_structure; //ims
+
+    => nrel_main_idtf:
+        [Раздел. Предметная область технологий и методов]
+        (*<-lang_ru;;*);
+        [Section. Subject domain of technologies и methods]
+        (*<-lang_en;;*);
+
+    -> rrel_key_sc_element:
+        section_subject_domain_of_technologies;
+
+    <= nrel_section_decomposition: {
+        section_subject_domain_of_technologies;
+        section_subject_domain_of_methods
+    };;
+
+    section_subject_domain_of_technologies_and_methods  = [*
+        subject_domain_of_technologies_and_methods
+
+            <- structure;
+
+            => nrel_main_idtf:
+                [Предметная область технологий и методов]
+                (*<-lang_ru;;*);
+                [Subject domain of technologies и methods]
+                (*<-lang_en;;*);;
+    *];;
+    

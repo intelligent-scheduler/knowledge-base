@@ -20,6 +20,9 @@
     section_subject_domain_of_streets                           <- non_atomic_section;; // Раздел. Предметная область улиц
     section_subject_domain_of_roads                             <- non_atomic_section;; // Раздел. Предметная область дорог
     section_subject_domain_of_apartments                        <- non_atomic_section;; // Раздел. Предметная область квартир
+    section_subject_domain_of_technologies_and_methods          <- non_atomic_section;; // Раздел. Предметная область технологий и методов
+    section_subject_domain_of_technologies                      <- non_atomic_section;; // Раздел. Предметная область технологий
+    section_subject_domain_of_methods                           <- non_atomic_section;; // Раздел. Предметная область методов
 
     //subject domains
     subject_domain_of_intelligent_scheduler                     <- subject_domain;; // Предметная область интеллектуального планировщика
@@ -41,6 +44,9 @@
     subject_domain_of_streets                                   <- subject_domain;; // Предметная область улиц
     subject_domain_of_roads                                     <- subject_domain;; // Предметная область дорог
     subject_domain_of_apartments                                <- subject_domain;; // Предметная область квартир
+    subject_domain_of_technologies_and_methods          <- subject_domain;; // Предметная область технологий и методов
+    subject_domain_of_technologies                      <- subject_domain;; // Предметная область технологий
+    subject_domain_of_methods                           <- subject_domain;; // Предметная область методов
 
     //concepts
     concept_task_relation                                       <- sc_node_not_relation;; // Отношение на множестве задач
@@ -126,9 +132,10 @@
     concept_latitude                                            <- sc_node_not_relation;; // Широта
     concept_longitude                                           <- sc_node_not_relation;; // Долгота
     concept_language 											<- sc_node_not_relation;; // Язык
-    concept_means                                               <- sc_node_not_relation;;
-    concept_method                                              <- sc_node_not_relation;;
-    concept_technology                                          <- sc_node_not_relation;;
+    concept_method                                              <- sc_node_not_relation;; // Метод
+    concept_technology                                          <- sc_node_not_relation;; // Технология
+    concept_tool                                                <- sc_node_not_relation;; // Инструмент
+    concept_approach                                            <- sc_node_not_relation;; // Подход
 
     //relations
     nrel_subtask                                                <- sc_node_norole_relation;; // Подзадача
@@ -148,8 +155,7 @@
     nrel_eisenhower_matrix_analysis                             <- sc_node_norole_relation;; // Матрица Эйзенхауэра
     nrel_abcd_analysis                                          <- sc_node_norole_relation;; // ABCD - анализ
     nrel_method                                                 <- sc_node_norole_relation;; // Метод
-    nrel_tool                                                   <- sc_node_norole_relation;; // Инструмент  
-    nrel_means                                                  <- sc_node_norole_relation;;
+    nrel_using_tool                                             <- sc_node_norole_relation;; // Используемый инструмент  
 
 //wanted
     //concepts
@@ -183,11 +189,12 @@
     concept_diagonal_matrix                                     <- sc_node_not_relation;; // Диагональная матрица
     concept_identity_matrix                                     <- sc_node_not_relation;; // Единичная матрица
     concept_orthogonal_matrix                                   <- sc_node_not_relation;; // Ортогональная матрица
+    concept_operation                                           <- sc_node_not_relation;; // Операция
+    concept_society                                             <- sc_node_not_relation;; // Общество
+    concept_information                                         <- sc_node_not_relation;; // Информация
+    concept_data                                                <- sc_node_not_relation;; // Данные
+    concept_computer                                            <- sc_node_not_relation;; // Компьютер
 
-    concept_common                                              <- sc_node_not_relation;; // Общность, совокупность 
-    concept_operation                                           <- sc_node_not_relation;;
-
-    
     //relations
     nrel_detail                                                 <- sc_node_norole_relation;; // Деталь или подробность
     nrel_part_of_building                                       <- sc_node_norole_relation;; // Часть строения

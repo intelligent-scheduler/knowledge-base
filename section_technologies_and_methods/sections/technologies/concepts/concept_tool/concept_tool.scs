@@ -1,0 +1,57 @@
+concept_tool
+
+    => nrel_main_idtf:
+        [инструмент]
+        (*<-lang_ru;;*);
+        [tool]
+        (*<-lang_en;;*);
+
+    => nrel_idtf:
+        [средство]
+        (*<-lang_ru;;*);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- definition;;
+
+            => nrel_main_idtf:
+                [Опр.(Инструмента)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/definition_concept_tool.html"
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> concept_device;;
+                    -> concept_completion;;
+                    -> concept_operation;;
+                *);;
+        *);
+
+    <- rrel_key_sc_element: ...
+        (*
+            <- statement;;
+
+            => nrel_main_idtf:
+                [Утв.(Об инструменте)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ...
+                (* 
+                    -> rrel_example: 
+                        "file://html/statement_concept_tool.html" 
+                        (*<-lang_ru;;*);; 
+                *);;
+
+            <= nrel_using_constants: ...
+                (*
+                    -> parameter;;
+                    -> task;;
+                    -> concept_completion;;
+                *);;
+        *);;
