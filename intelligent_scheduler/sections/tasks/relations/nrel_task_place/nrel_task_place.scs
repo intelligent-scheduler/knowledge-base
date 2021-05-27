@@ -1,12 +1,13 @@
 nrel_task_place
 
     <- concept_task_relation;
-
+    
     <- asymmetric_relation;
     <- transitive_relation;
     <- antireflexive_relation;
     <|-  order_relation;
 
+    <= nrel_inclusion: nrel_task_property;
     <= nrel_inclusion: nrel_location;
 
     => nrel_first_domain: task; // ims

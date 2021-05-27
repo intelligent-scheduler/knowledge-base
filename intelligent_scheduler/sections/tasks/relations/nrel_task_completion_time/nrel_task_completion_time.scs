@@ -19,6 +19,7 @@ nrel_task_completion_time
                     duration //ims
                 };;
         *);
+        
     => nrel_definitional_domain: ...
         (*
             <= nrel_combination:
