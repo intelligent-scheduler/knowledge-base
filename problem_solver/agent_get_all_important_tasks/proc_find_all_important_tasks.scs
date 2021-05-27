@@ -1,0 +1,33 @@
+scp_program -> proc_find_important_tasks (*
+	
+	-> rrel_params: ... ;;
+
+
+	-> rrel_operators: ... (*
+
+		-> rrel_init: ..proc_print_important_tasks_set (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_print_set;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_const: concept_important_task;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_run_all_tests_wait_test_1;;
+		*);;
+
+		-> ..proc_run_all_tests_wait_test_1 (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_run_all_tests_operator_return;;
+		*);;
+
+		-> ..proc_run_all_tests_operator_return (*
+			<- return;;
+		*);;        
+
+	*);;
+*);;
+
+
