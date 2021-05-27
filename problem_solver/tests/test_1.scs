@@ -1,0 +1,8 @@
+task_1 => nrel_subtask: subtask1;;
+task_1 => nrel_subtask: subtask2;;
+task_1 => nrel_subtask: subtask3;;
+
+concept_completed_task -> task_1;;
+concept_completed_task -> subtask1;;
+concept_completed_task -> subtask2;;
+concept_completed_task -> subtask3;;
