@@ -8,7 +8,6 @@ nrel_task_description
     <|- order_relation;
 
     <= nrel_inclusion: nrel_task_property;
-    <= nrel_inclusion: nrel_description;
 
     //FIX domains
     => nrel_first_domain: task; //ims
