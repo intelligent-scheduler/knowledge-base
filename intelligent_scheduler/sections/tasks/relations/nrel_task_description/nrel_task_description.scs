@@ -73,6 +73,6 @@ nrel_task_description
             <= nrel_sc_text_translation: ... 
                 (* 
                     -> rrel_example: 
-                        "file://png/nrel_description.png";;
+                        "file://png/description_nrel_task_description.png";;
                 *);;
         *);;
