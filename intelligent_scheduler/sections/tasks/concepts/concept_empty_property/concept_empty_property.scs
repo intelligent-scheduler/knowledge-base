@@ -30,7 +30,7 @@ concept_empty_property
                     -> nrel_task_completion_time;;
                     -> nrel_start_task_completion;;
                     -> nrel_end_of_task_completion;;
-                    -> nrel_description;;
+                    -> nrel_task_description;;
                     -> nrel_task_place;;
                 *);;
         *);
