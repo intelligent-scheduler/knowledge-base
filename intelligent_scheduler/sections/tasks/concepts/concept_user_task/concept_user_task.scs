@@ -28,4 +28,20 @@ concept_user_task
                     -> task;; // ims
                     -> ui_user;; // ims
                 *);;
+        *);
+
+            
+    <- rrel_key_sc_element: ... 
+        (*
+            <- illustration;;
+
+            => nrel_main_idtf:
+                [Рис.(Пример пользовательской задачи)]
+                (*<-lang_ru;;*);;
+
+            <= nrel_sc_text_translation: ... 
+                (* 
+                    -> rrel_example: 
+                        "file://png/example_task.png";; 
+                *);;
         *);;

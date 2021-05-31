@@ -1,10 +1,8 @@
-concept_task_template
-
-  <- task; //ims
+nrel_task_template
 
   => nrel_main_idtf: 
-      [шаблон задачи] (*<-lang_ru;;*);
-      [task template] (*<-lang_en;;*);
+      [шаблон задачи'*'] (*<-lang_ru;;*);
+      [task template'*'] (*<-lang_en;;*);
 
 
   <- rrel_key_sc_element: ... (*

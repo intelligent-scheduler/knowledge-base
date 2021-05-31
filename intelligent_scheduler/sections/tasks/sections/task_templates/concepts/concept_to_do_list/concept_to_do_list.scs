@@ -13,7 +13,7 @@ concept_to_do_list
             [Опр. (To-Do List)] (* <- lang_ru;; *);;
           => nrel_using_constants: ... 
             (*
-                -> concept_user_task_template;;
+                -> task;;
                 -> nrel_subtask;;
                 -> concept_empty_task;;
             *);;
@@ -23,29 +23,6 @@ concept_to_do_list
                       "file://html/definition_concept_to_do_list.html"
                       (*<-lang_ru;;*);;
               *);;
-        *);
-        
-    <- rrel_key_sc_element: ...
-        (*
-            <- statement;;
-
-            => nrel_main_idtf:
-                [Утв.(*Об основном идентификаторе задачи*)]
-                (*<-lang_ru;;*);;
-
-            <= nrel_sc_text_translation: ...
-                (* 
-                    -> rrel_example: 
-                        "file://html/statement_concept_to_do_list.html" 
-                        (*<-lang_ru;;*);; 
-                *);;
-
-            <= nrel_using_constants: ...
-                (*
-                    -> ui_user;;
-                    -> concept_empty_task;;
-                    -> concept_defined_task;;
-                *);;
         *);
 
     <- rrel_key_sc_element: ... 

@@ -25,7 +25,7 @@ concept_shopping_list
 
             <= nrel_using_constants: ...
                 (*
-                    -> concept_user_task_template;;
+                    -> task;;
                     -> nrel_subtask;;
                     -> concept_action_purchase;;
                 *);;

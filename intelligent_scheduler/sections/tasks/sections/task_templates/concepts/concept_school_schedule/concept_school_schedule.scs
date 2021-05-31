@@ -1,7 +1,5 @@
 concept_school_schedule
 
-    <- concept_task_template;
-
     => nrel_main_idtf: 
         [школьное расписание] (*<-lang_ru;;*);
         [school schedule] (*<-lang_en;;*);
@@ -11,9 +9,10 @@ concept_school_schedule
         => nrel_main_idtf:
         [Опр. (Школьное расписание)] (* <- lang_ru;; *);;
         => nrel_using_constants: ... (*
-            -> nrel_start_task_completion;;
-            -> nrel_end_of_task_completion;;
-            -> nrel_task_completion_time;;
+            -> task;; //ims
+            -> concept_start_task_completion;;
+            -> concept_end_of_task_completion;;
+            -> concept_task_completion_time;;
         *);;
         <= nrel_sc_text_translation: ... (*
         -> rrel_example:
